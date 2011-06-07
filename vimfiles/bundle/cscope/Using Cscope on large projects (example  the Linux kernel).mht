@@ -1,0 +1,494 @@
+From: <Saved by Mozilla 5.0 (Windows)>
+Subject: Using Cscope on large projects (example: the Linux kernel)
+Date: Sat, 04 Jun 2011 21:51:15 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_58DA723D.F2020593"
+X-MAF-Information: Produced By MAF V1.0.0
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_58DA723D.F2020593
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://cscope.sourceforge.net/large_projects.html
+
+<html><head>
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DGB2312">
+    <title>Using Cscope on large projects (example: the Linux kernel)</titl=
+e>
+</head>
+
+<body bgcolor=3D"#FFFFFF">
+
+<a href=3D"http://sourceforge.net/"> <img src=3D"http://sourceforge.net/sfl=
+ogo.php?group_id=3D4664&amp;type=3D1" alt=3D"SourceForge Logo" border=3D"0"=
+ height=3D"31" width=3D"88"></a>=20
+
+<p>
+
+</p><center>
+<h2>Using Cscope on large projects (example: the Linux kernel)</h2>
+</center>
+
+Cscope can be a particularly useful tool if you need to wade into a large=
+ code
+base.  You can save yourself a lot of time by being able to do fast, target=
+ed
+searches rather than randomly grepping through the source files by hand
+(especially since grep starts to take a while with a truly large code base).
+
+<p>In this tutorial you'll learn how to set up Cscope with a large project.
+We'll use as our example the Linux kernel source code, but the basic steps=
+ are
+the same for any other large project, including C++ or Java projects.
+
+</p><ol>
+   =20
+    <li><b>Get the source</b>.  First get the source code.  You can downloa=
+d the
+    Linux kernel source from <a href=3D"http://www.kernel.org/">http://www.=
+kernel.org</a>. For the rest of
+    this tutorial, I'll assume you've downloaded Linux 2.4.18 and installed=
+ it
+    into <tt>/home/jru/linux-2.4.18</tt>.
+
+    <p><i>Note:  Make sure you've got enough disk space:  the kernel tarball
+        alone is 30 MB, it expands into 150 MB of source code, and the Csco=
+pe
+        database we'll generate will gobble up another 20-100+ MB (dependin=
+g on
+        how much of the kernel code you decide to include in the database).=
+ You
+        can put the Cscope database on a different disk partition than the
+        source code if you need to.</i>
+
+    </p><p></p></li><li><b>Figure out where you want to put your Cscope dat=
+abase files</b>.
+
+    I'll assume you'll use <tt>/home/jru/cscope</tt> as the directory to
+    store your database and associated files.
+
+    <p></p></li><li><b>Generate <tt>cscope.files</tt> with a list of files=
+ to be
+        scanned</b>.  For some projects, you may want to include every C so=
+urce
+    file in the project's directories in your Cscope database.  In that cas=
+e you
+    can skip this step, and just use '<tt>cscope -R</tt>' in the project's
+    top-level directory to build your Cscope database.  But if there's some=
+ code
+    that you wish to exclude, and/or your project contains C++ or Java sour=
+ce
+    code (by default Cscope only parses files with the <tt>.c</tt>, <tt>.h<=
+/tt>,
+    <tt>.y</tt>, or <tt>.l</tt> extensions), you'll need to generate a file
+    called <tt>cscope.files</tt>, which should contain the name of all files
+    that you wish to have Cscope scan (one file name per line). =20
+
+    <p>You'll probably want to use absolute paths (at least if you're plann=
+ing
+    to use the Cscope database within an editor), so that you can use the
+    database from directories other than the one you create.  The commands I
+    show will first cd to root, so that find prints out absolute paths.
+
+    </p><p>For many projects, your find command may be as as simple as=20
+   =20
+    </p><pre>    cd /
+    find /my/project/dir -name '*.java' &gt;/my/cscope/dir/cscope.files
+    </pre>
+
+    For the Linux kernel, it's a little trickier, since we want to exclude=
+ all
+    the code in the docs and scripts directories, plus all of the architect=
+ure
+    and assembly code for all chips except for the beloved Intel x86 (which=
+ I'm
+    guessing is the architecture you're interested in).  Additionally, I'm
+    excluding all kernel driver code in this example (they more than double=
+ the
+    amount of code to be parsed, which bloats the Cscope database, and they
+    contain many duplicate definitions, which often makes searching harder.=
+  If
+    you are interested in the driver code, omit the relevant line below, or
+    modify it to print out only the driver files you're interested in):
+
+    <pre>    LNX=3D/home/jru/linux-2.4.18
+    cd / =09
+    find  $LNX                                                           =
+     \
+	-path "$LNX/arch/*" ! -path "$LNX/arch/i386*" -prune -o               \
+	-path "$LNX/include/asm-*" ! -path "$LNX/include/asm-i386*" -prune -o \
+	-path "$LNX/tmp*" -prune -o                                           \
+	-path "$LNX/Documentation*" -prune -o                                 \
+	-path "$LNX/scripts*" -prune -o                                       \
+	-path "$LNX/drivers*" -prune -o                                       \
+        -name "*.[chxsS]" -print &gt;/home/jru/cscope/cscope.files
+    </pre>
+
+    While find commands can be a little tricky to write, for large projects
+    they are much easier than editing a list of files manually, and you can
+    also cut and paste a solution from someone else.=20
+
+    <p></p></li><li><b>Generate the Cscope database</b>.  Now it's time to=
+ generate the
+    Cscope database:
+
+    <pre>    cd /home/jru/cscope     # the directory with 'cscope.files'
+    cscope -b -q -k
+    </pre>
+
+    The <tt>-b</tt> flag tells Cscope to just build the database, and not=
+ launch
+    the Cscope GUI.  The <tt>-q</tt> causes an additional, 'inverted index'=
+ file
+    to be created, which makes searches run much faster for large databases.
+    Finally, <tt>-k</tt> sets Cscope's 'kernel' mode--it will not look in
+    <tt>/usr/include</tt> for any header files that are #included in your=
+ source
+    files (this is mainly useful when you are using Cscope with operating=
+ system
+    and/or C library source code, as we are here).
+
+    <p>On my 900 MHz Pentium III system (with a standard IDE disk), parsing=
+ this
+    subset of the Linux source takes only 12 seconds, and results in 3 files
+    (<tt>cscope.out</tt>, <tt>cscope.in.out</tt>, and <tt>cscope.po.out</tt=
+>)
+    that take up a total of 25 megabytes.
+
+    </p><p></p></li><li><b>Using the database</b>.  If you like to use <a=
+ href=3D"http://www.vim.org/">vim</a> or <a href=3D"http://www.gnu.org/soft=
+ware/emacs/emacs.html">emacs</a>/<a href=3D"http://www.xemacs.org/">xemacs<=
+/a>, I recommend that you learn how
+    to run Cscope within one of these editors, which will allow you to run
+    searches easily within your editor.  We have a <a href=3D"http://cscope=
+.sourceforge.net/cscope_vim_tutorial.html">tutorial for Vim</a>, and emacs=
+ users
+    will of course be clever enough to figure everything out from the helpf=
+ul
+    comments in the <tt>cscope/contrib/xcscope/</tt> directory of the Cscope
+    distribution. =20
+
+    <p>Otherwise, you can use the standalone Cscope curses-based GUI, which=
+ lets
+    you run searches, then launch your favorite editor (i.e., whatever $EDI=
+TOR
+    is set to in your environment, or 'vi' by default) to open on the exact=
+ line
+    of the search result.
+
+    </p><p>If you use the standalone Cscope browser, make sure to invoke it=
+ via
+
+    </p><pre>    cscope -d
+    </pre>
+
+    This tells Cscope not to regenerate the database.  Otherwise you'll hav=
+e to
+    wait while Cscope checks for modified files, which can take a while for
+    large projects, even when no files have changed.  If you accidentally=
+ run
+    '<tt>cscope</tt>', without any flags, you will also cause the database=
+ to be
+    recreated from scratch without the fast index or kernel modes being use=
+d, so
+    you'll probably need to rerun your original cscope command above to
+    correctly recreate the database.
+
+    <p></p></li><li><b>Regenerating the database when the source code chang=
+es</b>. =20
+
+    <p>If there are new files in your project, rerun your 'find' command to
+    update <tt>cscope.files</tt> if you're using it.
+
+    </p><p>Then simply invoke <tt>cscope</tt> the same way (and in the same
+    directory) as you did to generate the database initially (i.e.,
+    <nobr><tt>cscope -b -q -k</tt>).</nobr>=20
+
+
+</p></li></ol>
+
+<p>&#160;
+
+</p><center>
+   =20
+    <img src=3D"http://cscope.sourceforge.net/pics/cscope_hello.jpg">
+
+    <br>Tutorial by Jason Duell
+
+    <p><a href=3D"http://cscope.sourceforge.net/">Back to the Cscope home=
+ page</a>
+</p></center>
+
+
+
+<div style=3D"position: absolute; display: none; z-index: 9999;" id=3D"live=
+margins_control"><img src=3D"chrome://livemargins/skin/monitor-background-h=
+orizontal.png" style=3D"position: absolute;left:-77px;top:-5px" height=3D"5=
+" width=3D"77">	<img src=3D"chrome://livemargins/skin/monitor-background-ve=
+rtical.png" style=3D"position: absolute;left:0;top:-5px;">	<img id=3D"monit=
+or-play-button" src=3D"chrome://livemargins/skin/monitor-play-button.png"=
+ onmouseover=3D"this.style.opacity=3D1" onmouseout=3D"this.style.opacity=3D=
+0.5" style=3D"position: absolute;left:1px;top:0;opacity:0.5;cursor:pointer"=
+></div></body></html>
+------=_NextPart_000_0000_58DA723D.F2020593
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://sourceforge.net/sflogo.php?group_id=4664&type=1
+
+iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAMAAABUFvrSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAFpQTFRF////7u7uX2pytLm9ipKYn6aqdH6F3+Hj6uvsf4iOv8PHanR7
+1NfZlJyhqrC09PX2ys3Qsri8kpqf7KqcmJ+k1kkqzdDTxcnMub7BoKarqpOR8cK4lp2j6Z6NbVan
+UgAAARFJREFUSMft08lu3DAURNHb93EUKbUcJ7Ez/f9vZiG3h2TdG0O1IMDNQaEIcrlTuHCXnPAJ
+n/Bng69deyXU3nIGUi5qEGpkX5JnVzdUe6tdjUV1gWQwTepxWC5cdisR25i0Xm5wEIZBzTlDM0Gz
+VLJZWfwxSiW2xQAgaZ0mE8BiHFPktcEIoPrlFc4jrQBZfVINA64OJfx6iItagGQp+1G2vcG03OMG
+r0Daiva5HvCt8Rtc3MOA5MNr41rKv41nr4S/x0LtfRuNOqLEdF8Mak8fpkiGtpFeLg8GPH57TLbq
+f1Ns6kZW12vrarqWYBrvHi8Bs+sIlN3+vajrs+rPP7+SjTimKO+mOD/ICZ/wJ4LvlL9T9gm7i8l6
+8gAAAABJRU5ErkJggg==
+------=_NextPart_000_0000_58DA723D.F2020593
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: http://cscope.sourceforge.net/pics/cscope_hello.jpg
+
+/9j/4AAQSkZJRgABAQAAAQABAAD//gBZQ1JFQVRPUjogWFYgVmVyc2lvbiAzLjEwYSAgUmV2OiAx
+Mi8yOS85NCAoUE5HIHBhdGNoIDEuMikgIFF1YWxpdHkgPSAxMDAsIFNtb290aGluZyA9IDAK/9sA
+QwABAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+AQEBAQEBAQEB/9sAQwEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+AQEBAQEBAQEBAQEBAQEBAQEBAQEB/8AAEQgAbgBhAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAA
+AAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQy
+gZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVm
+Z2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS
+09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYH
+CAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1Lw
+FWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5
+eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj
+5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8A/v4ooooAKKKKACvjz9rb9uz9nP8AYw8Oi7+L
+HinUNd+JWt+HfEuvfC39m74VaRN8Sv2nfjvP4Y0261G+0P4K/BDw9LL4x8a3SC1MOqeIPsuneAvB
+cEja/wDEXxh4N8JWOq+IdP8AnP8A4LK/8FHY/wDglx+wj8Q/2ltD8O+HvHPxg1LX/Cvwk/Z3+HPi
+l/EaaH48+NXxAu549GsdSXwvY3GqX+neEfCeleMvijq3hyHUvCk/jTR/AOoeCNL8aeE9e8R6Trln
++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
+------=_NextPart_000_0000_58DA723D.F2020593
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: chrome://livemargins/skin/monitor-background-horizontal.png
+
+iVBORw0KGgoAAAANSUhEUgAAAE0AAAAFCAYAAAAAAmGxAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A
+/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9kIBwk6F/3p9A4AAAAZdEVYdENv
+bW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAo0lEQVQ4y+2SSw6EMAxD7TBz/wMPtLOASsXK
+B1hjqRuSOu4jxC7DWYSv6DsAdKkz6XniX9V5+ONCjicz2njDJ4A2G3gBmMBgEuQuNBZzNWcFjZKh
+F8DVowHYBrRvEnoYmoT3wljiYdKj4RlA0gwRDBawojv9ws/hAawBWGdodI45QCjbSanp4717dIAs
+icecB8EMFD0KVZfAWwyFtgL44dV9/QG/nx1+osSlawAAAABJRU5ErkJggg==
+------=_NextPart_000_0000_58DA723D.F2020593
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: chrome://livemargins/skin/monitor-background-vertical.png
+
+iVBORw0KGgoAAAANSUhEUgAAAAUAAABRCAYAAAAacGwEAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A
+/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9kIBwk5C8LF+4IAAAAZdEVYdENv
+bW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAABIUlEQVQ4y62Uu07EMBBFz9ig1RZAQQv91nT8
+/3/wFxQJii8F3t2JX3FBJCvR2JP7GM/wydsZOAGPQAACTxdegWfgnDdiXJfTO+sWgZSX4stqHwsp
+Aj/ACmxxIX0BF+AbWIAtCFn+1wMQAQsmyIGQF0GY+QAQrh9y67a7e9pBsz/CvZMqg/KA12BqnTT/
+PuRpLSCV6WkksxkcoUvW0669IjMVQCoNGaU7eT5dWREj7VaWo+m8WjXi8DJoVOLj9OQZ+PRuNXWI
+zrSiefJqWbe1amQleY2AqnSN0qvCVdbhWXigNOVnmjLEyrbpntSocHfyeYLJe1BSym0oqzvObB/w
+6Ol/bkjmKYJzfjcAbfrSVh1XK5KqoDqT9j6CqmnTVXR7fgGOG60weMe6CQAAAABJRU5ErkJggg==
+
+------=_NextPart_000_0000_58DA723D.F2020593
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: chrome://livemargins/skin/monitor-play-button.png
+
+iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A
+/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9kMCQ0lHLU3WjcAAAHYSURBVDjL
+lZTBalNBFIa/uXdu0qa1SoK2CuojqCulIJQKNboSXLr3Edz4Bm7duPIJFERcBLSGgrj1GWJLS5Ua
+FJIamzm/i5ncKG1KcmA2M3O+Of9/DuOePX+hJ/uXYbEO84tQqUGeA47TQwDcWCr4shOaHuBafQF/
+poavLZBV53F5cSrCpTck+DYYQsNaXkCQcCYwkZlwTkwb9SKH7iFeOI4kTBEyK8g5BwgPMDCRS2QI
+J8PJpgZhUaMXMAgiN3i5eo61q2cpiuMefd7/w6P2jwkwh5egJ3DBuHmhkko9HqvLFX4G49b5Ck+v
+LxFMPNg8iN2VRWm/DAgxYeP9Ae3voQSsr1TZ3GgA8OpOg/WVannWDWkMjCiNEGAYk9s7fch8efnj
+dh9olND/4ijEWTDDGw6CwJLBZsnBaYy2JA2y0vmk5u7FuQhOq3lpbjIoCIKBpfYTLG4C7+4v470/
+Ma/1tU/zSm28MRypEJnJgQkkPmwfTny81elz780ea693+bT7m1anH/OCxTkaERkaD9/uQdGFLJ8I
+3Or0uN3p/TPasXF+7FHyJYvVzRRS6poUsbK03EwQzPAomT0U5AKXqpoFVPVpIE2gEKuxMP5wTvzL
+FM9Hb1UyCHr8F1NT7OnOQnb0AAAAAElFTkSuQmCC
+------=_NextPart_000_0000_58DA723D.F2020593--
