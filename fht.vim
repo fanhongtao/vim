@@ -12,11 +12,12 @@ set nocompatible
 
 "==============================================================================
 " plugin: pathogen (id: 2332)
-" 安装有 doc 目录的插件时，需要执行类似如下的命令以便让插件对应的帮助生效
+" When install plugin with directory 'doc', execute command like this to make
+" the doc effective:
 "	helptag $VIM/vimfiles/bundle/Recent/doc
 " Use pathogen to easily modify the runtime path to include all
 " plugins under the ~/.vim/bundle directory
-" call pathogen#helptags()
+"call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()      " Init plugin pathogen
 
 
@@ -45,7 +46,7 @@ set fileencodings=utf-8,ucs-bom,cp936
                         " a list of character encodings considered when 
                         " starting to edit an existing file.
 set history=50          " keep 50 lines of command line history
-set nobackup            " do not keep a backup file
+set undolevels=1000     " use many muchos levels of undo 
 set number              " Print the line number in front of each line
 set ruler               " Show the line and column number of the cursor position
 set showcmd             " display incomplete commands
@@ -57,10 +58,14 @@ set smarttab            " insert tabs on the start of a line according to
 set hlsearch            " highlight search terms
 set incsearch           " show search matches as you type
 
+set visualbell          " don't beep
+set noerrorbells        " don't beep
+set nobackup            " do not keep a backup file
+set noswapfile          " do not use swap file
 
-
-" 将词典设置成美国英语，可以使用 CTRL-X, CTRL-K 来进行拼写补全
-" set spell spelllang=en_us
+" Set the spell language to US English.
+" Use Ctrl-X, CTRL-K to check the spell
+"set spell spelllang=en_us
 
 if (g:iswindows==1)
     au GUIEnter * simalt ~x             " Maximize windows when start.
@@ -110,8 +115,8 @@ if has("autocmd")
     augroup vimrcEx
         au!
 
-        " For all text files set 'textwidth' to 78 characters.
-        autocmd FileType text setlocal textwidth=78
+        " For all text files set 'textwidth' to 120 characters.
+        autocmd FileType text setlocal textwidth=120
 
         " When editing a file, always jump to the last known cursor position.
         " Don't do it when the position is invalid or when inside an event handler
@@ -142,10 +147,24 @@ if !exists(":DiffOrig")
         \ | wincmd p | diffthis
 endif
 
+"==============================================================================
 " read project's setting file
-if filereadable("vim_proj/project.vim")
-    source vim_proj/project.vim
-endif
+let s:backup_dir = getcwd()
+let s:curr_dir = s:backup_dir
+let s:last_dir = ""
+while s:last_dir != s:curr_dir
+    if filereadable("vim_proj/project.vim")
+        echo 'Read project from '.s:curr_dir
+        source vim_proj/project.vim
+    endif
+    cd ..
+    let s:last_dir = s:curr_dir
+    let s:curr_dir = getcwd()
+endwhile
+execute ":cd ".s:backup_dir
+unlet s:backup_dir
+unlet s:curr_dir
+unlet s:last_dir
 
 "==============================================================================
 " User defined command
