@@ -58,7 +58,6 @@ set smarttab            " insert tabs on the start of a line according to
 set hlsearch            " highlight search terms
 set incsearch           " show search matches as you type
 
-set visualbell          " don't beep
 set noerrorbells        " don't beep
 set nobackup            " do not keep a backup file
 set noswapfile          " do not use swap file
@@ -75,11 +74,8 @@ else
     set dir=/tmp/vimswap,/tmp/,.        " set directory of swap files
 endif
 
-
-if &t_Co >= 256 || has("gui_running")
-    colorscheme torte       " set active color scheme
-endif
-
+colorscheme torte       " set active color scheme
+syntax on               " Switch syntax highlighting on
 
 " It clears the search buffer when you press ,/
 nmap <silent> ,/ :nohlsearch<CR>
@@ -94,12 +90,6 @@ inoremap <C-U> <C-G>u<C-U>
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
     set mouse=a
-endif
-
-" Switch syntax highlighting on, when the terminal has colors
-" Also switch on highlighting the last used search pattern.
-if &t_Co > 2 || has("gui_running")
-    syntax on
 endif
 
 " Only do this part when compiled with support for autocommands.
@@ -222,10 +212,6 @@ let Tlist_Use_Right_Window = 1  " Show taglist window on the right
 let tlist_cpp_setting='c++;c:class;f:function;p:prototype'
 " Use 'F9' to open/close taglist window
 map <silent> <F9> :TlistToggle<CR>
-
-"==============================================================================
-" plugin: fencview (id: 1708)
-let g:fencview_autodetect = 1
 
 "==============================================================================
 " plugin: recent (id: 1767)
