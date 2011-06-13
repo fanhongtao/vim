@@ -1,0 +1,865 @@
+From: <Saved by Mozilla 5.0 (Windows)>
+Subject: Quicksilver.vim - Quickly open files from inside VIM. : vim online
+Date: Mon, 13 Jun 2011 22:36:32 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_C67AF1EA.71DF9F79"
+X-MAF-Information: Produced By MAF V1.0.0
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_C67AF1EA.71DF9F79
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.vim.org/scripts/script.php?script_id=3617
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head>
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DISO-8859-=
+1">
+  <link rel=3D"Stylesheet" type=3D"text/css" href=3D"urn:snapshot-07555D5F:=
+http://www.vim.org/css/style.css">
+  <title>Quicksilver.vim - Quickly open files from inside VIM. : vim online=
+</title>
+  <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DISO-885=
+9-1">
+  <meta name=3D"KEYWORDS" content=3D"Vim, Vi IMproved, text editor, home,=
+ documentation, tips, scripts, news">
+  <link rel=3D"shortcut icon" type=3D"image/x-icon" href=3D"http://www.vim.=
+org/images/vim_shortcut.ico">
+</head>
+
+<body topmargin=3D"0" leftmargin=3D"0" bgcolor=3D"#ffffff" marginheight=3D"=
+0" marginwidth=3D"0">=20
+
+<!-- HEADER, SPONSOR IMAGE, VIM IMAGE AND BOOK AD -->
+<table border=3D"0" bordercolor=3D"red" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%">
+  <tbody><tr>
+    <td colspan=3D"4" class=3D"lightbg"><img src=3D"http://www.vim.org/imag=
+es/spacer.gif" alt=3D"" height=3D"5" width=3D"1"></td>
+  </tr>
+  <tr>
+  <td class=3D"lightbg">=A0=A0=A0</td>
+  <td class=3D"lightbg" align=3D"left"><a href=3D"http://www.vim.org/sponso=
+r/index.php"><img src=3D"http://www.vim.org/images/sponsorvim.gif" alt=3D"s=
+ponsor Vim development" border=3D"0"></a></td>
+    <td class=3D"lightbg" align=3D"center"><a href=3D"http://www.vim.org/in=
+dex.php"><img src=3D"http://www.vim.org/images/vim_header.gif" alt=3D"Vim=
+ logo" border=3D"0"></a></td>
+    <td class=3D"lightbg" align=3D"right"><a href=3D"http://iccf-holland.or=
+g/click5.html"><img src=3D"http://www.vim.org/images/buyhelplearn.gif" alt=
+=3D"Vim Book Ad" border=3D"0"></a></td>
+  </tr>
+  <tr>
+    <td colspan=3D"4" class=3D"lightbg"><img src=3D"http://www.vim.org/imag=
+es/spacer.gif" alt=3D"" height=3D"5" width=3D"1"></td>
+  </tr>
+  <tr>
+    <td colspan=3D"4" class=3D"darkbg"><img src=3D"http://www.vim.org/image=
+s/spacer.gif" alt=3D"" height=3D"10" width=3D"1"></td>
+  </tr>
+</tbody></table>
+<!-- THE PAGE BODY: BETWEEN HEADER AND FOOTER -->
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+  <colgroup><col width=3D"180">
+  <col width=3D"1">
+
+  </colgroup><tbody><tr valign=3D"top">
+    <td class=3D"sidebar">
+      <table border=3D"0" cellpadding=3D"4" cellspacing=3D"0" width=3D"180">
+        <tbody><tr valign=3D"top">
+          <td class=3D"sidebar">
+
+<!-- INCLUDE THE PAGE NAVIGATION -->
+<table border=3D"0" bordercolor=3D"red" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%">
+    <tbody><tr>
+        <td><small>not logged in (<a href=3D"http://www.vim.org/login.php">=
+login</a>)</small></td>
+    </tr>
+    <tr><td>
+<small>=A0</small>
+<form action=3D"http://www.google.com/cse" id=3D"cse-search-box">
+  <div>
+    <input name=3D"cx" value=3D"partner-pub-3005259998294962:bvyni59kjr1"=
+ type=3D"hidden">
+    <input name=3D"ie" value=3D"ISO-8859-1" type=3D"hidden">
+    <input style=3D"border: 1px solid rgb(126, 157, 185); padding: 2px; bac=
+kground: url(&quot;http://www.google.com/cse/intl/en/images/google_custom_s=
+earch_watermark.gif&quot;) no-repeat scroll left center rgb(255, 255, 255);=
+" name=3D"q" size=3D"20" type=3D"text">
+    <br>
+    <input name=3D"sa" value=3D"Search" type=3D"submit">
+  </div>
+<input value=3D"www.vim.org/scripts/script.php?script_id=3D3617" name=3D"si=
+teurl" type=3D"hidden"></form>
+<script type=3D"text/javascript" src=3D"urn:snapshot-2CCC6926:http://www.go=
+ogle.com/coop/cse/brand?form=3Dcse-search-box&amp;lang=3Den"></script>
+    </td></tr>
+    <tr>
+        <td><img src=3D"http://www.vim.org/images/spacer.gif" alt=3D"" bord=
+er=3D"0" height=3D"1" width=3D"1"></td>
+    </tr>
+    <tr>
+        <td class=3D"darkbg"><img src=3D"http://www.vim.org/images/spacer.g=
+if" alt=3D"" border=3D"0" height=3D"3"></td>
+    </tr>
+    <tr>
+        <td><img src=3D"http://www.vim.org/images/spacer.gif" alt=3D"" bord=
+er=3D"0" height=3D"2" width=3D"1"></td>
+    </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/index=
+.php">Home</a></td>
+        </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/searc=
+h.php">Advanced search</a></td>
+        </tr>
+    <tr>
+        <td><img src=3D"http://www.vim.org/images/spacer.gif" alt=3D"" bord=
+er=3D"0" height=3D"7" width=3D"1"></td>
+    </tr>
+    <tr>
+        <td class=3D"checker"><img src=3D"http://www.vim.org/images/spacer.=
+gif" alt=3D"" border=3D"0" height=3D"1"></td>
+    </tr>
+    <tr>
+        <td><img src=3D"http://www.vim.org/images/spacer.gif" alt=3D"" bord=
+er=3D"0" height=3D"7" width=3D"1"></td>
+    </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/about=
+.php">About Vim</a></td>
+        </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/commu=
+nity.php">Community</a></td>
+        </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/news/=
+news.php">News</a></td>
+        </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/spons=
+or/index.php">Sponsoring</a></td>
+        </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/trivi=
+a.php">Trivia</a></td>
+        </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/docs.=
+php">Documentation</a></td>
+        </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/downl=
+oad.php">Download</a></td>
+        </tr>
+    <tr>
+        <td><img src=3D"http://www.vim.org/images/spacer.gif" alt=3D"" bord=
+er=3D"0" height=3D"7" width=3D"1"></td>
+    </tr>
+    <tr>
+        <td class=3D"checker"><img src=3D"http://www.vim.org/images/spacer.=
+gif" alt=3D"" border=3D"0" height=3D"1"></td>
+    </tr>
+    <tr>
+        <td><img src=3D"http://www.vim.org/images/spacer.gif" alt=3D"" bord=
+er=3D"0" height=3D"7" width=3D"1"></td>
+    </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/scrip=
+ts/index.php">Scripts</a></td>
+        </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/tips/=
+index.php">Tips</a></td>
+        </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/accou=
+nt/index.php">My Account</a></td>
+        </tr>
+    <tr>
+        <td><img src=3D"http://www.vim.org/images/spacer.gif" alt=3D"" bord=
+er=3D"0" height=3D"7" width=3D"1"></td>
+    </tr>
+    <tr>
+        <td class=3D"checker"><img src=3D"http://www.vim.org/images/spacer.=
+gif" alt=3D"" border=3D"0" height=3D"1"></td>
+    </tr>
+    <tr>
+        <td><img src=3D"http://www.vim.org/images/spacer.gif" alt=3D"" bord=
+er=3D"0" height=3D"7" width=3D"1"></td>
+    </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/huh.p=
+hp">Site Help</a></td>
+        </tr>
+</tbody></table>
+
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"172">
+              <tbody><tr><td><img src=3D"http://www.vim.org/images/spacer.g=
+if" alt=3D"" border=3D"0" height=3D"8" width=3D"1"></td></tr>
+              <tr><td class=3D"darkbg"><img src=3D"http://www.vim.org/image=
+s/spacer.gif" alt=3D"" height=3D"3" width=3D"1"></td></tr>
+            </tbody></table>
+            <br>
+
+<!-- INCLUDE THE PAGE SIDEBAR TEXT -->
+=A0
+
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+
+    <td class=3D"darkbg"><img src=3D"http://www.vim.org/images/spacer.gif"=
+ alt=3D"" border=3D"0" height=3D"1" width=3D"1"><br></td>
+    <td>
+      <table border=3D"0" bordercolor=3D"red" cellpadding=3D"10" cellspacin=
+g=3D"0" width=3D"100%">
+        <tbody><tr>
+          <td valign=3D"top">
+
+<span class=3D"txth1">Quicksilver.vim : Quickly open files from inside VIM.=
+</span>=20
+
+<br>
+<br>
+
+<!-- karma table -->
+<table border=3D"1" bordercolor=3D"#000066" cellpadding=3D"4" cellspacing=
+=3D"0">
+<tbody><tr>
+  <td class=3D"lightbg"><b>=A0script karma=A0</b></td>
+  <td>
+    Rating <b>1/1</b>,
+    Downloaded by 67  </td>
+  <td class=3D"lightbg">
+  <b>=A0Comments, bugs, improvements=A0</b>
+  </td>
+  <td>
+    <a href=3D"http://vim.wikia.com/wiki/Script:3617">Vim wiki</a>
+  </td> =20
+</tr>
+</tbody></table>
+<p>
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+<tbody><tr><td class=3D"prompt">created by</td></tr>
+<tr><td><a href=3D"http://www.vim.org/account/profile.php?user_id=3D27766">=
+Bogdan Popa</a></td></tr>
+<tr><td>=A0</td></tr>
+<tr><td class=3D"prompt">script type</td></tr>
+<tr><td>utility</td></tr>
+<tr><td>=A0</td></tr>
+<tr><td class=3D"prompt">description</td></tr>
+<tr><td>Quicksilver is a VIM plugin whose purpose is to quicken the process=
+ of
+<br>opening files from inside VIM.
+<br>
+<br># Preview
+<br>
+<br>Video: <a target=3D"_blank" href=3D"http://www.youtube.com/watch?v=3DRD=
+sey4YqpHs">http://www.youtube.com/watch?v=3DRDsey4YqpHs</a>
+<br>Screenshot: <a target=3D"_blank" href=3D"http://farm4.static.flickr.com=
+/3383/5804126014_072806d823_z.jpg">http://farm4.static.flickr.com/3383/5804=
+126014_072806d823_z.jpg</a>
+<br>
+<br># Usage
+<br>
+<br>By default, `\q` will activate the Quicksilver buffer and switch to
+<br>insert mode. Typing any key will update the list of suggestions and
+<br>pressing `CR` will open the first item in the suggestion list. Use `C-c`
+<br>to quickly close the buffer.
+<br>
+<br>You may cycle through the suggestion list using `Tab` and `S-Tab`. `CR`
+<br>will open the current suggestion (first item in the list).
+<br>
+<br>If there is only one item in the suggestion list, pressing `Tab` will
+<br>open that item.
+<br>
+<br>Pressing `CR` when there is no pattern will go up a directory.
+<br>
+<br>`C-w` clears the entire pattern. If there is no pattern, it will go up a
+<br>directory.
+<br>
+<br>`C-t` toggles between if pattern and filename case should be ignored or
+<br>not.
+<br>
+<br>`C-f` turns on `fuzzy matching`. Fuzzy matching will match any filename
+<br>that contains every character in the given pattern, no matter the order
+<br>of the characters. For example: the pattern `foo` will match `foo`, as
+<br>well as `oof`, `ofo` and `foob`.
+<br>
+<br>`C-n` turns on `normal matching`. Normal matching will match any
+<br>filename that contains the exact phrase within it. For example: the
+<br>pattern `foo` will match `foo` and `foob` but not `ofo` or `oof`.
+<br>
+<br>If you prefer fuzzy matching and would like Quicksilver to default to it
+<br>instead of normal matching then you can add `let g:QSMatchFn =3D 'fuzzy=
+'`
+<br>to your `.vimrc`.
+<br>
+<br>If a file with the given pattern does not exist then a new file will be
+<br>opened for editing with the given pattern as its filename. If a pattern
+<br>ends in `/`, quicksilver will create a new folder, change its CWD to
+<br>that folder and remain in insert mode expecting a file name.
+<br>
+<br>Patterns that start or end in a wildcard (`*`) are treated as glob
+<br>patterns. For example, the pattern `*.md` will open all the files that
+<br>have the extension `.md` in the CWD.
+<br>
+<br># Requirements
+<br>
+<br>* VIM 7.0+ compiled with +python
+<br>* Python 2.6+
+<br></td></tr>
+<tr><td>=A0</td></tr>
+<tr><td class=3D"prompt">install details</td></tr>
+<tr><td>Use pathogen (<a target=3D"_blank" href=3D"http://github.com/tpope/=
+vim-pathogen">http://github.com/tpope/vim-pathogen</a>) and clone=20
+<br>the github repository (<a target=3D"_blank" href=3D"https://github.com/=
+Bogdanp/quicksilver.vim">https://github.com/Bogdanp/quicksilver.vim</a>)=20
+<br>into your ~/.vim/bundle directory or download quicksilver.vim to
+<br>your ~/.vim/plugin/ directory.</td></tr>
+<tr><td>=A0</td></tr>
+</tbody></table>
+
+<!-- rating table -->
+</p><form name=3D"rating">
+<input name=3D"script_id" value=3D"3617" type=3D"hidden">
+<table border=3D"1" bordercolor=3D"#000066" cellpadding=3D"4" cellspacing=
+=3D"0">
+<tbody><tr>
+  <td class=3D"lightbg"><b>rate this script</b></td>
+  <td valign=3D"middle">
+    <input name=3D"rating" value=3D"life_changing" type=3D"radio">Life Chan=
+ging
+    <input name=3D"rating" value=3D"helpful" type=3D"radio">Helpful
+    <input name=3D"rating" value=3D"unfulfilling" type=3D"radio">Unfulfilli=
+ng=A0
+    <input value=3D"rate" type=3D"submit">
+  </td>
+</tr>
+</tbody></table>
+</form>
+<span class=3D"txth2">script versions</span> (<a href=3D"http://www.vim.org=
+/scripts/add_script_version.php?script_id=3D3617">upload new version</a>)
+<p>
+Click on the package to download.
+</p><p>
+
+<table border=3D"0" cellpadding=3D"4" cellspacing=3D"2" width=3D"100%">
+<tbody><tr class=3D"tableheader">
+        <th valign=3D"top">package</th>
+    <th valign=3D"top">script version</th>
+    <th valign=3D"top">date</th>
+    <th valign=3D"top">Vim version</th>
+    <th valign=3D"top">user</th>
+    <th valign=3D"top">release notes</th>
+</tr>
+<tr>
+        <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><a href=3D"ht=
+tp://www.vim.org/scripts/download_script.php?src_id=3D15842">quicksilver.vi=
+m</a></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><b>0.3.1</b></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><i>2011-06-09</i>=
+</td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"rowodd" valign=3D"top"><i><a href=3D"http://www.vim.org/ac=
+count/profile.php?user_id=3D27766">Bogdan Popa</a></i></td>
+    <td class=3D"rowodd" valign=3D"top" width=3D"2000">New in version 0.3.1:
+<br>
+<br>* If there is only one file in the suggestion list, pressing Tab will=
+ open that file.</td>
+</tr>
+<tr>
+        <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><a href=3D"h=
+ttp://www.vim.org/scripts/download_script.php?src_id=3D15838">quicksilver.v=
+im</a></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><b>0.3.0</b></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><i>2011-06-08</i=
+></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"roweven" valign=3D"top"><i><a href=3D"http://www.vim.org/a=
+ccount/profile.php?user_id=3D27766">Bogdan Popa</a></i></td>
+    <td class=3D"roweven" valign=3D"top" width=3D"2000">New in version 0.3.=
+0:
+<br>
+<br>* Allow the user to set a default match function in their .vimrc
+<br>* Suggestions can now be cycled through</td>
+</tr>
+<tr>
+        <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><a href=3D"ht=
+tp://www.vim.org/scripts/download_script.php?src_id=3D15826">quicksilver.vi=
+m</a></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><b>0.2.7</b></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><i>2011-06-06</i>=
+</td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"rowodd" valign=3D"top"><i><a href=3D"http://www.vim.org/ac=
+count/profile.php?user_id=3D27766">Bogdan Popa</a></i></td>
+    <td class=3D"rowodd" valign=3D"top" width=3D"2000">Version 0.2.7:
+<br>
+<br>* Allow the user to set a default match function in their vimrc. </td>
+</tr>
+<tr>
+        <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><a href=3D"h=
+ttp://www.vim.org/scripts/download_script.php?src_id=3D15822">quicksilver.v=
+im</a></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><b>0.2.6</b></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><i>2011-06-06</i=
+></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"roweven" valign=3D"top"><i><a href=3D"http://www.vim.org/a=
+ccount/profile.php?user_id=3D27766">Bogdan Popa</a></i></td>
+    <td class=3D"roweven" valign=3D"top" width=3D"2000">Initial upload</td>
+</tr>
+</tbody></table>
+<!-- finish off the framework -->
+          </p></td>
+        </tr>
+      </tbody></table>
+    </td>
+
+  </tr>
+</tbody></table>
+
+<!-- END OF THE PAGE BODY: BETWEEN HEADER AND FOOTER -->
+
+<table border=3D"0" bordercolor=3D"red" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%">
+  <tbody><tr><td colspan=3D"4"><img src=3D"http://www.vim.org/images/spacer=
+.gif" alt=3D"" height=3D"5" width=3D"1"></td></tr>
+  <tr><td colspan=3D"4" bgcolor=3D"#000000"><img src=3D"http://www.vim.org/=
+images/spacer.gif" alt=3D"" height=3D"2" width=3D"1"></td></tr>
+  <tr><td colspan=3D"4"><img src=3D"http://www.vim.org/images/spacer.gif"=
+ alt=3D"" height=3D"5" width=3D"1"></td></tr>
+  <tr>
+    <td><img src=3D"http://www.vim.org/images/spacer.gif" alt=3D"" height=
+=3D"1" width=3D"5"></td>
+
+    <td align=3D"left" valign=3D"top"><small>
+      If you have questions or remarks about this site, visit the
+      <a href=3D"http://vimonline.sf.net/">vimonline development</a> pages.
+      Please use this site responsibly.
+      <br>=20
+     =20
+      Questions about <a href=3D"http://www.vim.org/about.php">Vim</a> shou=
+ld go
+      to the <a href=3D"http://www.vim.org/maillist.php">maillist</a>.
+      Help Bram <a href=3D"http://iccf-holland.org/">help Uganda</a>.
+      </small>
+	=A0
+	=A0
+
+	<!-- Start of StatCounter Code -->
+	<script type=3D"text/javascript" language=3D"javascript"><!--
+
+/* Script removed by snapshot save */
+
+--></script>
+
+	<script type=3D"text/javascript" language=3D"javascript" src=3D"urn:snapsh=
+ot-2BF5133A:http://www.statcounter.com/counter/counter.js"></script><noscri=
+pt><a href=3D"http://www.statcounter.com/" target=3D"_blank"><img  src=3D"h=
+ttp://c12.statcounter.com/counter.php?sc_project=3D1417324&java=3D0&securit=
+y=3Dd41633bc&invisible=3D0" alt=3D"free tracking" border=3D"0"></a> </noscr=
+ipt>
+	<!-- End of StatCounter Code -->
+          </td>
+
+    <td align=3D"right" valign=3D"top">
+      		<a href=3D"http://sourceforge.net/projects/vim" rel=3D"nofollow"><i=
+mg src=3D"http://sflogo.sourceforge.net/sflogo.php?group_id=3D8&amp;type=3D=
+1" alt=3D"SourceForge.net Logo" border=3D"0" height=3D"31" width=3D"88"></a>
+    </td>
+
+    <td><img src=3D"http://www.vim.org/images/spacer.gif" alt=3D"" height=
+=3D"1" width=3D"5"></td>
+  </tr>
+
+   =20
+  <tr><td colspan=3D"4"><img src=3D"http://www.vim.org/images/spacer.gif"=
+ alt=3D"" height=3D"5" width=3D"1"></td>
+ =20
+  </tr>
+</tbody></table>
+
+
+
+
+<div style=3D"position: absolute; display: none; z-index: 9999;" id=3D"live=
+margins_control"><img src=3D"chrome://livemargins/skin/monitor-background-h=
+orizontal.png" style=3D"position: absolute;left:-77px;top:-5px" height=3D"5=
+" width=3D"77">	<img src=3D"chrome://livemargins/skin/monitor-background-ve=
+rtical.png" style=3D"position: absolute;left:0;top:-5px;">	<img id=3D"monit=
+or-play-button" src=3D"chrome://livemargins/skin/monitor-play-button.png"=
+ onmouseover=3D"this.style.opacity=3D1" onmouseout=3D"this.style.opacity=3D=
+0.5" style=3D"position: absolute;left:1px;top:0;opacity:0.5;cursor:pointer"=
+></div></body></html>
+------=_NextPart_000_0000_C67AF1EA.71DF9F79
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.vim.org/images/spacer.gif
+
+R0lGODlhAQABAJH/AP///wAAAP///wAAACH/C0FET0JFOklSMS4wAt7tACH5BAEAAAIALAAAAAAB
+AAEAAAICVAEAOw==
+------=_NextPart_000_0000_C67AF1EA.71DF9F79
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.vim.org/images/sponsorvim.gif
+
+R0lGODlh1wAmAPcAAAAAAAB7AACEAAgICAiECBAQEBCEEBCMEBgYGBiMGCEhISGMISGUISkpKSmU
+KTExMTGUMTGcMTk5OTmcOUJCQkKcQkKlQkpKSkqlSlJSUlKlUlKtUlpaWlqtWmNjY2OtY2O1Y2tr
+a2u1a3Nzc3O1c3O9c3t7e3u9e4SEhITGhIyMjIzGjJSUlJTGlJTOlJycnJzOnKWlpaXOpaXWpa2t
+ra3WrbW1tbXWtbXetb29vb3evcbGxsbexsbnxs7Ozs7nztbW1tbn1tbv1t7e3t7v3ufn5+fv5+f3
+5+/v7+/37/f39/f/9///////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAA1wAmAAAI/gADCAgg
+kODAgggPKjTIMGHDhQ4jQpz4sKJEixQvaszIEaPHjR87gnTIpKTJkyhTqlzJsqXLlzBjypxJs6bN
+myYJ4tzJs6fPn0CD0tQptKjRo0iT8iSqtKnTp1B/Mj2JJMaIES+UlFQSo2sMGj5Q+lARAkWOkzRi
+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
+SjgSItGES+iETPiEUhiFVAiFViiFAxEQAAA7
+------=_NextPart_000_0000_C67AF1EA.71DF9F79
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.vim.org/images/vim_header.gif
+
+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
+------=_NextPart_000_0000_C67AF1EA.71DF9F79
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.vim.org/images/buyhelplearn.gif
+
+R0lGODlhDwEmAMQfAEShRLvdu4iIiERERIjDiLu7u93u3ZnMme727mayZszlzCKQIhGIETOZMxER
+EXe7d+7u7szMzN3d3WZmZqrUqjMzM1WqVSIiIpmZmXd3d1VVVaqqqgB/AAAAAP///////yH5BAEA
+AB8ALAAAAAAPASYAAAX/4MeNZGmeaKqubOu+cCzPdG3TX67vfM95wKBwSCwaj8ikcslsOp/QqHT6
+5PSu2B91y+16v+CweGnFmnXasXrNbrvfxvLZnIbb7/i8HiifX+tAEQWDgxBCgxFBiB6EhoGFe16C
+BUEQgxJAhJqGEpBCnZt2k0STmphBk6dAoISqHqCqnYlkfnREAx25uhlBuQO9Hb8ZuROrDh0VkV64
+HYq5AkC60pQCuZRC1dIdGo5tzLfaHdBBF8TY4RWz2Q6O1b+0tX/g4gLHHbO+wL8Q9pgT1sq6fMv0
+LFoHBwMSDkiU7VqQbBUG2CvmZqAQZgoHYECly8G5DhME/AsGJBtJD+6Y//SJh2ZeSYAe8hl8hyGX
+BgnmAnKxWKBgzJMfHb7sQAlCuWYVc7ksMkzXhocwKyhFKQ1aSngsdwDywKzABqnJZuoLIhXZwW46
+pzATwHbkuFwX2LIdKpQqUSBl31gMslauqmMjNUC966HchZcVyjmQcFXJyqxbmVUdK5agrnFpqUjW
+9jYc3SHZBBTIJjgp0ovhrm3IFUFDrnbEBDDbSHVAz2CNkzxmGfmZyFy8fr4TLmRk2Myaff8WZzCu
+3M8fpTmY5W0qanpsT/07XLMDbZO6aNf20LTccN1ZefQ+nZd4ZcuYkUvh6VNmUNC5Ig4QgJbNXiD/
+ecBPOO+ENtJwKRmly/95SOwWz3pAKOhRYWcxkhN88iV32m2dMWhXXQ3lEWCA3SnUz4cQlDXOVbcB
+hV56LQ2BkUQ+rSOZUBxmqJZ1Of6kDTXhNBMiHpvlUyRzrh02lFUARWDPU4015WEcMMZ4nS4ViIeS
+PR1c8NQhPukIBX3M+TiNXdp8KCKBXIXDH3BB4ISMmh50N11jA05ZhIO1bMXEImIGKmigfPrh56CI
+JqpoEIXOceiikEaKXKNnPCrppZjiQaktmXbq6R2bZvHpqKSqEao8SBgQgAFfKBAAAlC4CusUAQQw
+qKx74JrZqT4QQQABQRDAAbBOEADAA0EcAEACHgDAga1POAutFCNEAQD/AAoAoSyyYkjLhrHceqAs
+s97uWmUOW1ULhLDENkHBCLM2wAGyujpRLrWWHjECtMICMMa9Y7zLQbzzelCvTryqN8QBI/xqALvG
+JsDqutdKTAQDHBzggQEjZHsAAax+rEACAAAb8axCOHsAyQnMGgDJFmgMhAEPXEvArNUi8CsFKj27
+Lgf+Gsyyw+JacO0D2YpLgAI13zwzy/LaaqzNKHeBscYcc+AxyEqPXLIHJ9uRsFZDOEtCAMKWELSz
+DcjLQNUeJMCBBWBzsAAQ3ppNwgIktBuEswwAwLe/AgOAMbIGYNwA3w3w8YPcDcCtr891+5s4Bw2Y
+bavggnPwdrMmAHv5/wKae4C54UCDITfdwt4N+uYm8N2w2OeKQIS6dTOrQLXv0h13xkPsPrC8xOYN
+vAUcMNsvEd4igLEBUXvg/MAPDIs3Bzw37HnSZFC+vNzMvr6x9AHwDbvGy1fvu7esGiAwGMIjQPz1
+53uAvPKpwzG2lYymwa7jdQsdEfiWtokZT2rWC0D+UkY5aeFOWuX6XwnC1zN+pa5c3jqA7PYlPgX6
+C4M+ewDGSBAGAo7AgD7z1v88SLtzpct/1jPdD4RlgVrVamJCqN4IGkc/8a1wgX+jHN8UgDGCKQB5
+PPNA9YDVMIxNyzHA+52/kCczaXFsAbDLogdY6KwkSothFsgW7rygQ//MBVGLPwzaG/aHrtsNiwIP
+i2G1EscAAgSAAgnw28xIIDPxqTCBQLyeHeV2t9WhzW7iwhwFDvA8GdZtAZIzgtzqqEONMYySTlTg
+AihAAfN1MHXCasAizdevADAsX1DIWhT96LM0trBKWynjIYmlrk6WoI9CkNfAzuhDQKoxiLJbQLYQ
+oDdhAqGMDJCZupzlOyUQswThIgDGOgc7zHnSWyx8pjWfZQDZIQ+VUNAlyg5YN2CxUH+185OqnmgE
+V7GzDa4agqq4BwQE1OoL66zaAVgVgEYajJ5JiOcQVlUqaqWzoHowQbgQGgk22o6hd0DbrwAK0Tw4
+FJwVzShCL6rRjnoUlA/pvIFIR0rSkpr0pChNKQzOFQIAOw==
+------=_NextPart_000_0000_C67AF1EA.71DF9F79
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://sflogo.sourceforge.net/sflogo.php?group_id=8&type=1
+
+iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAMAAABUFvrSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAFpQTFRF////7u7uX2pytLm9ipKYn6aqdH6F3+Hj6uvsf4iOv8PHanR7
+1NfZlJyhqrC09PX2ys3Qsri8kpqf7KqcmJ+k1kkqzdDTxcnMub7BoKarqpOR8cK4lp2j6Z6NbVan
+UgAAARFJREFUSMft08lu3DAURNHb93EUKbUcJ7Ez/f9vZiG3h2TdG0O1IMDNQaEIcrlTuHCXnPAJ
+n/Bng69deyXU3nIGUi5qEGpkX5JnVzdUe6tdjUV1gWQwTepxWC5cdisR25i0Xm5wEIZBzTlDM0Gz
+VLJZWfwxSiW2xQAgaZ0mE8BiHFPktcEIoPrlFc4jrQBZfVINA64OJfx6iItagGQp+1G2vcG03OMG
+r0Daiva5HvCt8Rtc3MOA5MNr41rKv41nr4S/x0LtfRuNOqLEdF8Mak8fpkiGtpFeLg8GPH57TLbq
+f1Ns6kZW12vrarqWYBrvHi8Bs+sIlN3+vajrs+rPP7+SjTimKO+mOD/ICZ/wJ4LvlL9T9gm7i8l6
+8gAAAABJRU5ErkJggg==
+------=_NextPart_000_0000_C67AF1EA.71DF9F79
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: chrome://livemargins/skin/monitor-background-horizontal.png
+
+iVBORw0KGgoAAAANSUhEUgAAAE0AAAAFCAYAAAAAAmGxAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A
+/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9kIBwk6F/3p9A4AAAAZdEVYdENv
+bW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAo0lEQVQ4y+2SSw6EMAxD7TBz/wMPtLOASsXK
+B1hjqRuSOu4jxC7DWYSv6DsAdKkz6XniX9V5+ONCjicz2njDJ4A2G3gBmMBgEuQuNBZzNWcFjZKh
+F8DVowHYBrRvEnoYmoT3wljiYdKj4RlA0gwRDBawojv9ws/hAawBWGdodI45QCjbSanp4717dIAs
+icecB8EMFD0KVZfAWwyFtgL44dV9/QG/nx1+osSlawAAAABJRU5ErkJggg==
+------=_NextPart_000_0000_C67AF1EA.71DF9F79
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: chrome://livemargins/skin/monitor-background-vertical.png
+
+iVBORw0KGgoAAAANSUhEUgAAAAUAAABRCAYAAAAacGwEAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A
+/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9kIBwk5C8LF+4IAAAAZdEVYdENv
+bW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAABIUlEQVQ4y62Uu07EMBBFz9ig1RZAQQv91nT8
+/3/wFxQJii8F3t2JX3FBJCvR2JP7GM/wydsZOAGPQAACTxdegWfgnDdiXJfTO+sWgZSX4stqHwsp
+Aj/ACmxxIX0BF+AbWIAtCFn+1wMQAQsmyIGQF0GY+QAQrh9y67a7e9pBsz/CvZMqg/KA12BqnTT/
+PuRpLSCV6WkksxkcoUvW0669IjMVQCoNGaU7eT5dWREj7VaWo+m8WjXi8DJoVOLj9OQZ+PRuNXWI
+zrSiefJqWbe1amQleY2AqnSN0qvCVdbhWXigNOVnmjLEyrbpntSocHfyeYLJe1BSym0oqzvObB/w
+6Ol/bkjmKYJzfjcAbfrSVh1XK5KqoDqT9j6CqmnTVXR7fgGOG60weMe6CQAAAABJRU5ErkJggg==
+
+------=_NextPart_000_0000_C67AF1EA.71DF9F79
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: chrome://livemargins/skin/monitor-play-button.png
+
+iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A
+/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9kMCQ0lHLU3WjcAAAHYSURBVDjL
+lZTBalNBFIa/uXdu0qa1SoK2CuojqCulIJQKNboSXLr3Edz4Bm7duPIJFERcBLSGgrj1GWJLS5Ua
+FJIamzm/i5ncKG1KcmA2M3O+Of9/DuOePX+hJ/uXYbEO84tQqUGeA47TQwDcWCr4shOaHuBafQF/
+poavLZBV53F5cSrCpTck+DYYQsNaXkCQcCYwkZlwTkwb9SKH7iFeOI4kTBEyK8g5BwgPMDCRS2QI
+J8PJpgZhUaMXMAgiN3i5eo61q2cpiuMefd7/w6P2jwkwh5egJ3DBuHmhkko9HqvLFX4G49b5Ck+v
+LxFMPNg8iN2VRWm/DAgxYeP9Ae3voQSsr1TZ3GgA8OpOg/WVannWDWkMjCiNEGAYk9s7fch8efnj
+dh9olND/4ijEWTDDGw6CwJLBZsnBaYy2JA2y0vmk5u7FuQhOq3lpbjIoCIKBpfYTLG4C7+4v470/
+Ma/1tU/zSm28MRypEJnJgQkkPmwfTny81elz780ea693+bT7m1anH/OCxTkaERkaD9/uQdGFLJ8I
+3Or0uN3p/TPasXF+7FHyJYvVzRRS6poUsbK03EwQzPAomT0U5AKXqpoFVPVpIE2gEKuxMP5wTvzL
+FM9Hb1UyCHr8F1NT7OnOQnb0AAAAAElFTkSuQmCC
+------=_NextPart_000_0000_C67AF1EA.71DF9F79
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-07555D5F:http://www.vim.org/css/style.css
+
+/* Effective stylesheet produced by snapshot save */
+body, td, p { font-family: arial,helvetica,sans-serif; }
+th { font-family: arial,helvetica,sans-serif; font-weight: bold; text-align=
+: left; }
+em { font-weight: bold; font-style: italic; }
+.darkbg { background-color: rgb(0, 127, 0); }
+.lightbg { background-color: rgb(204, 204, 153); }
+.sidebar { font-family: arial,helvetica,sans-serif; background-color: rgb(2=
+40, 240, 221); font-size: small; }
+.topheader { font-family: arial,helvetica,sans-serif; font-size: large; fon=
+t-weight: bold; background-color: rgb(204, 204, 153); }
+.sidebarheader { font-family: arial,helvetica,sans-serif; font-size: small;=
+ font-weight: bold; }
+.newsdate { font-style: italic; color: rgb(102, 102, 204); font-size: small=
+; }
+pre, code { font-family: "andale mono","monotype.com","courier new",monospa=
+ce; }
+h1 { font-family: arial,helvetica,sans-serif; font-size: medium; font-weigh=
+t: bold; color: rgb(0, 0, 102); }
+.txth1 { font-family: arial,helvetica,sans-serif; font-size: medium; font-w=
+eight: bold; color: rgb(0, 0, 102); }
+h2 { font-family: arial,helvetica,sans-serif; font-size: small; font-weight=
+: bold; color: rgb(0, 0, 102); }
+.txth2 { font-family: arial,helvetica,sans-serif; font-size: small; font-we=
+ight: bold; color: rgb(0, 0, 102); }
+h3 { font-family: arial,helvetica,sans-serif; font-size: x-small; font-weig=
+ht: bold; color: rgb(0, 0, 102); }
+.txth3 { font-family: arial,helvetica,sans-serif; font-size: x-small; font-=
+weight: bold; color: rgb(0, 0, 102); }
+small { font-family: arial,helvetica,sans-serif; font-size: 75%; }
+a.small { font-family: arial,helvetica,sans-serif; font-size: 75%; text-dec=
+oration: none; color: rgb(0, 0, 102); }
+.style1 { color: rgb(102, 102, 102); }
+input { font-family: arial,helvetica,sans-serif; }
+textarea { font-family: arial,helvetica,sans-serif; width: 100%; }
+.prompt { font-family: arial,helvetica,sans-serif; font-weight: bold; }
+.errortext { font-family: arial,helvetica,sans-serif; color: rgb(204, 0, 0)=
+; }
+.errorheader { font-family: arial,helvetica,sans-serif; color: rgb(204, 0,=
+ 0); font-size: medium; }
+.tableheader { font-family: arial,helvetica,sans-serif; font-weight: bold;=
+ background-color: rgb(204, 204, 153); }
+.rowodd { font-family: arial,helvetica,sans-serif; background-color: rgb(24=
+0, 240, 221); }
+.roweven { font-family: arial,helvetica,sans-serif; background-color: rgb(2=
+04, 204, 153); }
+tr.tableheader th { font-family: arial,helvetica,sans-serif; background-col=
+or: rgb(204, 204, 153); text-align: center; }
+td.checker { background-color: rgb(0, 127, 0); background-image: url("http:=
+//vim.sourceforge.net/images/checkerboard.gif"); }
+.example { background-color: rgb(238, 255, 204); border-color: rgb(136, 170=
+, 102); border-style: solid none; border-width: 1px medium; padding: 5px;=
+ }
+
+------=_NextPart_000_0000_C67AF1EA.71DF9F79
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://vim.sourceforge.net/images/checkerboard.gif
+
+R0lGODlhCgAKAIAAAAB/APDw8CH5BAAAAAAALAAAAAAKAAoAAAIShBMGqHz5Gpq0Wriwy7K/C1YF
+ADs=
+------=_NextPart_000_0000_C67AF1EA.71DF9F79
+Content-Type: text/plain
+Content-Transfer-Encoding: base64
+Content-Location: http://www.vim.org/images/vim_shortcut.ico
+
+AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAc3NzAGZmZgAzMzMAc79MADGVAADm5uYAzMzMAEyyGgA2pAAAIGQAANnZ2QCZmZkA
+M5kAABpMAACysrIAREREAExmQAAQMgAAJkAaAEBZMwAzZhoAJnMAABFeAAASRgAAJ4QAAAI0AAAG
+HwAANEQzAGZ4ZgCIiIgATIAzADRWMwAskgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXGgAAAAAAAAAAAAABAgMXIRkaAAAAAAAAAAAABgcM
+AAINAxwDAgMCAAAAAAYHBwwMHx8MIAwCDAAAAAAGBwcHDAIWBx0HHgcAAAAbBgcHBwIDDgIUAhwC
+AAAXGAYHBwcMDAAWDQ0ZGgAABBUGBwIRCwIMAxYNCQUAAAATBgcCDRELBwcUCQUAAAAAAAYHAg0N
+EQsHDBIAAAAAAAAGBwINDQ0RCwcMAAAAAAABCwcMAw0NDg8HBwwQAAAABgcHBwIICQoGBwcHAgAA
+AAECAgIDBAUAAQICAgMAAAAAAAAAAAAAAAAAAAAAAP5/AAD8PwAAwB8AAMABAADAAQAAwAAAAIAA
+AAAAAAAAAAAAAIABAADAAwAAwAMAAIABAACAAQAAgAEAAP5/AAA=
+------=_NextPart_000_0000_C67AF1EA.71DF9F79
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.google.com/cse/intl/en/images/google_custom_search_watermark.gif
+
+R0lGODlhdwAQAPcAANfX1/7+/vz8/Pv7+/n5+f39/fb29vf39/Ly8vz7+/r6+/r6+vPz8/X19vf2
+9v/9/PTz8/n7//T09O/v7q3Nr/Dx8fTV0MvV6d/a2fDw8v/++uXl5uTt/fTW0rfC2ty6td7n3v/8
+++Xm6dLa6v79/PLx7fDw7/X4/bXA2fTz8dXW2vX19fX19NjU0/j4+LjB1uncq9br19Ps1OrhwLjD
+2+u8tu3v7erq6tbW1ua5tPna1sLQ7N3n++fGwqu3z+C5tefEv9rV1NTW2+nc2/Pz9uLi4vLz8/77
+4uDa2dvZz8HI1+js6dbUza3Lr87S3Obm5+zt7dyyrfbwzdmvqfr7+9fe7tfc6bi/0Nvi79/f4MDL
+4+Pe3tDY6qu84urp7r/H16m74tvq3OTdwuDcy+/j4v389MfR5Onp6sDI2dzAvNm2sa6/5fDLxvDg
+ofHt7fXrxOvT0N/d3f/7+9zy3drb3ebZ1+zb2LzE2Nzj8fTh3trY0O67svDjqurq67rC1djg8v/9
+1vDjqenp6dzt3Onq7ezo5MLH1O/p16zMr/HNx8fL1d7b29DZ7vb19cjP4OPi3dbd69Lb7cPM4Pr7
+/cXQ6Ofr873K5s7OzsrY9M7Z8fv47eva2PPz9PDz9/79/a693vzl4eHFwff29/Lj4Prh3djh89bc
+6ePU0ejn56vLr+DXst3o3Pvv7e7HwbC/4K283fz9/7Tcttfa4sPM3sXN3/XFvNnl+L7E0/Hx8uft
++err6tnc4trc4t3VtuXbqe7u7q3MsL7I4Pb09Obr9tDX5cDO6OWsp//g2tnT0t3t3avNrd/h5/Py
+8rvC1NbJx/X29fLrs9Dd99ra2+3nzePj4t/V1Ojo6MrV6+Xu/OPh3d+6tdzn3NnX0ebl5vn6+6fF
+qd+4stnUvOTu/f319O/1/tHc8uDh4//+/uLp+eHa2a2+4////MjO3OHf29Xf9erp6vb299fS0fb2
+9d7Y06enp////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAB3ABAA
+AAj/AOsJHEiwoMGDCBMqXMiwocOHECNKnEix4sII6KqMyMTDG8UAMWLZsEiypERyZuhMQLCBhhIB
+FEEoQ1AQgE0A9XCa3EkyQjFpBCt0g1nvgZyC6zQkXEWhgcAQD+oFwJHTZkF6WBvSm4h1K1eFHK4c
+OHgOlB04iRoJPHJo2psU9WDlwhONEZFtFA6QILWJDRkGl3IKHui1XuGEhx0WTqxYYblbAQ4ec2aA
+Sqgf9QCF46RADIwCtoQ4cIQiQRhEA3QgCzBkygrEVwV67Wo4a23ZXW0TNqibtu3fugtSehG5oKda
+iwS6MVYIGjeBJdo82mGuXgZXEpKlEtYq3ag6cUTB/yY423Bs8+bLoyf8WzZ59OXVF7QCpsLAYaUw
+edmDROCCHPPwkYRAAwSihyXs1NNJMwYMAgwENVSDAAELJaZeb+6llyFj7uWG21bywXdQA2tIUlwC
+y3xyBhBpCDTOB4LMoApMZfhCDS6GRHINKvXM0cQAPWhDlEKLibibkSBu+F6HSyYpYogEifBKMJWc
+MAkWPkABgRqnsGJBCwWw0MsYmkjBhAv1KHBBF4TUI8M3SzATBTgd5DEAkb1lRRtufCJ5VZ4g+sae
+kgj9oogfsxDDSxYG1CMBBlu8s4BAB7STzQ0UYsOFLHeoY8QzRehSDwNBxGPNkDylalIABDhAAKpS
+GTRUnDhfmFBAArQ4oequvFoEiQdEmaJCr8QW2xA8aGjhzh+7yGPss9AWNEAfT0wAa7TYGhQQADs=
+
+------=_NextPart_000_0000_C67AF1EA.71DF9F79
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-2CCC6926:http://www.google.com/coop/cse/brand?form=cse-search-box&lang=en
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_C67AF1EA.71DF9F79
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-2BF5133A:http://www.statcounter.com/counter/counter.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_C67AF1EA.71DF9F79--

@@ -60,7 +60,6 @@ set incsearch           " show search matches as you type
 
 set noerrorbells        " don't beep
 set nobackup            " do not keep a backup file
-set noswapfile          " do not use swap file
 
 " Set the spell language to US English.
 " Use Ctrl-X, CTRL-K to check the spell
@@ -71,7 +70,7 @@ if (g:iswindows==1)
                                         " :h gui-win32-maximized
     set dir=d:/temp/vimswap,d:/temp,.   " set directory of swap files
 else
-    set dir=/tmp/vimswap,/tmp/,.        " set directory of swap files
+    set dir=~/.vim,.                    " set directory of swap files
 endif
 
 colorscheme torte       " set active color scheme
@@ -144,8 +143,9 @@ let s:curr_dir = s:backup_dir
 let s:last_dir = ""
 while s:last_dir != s:curr_dir
     if filereadable("vim_proj/project.vim")
-        echo 'Read project from '.s:curr_dir
+        " echo 'Read project from '.s:curr_dir
         source vim_proj/project.vim
+        break
     endif
     cd ..
     let s:last_dir = s:curr_dir
@@ -217,5 +217,15 @@ map <silent> <F9> :TlistToggle<CR>
 " plugin: recent (id: 1767)
 let g:RecentWinmode = "newtab"      " Open file in new tab
 
-
+"==============================================================================
+" plugin: vimwiki (id: 2226)
+" For Windows, I use two wiki, 
+"     one for common use, placed in E:/Git/vimwiki/main.
+"     one for VIM, placed in E:/Git/vimwiki/vim.
+"
+" For Linux, use the default '~/vimwiki/'
+if (g:iswindows==1)
+    let g:vimwiki_list = [{'path': 'E:/Git/vimwiki/main'},
+                \ {'path': 'E:/Git/vimwiki/vim'}]
+endif
 

@@ -1,0 +1,1923 @@
+From: <Saved by Mozilla 5.0 (Windows)>
+Subject: vimwiki - Personal Wiki for Vim : vim online
+Date: Mon, 13 Jun 2011 23:14:40 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_A7B0ADEA.DA1D6E10"
+X-MAF-Information: Produced By MAF V1.0.0
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_A7B0ADEA.DA1D6E10
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.vim.org/scripts/script.php?script_id=2226
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head>
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DISO-8859-=
+1">
+  <link rel=3D"Stylesheet" type=3D"text/css" href=3D"urn:snapshot-C9F1D651:=
+http://www.vim.org/css/style.css">
+  <title>vimwiki - Personal Wiki for Vim : vim online</title>
+  <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DISO-885=
+9-1">
+  <meta name=3D"KEYWORDS" content=3D"Vim, Vi IMproved, text editor, home,=
+ documentation, tips, scripts, news">
+  <link rel=3D"shortcut icon" type=3D"image/x-icon" href=3D"http://www.vim.=
+org/images/vim_shortcut.ico">
+</head>
+
+<body topmargin=3D"0" leftmargin=3D"0" bgcolor=3D"#ffffff" marginheight=3D"=
+0" marginwidth=3D"0">=20
+
+<!-- HEADER, SPONSOR IMAGE, VIM IMAGE AND BOOK AD -->
+<table border=3D"0" bordercolor=3D"red" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%">
+  <tbody><tr>
+    <td colspan=3D"4" class=3D"lightbg"><img src=3D"http://www.vim.org/imag=
+es/spacer.gif" alt=3D"" height=3D"5" width=3D"1"></td>
+  </tr>
+  <tr>
+  <td class=3D"lightbg">=A0=A0=A0</td>
+  <td class=3D"lightbg" align=3D"left"><a href=3D"http://www.vim.org/sponso=
+r/index.php"><img src=3D"http://www.vim.org/images/sponsorvim.gif" alt=3D"s=
+ponsor Vim development" border=3D"0"></a></td>
+    <td class=3D"lightbg" align=3D"center"><a href=3D"http://www.vim.org/in=
+dex.php"><img src=3D"http://www.vim.org/images/vim_header.gif" alt=3D"Vim=
+ logo" border=3D"0"></a></td>
+    <td class=3D"lightbg" align=3D"right"><a href=3D"http://iccf-holland.or=
+g/click5.html"><img src=3D"http://www.vim.org/images/buyhelplearn.gif" alt=
+=3D"Vim Book Ad" border=3D"0"></a></td>
+  </tr>
+  <tr>
+    <td colspan=3D"4" class=3D"lightbg"><img src=3D"http://www.vim.org/imag=
+es/spacer.gif" alt=3D"" height=3D"5" width=3D"1"></td>
+  </tr>
+  <tr>
+    <td colspan=3D"4" class=3D"darkbg"><img src=3D"http://www.vim.org/image=
+s/spacer.gif" alt=3D"" height=3D"10" width=3D"1"></td>
+  </tr>
+</tbody></table>
+<!-- THE PAGE BODY: BETWEEN HEADER AND FOOTER -->
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+  <colgroup><col width=3D"180">
+  <col width=3D"1">
+
+  </colgroup><tbody><tr valign=3D"top">
+    <td class=3D"sidebar">
+      <table border=3D"0" cellpadding=3D"4" cellspacing=3D"0" width=3D"180">
+        <tbody><tr valign=3D"top">
+          <td class=3D"sidebar">
+
+<!-- INCLUDE THE PAGE NAVIGATION -->
+<table border=3D"0" bordercolor=3D"red" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%">
+    <tbody><tr>
+        <td><small>not logged in (<a href=3D"http://www.vim.org/login.php">=
+login</a>)</small></td>
+    </tr>
+    <tr><td>
+<small>=A0</small>
+<form action=3D"http://www.google.com/cse" id=3D"cse-search-box">
+  <div>
+    <input name=3D"cx" value=3D"partner-pub-3005259998294962:bvyni59kjr1"=
+ type=3D"hidden">
+    <input name=3D"ie" value=3D"ISO-8859-1" type=3D"hidden">
+    <input style=3D"border: 1px solid rgb(126, 157, 185); padding: 2px; bac=
+kground: url(&quot;http://www.google.com/cse/intl/en/images/google_custom_s=
+earch_watermark.gif&quot;) no-repeat scroll left center rgb(255, 255, 255);=
+" name=3D"q" size=3D"20" type=3D"text">
+    <br>
+    <input name=3D"sa" value=3D"Search" type=3D"submit">
+  </div>
+<input value=3D"www.vim.org/scripts/script.php?script_id=3D2226" name=3D"si=
+teurl" type=3D"hidden"></form>
+<script type=3D"text/javascript" src=3D"urn:snapshot-1186C74A:http://www.go=
+ogle.com/coop/cse/brand?form=3Dcse-search-box&amp;lang=3Den"></script>
+    </td></tr>
+    <tr>
+        <td><img src=3D"http://www.vim.org/images/spacer.gif" alt=3D"" bord=
+er=3D"0" height=3D"1" width=3D"1"></td>
+    </tr>
+    <tr>
+        <td class=3D"darkbg"><img src=3D"http://www.vim.org/images/spacer.g=
+if" alt=3D"" border=3D"0" height=3D"3"></td>
+    </tr>
+    <tr>
+        <td><img src=3D"http://www.vim.org/images/spacer.gif" alt=3D"" bord=
+er=3D"0" height=3D"2" width=3D"1"></td>
+    </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/index=
+.php">Home</a></td>
+        </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/searc=
+h.php">Advanced search</a></td>
+        </tr>
+    <tr>
+        <td><img src=3D"http://www.vim.org/images/spacer.gif" alt=3D"" bord=
+er=3D"0" height=3D"7" width=3D"1"></td>
+    </tr>
+    <tr>
+        <td class=3D"checker"><img src=3D"http://www.vim.org/images/spacer.=
+gif" alt=3D"" border=3D"0" height=3D"1"></td>
+    </tr>
+    <tr>
+        <td><img src=3D"http://www.vim.org/images/spacer.gif" alt=3D"" bord=
+er=3D"0" height=3D"7" width=3D"1"></td>
+    </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/about=
+.php">About Vim</a></td>
+        </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/commu=
+nity.php">Community</a></td>
+        </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/news/=
+news.php">News</a></td>
+        </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/spons=
+or/index.php">Sponsoring</a></td>
+        </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/trivi=
+a.php">Trivia</a></td>
+        </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/docs.=
+php">Documentation</a></td>
+        </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/downl=
+oad.php">Download</a></td>
+        </tr>
+    <tr>
+        <td><img src=3D"http://www.vim.org/images/spacer.gif" alt=3D"" bord=
+er=3D"0" height=3D"7" width=3D"1"></td>
+    </tr>
+    <tr>
+        <td class=3D"checker"><img src=3D"http://www.vim.org/images/spacer.=
+gif" alt=3D"" border=3D"0" height=3D"1"></td>
+    </tr>
+    <tr>
+        <td><img src=3D"http://www.vim.org/images/spacer.gif" alt=3D"" bord=
+er=3D"0" height=3D"7" width=3D"1"></td>
+    </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/scrip=
+ts/index.php">Scripts</a></td>
+        </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/tips/=
+index.php">Tips</a></td>
+        </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/accou=
+nt/index.php">My Account</a></td>
+        </tr>
+    <tr>
+        <td><img src=3D"http://www.vim.org/images/spacer.gif" alt=3D"" bord=
+er=3D"0" height=3D"7" width=3D"1"></td>
+    </tr>
+    <tr>
+        <td class=3D"checker"><img src=3D"http://www.vim.org/images/spacer.=
+gif" alt=3D"" border=3D"0" height=3D"1"></td>
+    </tr>
+    <tr>
+        <td><img src=3D"http://www.vim.org/images/spacer.gif" alt=3D"" bord=
+er=3D"0" height=3D"7" width=3D"1"></td>
+    </tr>
+        <tr>
+            <td class=3D"sidebarheader"><a href=3D"http://www.vim.org/huh.p=
+hp">Site Help</a></td>
+        </tr>
+</tbody></table>
+
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"172">
+              <tbody><tr><td><img src=3D"http://www.vim.org/images/spacer.g=
+if" alt=3D"" border=3D"0" height=3D"8" width=3D"1"></td></tr>
+              <tr><td class=3D"darkbg"><img src=3D"http://www.vim.org/image=
+s/spacer.gif" alt=3D"" height=3D"3" width=3D"1"></td></tr>
+            </tbody></table>
+            <br>
+
+<!-- INCLUDE THE PAGE SIDEBAR TEXT -->
+=A0
+
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+
+    <td class=3D"darkbg"><img src=3D"http://www.vim.org/images/spacer.gif"=
+ alt=3D"" border=3D"0" height=3D"1" width=3D"1"><br></td>
+    <td>
+      <table border=3D"0" bordercolor=3D"red" cellpadding=3D"10" cellspacin=
+g=3D"0" width=3D"100%">
+        <tbody><tr>
+          <td valign=3D"top">
+
+<span class=3D"txth1">vimwiki : Personal Wiki for Vim</span>=20
+
+<br>
+<br>
+
+<!-- karma table -->
+<table border=3D"1" bordercolor=3D"#000066" cellpadding=3D"4" cellspacing=
+=3D"0">
+<tbody><tr>
+  <td class=3D"lightbg"><b>=A0script karma=A0</b></td>
+  <td>
+    Rating <b>4167/1067</b>,
+    Downloaded by 7349  </td>
+  <td class=3D"lightbg">
+  <b>=A0Comments, bugs, improvements=A0</b>
+  </td>
+  <td>
+    <a href=3D"http://vim.wikia.com/wiki/Script:2226">Vim wiki</a>
+  </td> =20
+</tr>
+</tbody></table>
+<p>
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+<tbody><tr><td class=3D"prompt">created by</td></tr>
+<tr><td><a href=3D"http://www.vim.org/account/profile.php?user_id=3D14343">=
+Maxim Kim</a></td></tr>
+<tr><td>=A0</td></tr>
+<tr><td class=3D"prompt">script type</td></tr>
+<tr><td>utility</td></tr>
+<tr><td>=A0</td></tr>
+<tr><td class=3D"prompt">description</td></tr>
+<tr><td>A Personal Wiki For Vim Plugin
+<br>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D
+<br>Screenshots are available on <a target=3D"_blank" href=3D"http://code.g=
+oogle.com/p/vimwiki/">http://code.google.com/p/vimwiki/</a>=20
+<br>There are also zipped vimwiki files there in case you do not like vimba=
+ll archives.
+<br>
+<br>Vimwiki quick reference card <a target=3D"_blank" href=3D"http://vimwik=
+i.googlecode.com/hg/misc/Vimwiki1.1.1QR.pdf">http://vimwiki.googlecode.com/=
+hg/misc/Vimwiki1.1.1QR.pdf</a>.
+<br>
+<br>
+<br>Prerequisites
+<br>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D
+<br>Make sure you have these settings in your vimrc file:=20
+<br>
+<br>set nocompatible
+<br>filetype plugin on
+<br>syntax on
+<br>
+<br>Without them Vimwiki will not work properly.
+<br>
+<br>
+<br>Intro
+<br>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D
+<br>Vimwiki is a personal wiki for Vim -- a number of linked text files tha=
+t have
+<br>their own syntax highlighting.
+<br>
+<br>With vimwiki you can
+<br>=A0=A0=A0=A0- organize notes and ideas
+<br>=A0=A0=A0=A0- manage todo-lists
+<br>=A0=A0=A0=A0- write documentation
+<br>
+<br>To do a quick start press &lt;Leader&gt;ww (this is usually \ww) to go=
+ to your index
+<br>wiki file. By default it is located in:
+<br>=A0=A0=A0=A0~/vimwiki/index.wiki
+<br>
+<br>Feed it with the following example:
+<br>
+<br>=3D My knowledge base =3D
+<br>=A0=A0=A0=A0* MyUrgentTasks -- things to be done _yesterday_!!!
+<br>=A0=A0=A0=A0* ProjectGutenberg -- good books are power.
+<br>=A0=A0=A0=A0* ScratchPad -- various temporary stuff.
+<br>
+<br>
+<br>Notice that !ProjectGutenberg, !MyUrgentTasks and !ScratchPad curly und=
+erlined.=20
+<br>These are links in CamelCase form that do not exists yet. (CamelCase
+<br>form -- capitalized word connected with other capitalized words)
+<br>
+<br>Place cursor on ProjectGutenberg and press &lt;Enter&gt;. Now you are in
+<br>ProjectGutenberg. Edit and save it, then press Backspace to return to=
+ parent
+<br>wiki page. You should see the difference now -- ProjectGutenberg is
+<br>highlighted as a link.
+<br>
+<br>
+<br>For the various options see :h vimwiki-options.
+<br>
+<br>
+<br>Basic Markup
+<br>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D
+<br>see :h vimwiki-syntax
+<br>
+<br>*bold* -- bold=20
+<br>_italic_ -- italic=20
+<br>WikiWord -- link to WikiWord=20
+<br>[[wiki link]] -- link with spaces
+<br>[[wiki link][description]] -- link with description
+<br>[[wiki link|description]] -- link with description
+<br>
+<br>Lists:
+<br>* bullet list item 1
+<br>=A0=A0=A0=A0- bullet list item 2
+<br>=A0=A0=A0=A0- bullet list item 3
+<br>=A0=A0=A0=A0=A0=A0=A0=A0* bullet list item 4
+<br>=A0=A0=A0=A0=A0=A0=A0=A0* bullet list item 5
+<br>* bullet list item 6
+<br>* bullet list item 7
+<br>=A0=A0=A0=A0- bullet list item 8
+<br>=A0=A0=A0=A0- bullet list item 9
+<br>
+<br># numbered list item 1
+<br># numbered list item 2
+<br>=A0=A0=A0=A0# numbered list item 3
+<br>=A0=A0=A0=A0# numbered list item 4
+<br>
+<br>=3D Header1 =3D
+<br>=3D=3D Header2 =3D=3D
+<br>=3D=3D=3D Header3 =3D=3D=3D
+<br>
+<br>
+<br>Key bindings
+<br>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D
+<br>see :h vimwiki-mappings
+<br>
+<br>normal mode:=20
+<br>&lt;Leader&gt;ww -- Open default wiki index file.
+<br>&lt;Leader&gt;wt -- Open default wiki index file in a new tab.
+<br>&lt;Leader&gt;ws -- Select and open wiki index file.
+<br>&lt;Leader&gt;wd -- Delete wiki file you are in.
+<br>&lt;Leader&gt;wr -- Rename wiki file you are in.
+<br>&lt;Enter&gt; -- Folow/Create wiki link
+<br>&lt;Shift-Enter&gt; -- Split and folow/create wiki link
+<br>&lt;Ctrl-Enter&gt; -- Vertical split and folow/create wiki link
+<br>&lt;Backspace&gt; -- Go back to parent(previous) wiki link
+<br>&lt;Tab&gt; -- Find next wiki link
+<br>&lt;Shift-Tab&gt; -- Find previous wiki link
+<br>
+<br>
+<br>Commands
+<br>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D
+<br>:Vimwiki2HTML -- Convert current wiki link to HTML
+<br>:VimwikiAll2HTML -- Convert all your wiki links to HTML
+<br></td></tr>
+<tr><td>=A0</td></tr>
+<tr><td class=3D"prompt">install details</td></tr>
+<tr><td>Windows:
+<br>=3D=3D=3D=3D=3D=3D=3D=3D
+<br>1. Unpack.=20
+<br>2. Open vimwiki-N-N.vba with Vim. (N-N is version number ie 1-1)=20
+<br>3. Source it with :so % command=20
+<br>
+<br>Linux:
+<br>=3D=3D=3D=3D=3D=3D
+<br>1. Open vimwiki-N-N.vba.gz with Vim. (N-N is version number ie 1-1)=20
+<br>2. Source it with :so % command=20
+<br></td></tr>
+<tr><td>=A0</td></tr>
+</tbody></table>
+
+<!-- rating table -->
+</p><form name=3D"rating">
+<input name=3D"script_id" value=3D"2226" type=3D"hidden">
+<table border=3D"1" bordercolor=3D"#000066" cellpadding=3D"4" cellspacing=
+=3D"0">
+<tbody><tr>
+  <td class=3D"lightbg"><b>rate this script</b></td>
+  <td valign=3D"middle">
+    <input name=3D"rating" value=3D"life_changing" type=3D"radio">Life Chan=
+ging
+    <input name=3D"rating" value=3D"helpful" type=3D"radio">Helpful
+    <input name=3D"rating" value=3D"unfulfilling" type=3D"radio">Unfulfilli=
+ng=A0
+    <input value=3D"rate" type=3D"submit">
+  </td>
+</tr>
+</tbody></table>
+</form>
+<span class=3D"txth2">script versions</span> (<a href=3D"http://www.vim.org=
+/scripts/add_script_version.php?script_id=3D2226">upload new version</a>)
+<p>
+Click on the package to download.
+</p><p>
+
+<table border=3D"0" cellpadding=3D"4" cellspacing=3D"2" width=3D"100%">
+<tbody><tr class=3D"tableheader">
+        <th valign=3D"top">package</th>
+    <th valign=3D"top">script version</th>
+    <th valign=3D"top">date</th>
+    <th valign=3D"top">Vim version</th>
+    <th valign=3D"top">user</th>
+    <th valign=3D"top">release notes</th>
+</tr>
+<tr>
+        <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><a href=3D"ht=
+tp://www.vim.org/scripts/download_script.php?src_id=3D15854">vimwiki-1-2.vb=
+a.gz</a></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><b>1.2</b></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><i>2011-06-11</i>=
+</td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top">7.3</td>
+    <td class=3D"rowodd" valign=3D"top"><i><a href=3D"http://www.vim.org/ac=
+count/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"rowodd" valign=3D"top" width=3D"2000">=3D Note =3D
+<br>Remove previous version of vimwiki before install - files in autoload=
+ dir is moved/renamed to autoload/vimwiki dir.=20
+<br>
+<br>=3D Changelog =3D=20
+<br>* Issue 70: Table spanning cell support.
+<br>* Issue 72: Do not convert again for unchanged file. |:VimwikiAll2HTML|
+<br>=A0=A0converts only changed wiki files.
+<br>* Issue 117: |VimwikiDiaryIndex| command that opens diary index wiki pa=
+ge.
+<br>* Issue 120: Links in headers are not highlighted in vimwiki but are
+<br>=A0=A0highlighted in HTML.
+<br>* Issue 138: Added possibility to remap table-column move bindings. See
+<br>=A0=A0|:VimwikiTableMoveColumnLeft| and |:VimwikiTableMoveColumnRight|
+<br>=A0=A0commands. For remap instructions see |vimwiki_&lt;A-Left&gt;|
+<br>=A0=A0and |vimwiki_&lt;A-Right&gt;|.
+<br>* Issue 125: Problem with 'o' command given while at the of the file.
+<br>* Issue 131: FileType is not set up when GUIEnter autocommand is used in
+<br>=A0=A0vimrc. Use 'nested' in 'au GUIEnter * nested VimwikiIndex'
+<br>* Issue 132: Link to perl (or any non-wiki) file in vimwiki subdirectory
+<br>=A0=A0doesn't work as intended.
+<br>* Issue 135: %title and %toc used together cause TOC to appear in an
+<br>=A0=A0unexpected place in HTML.
+<br>* Issue 139: |:VimwikiTabnewLink| command is added.
+<br>* Fix of g:vimwiki_stripsym =3D '' (i.e. an empty string) -- it removes=
+ bad
+<br>=A0=A0symbols from filenames.
+<br>* Issue 145: With modeline 'set ft=3Dvimwiki' links are not correctly
+<br>=A0=A0highlighted when open wiki files.=20
+<br>* Issue 146: Filetype difficulty with ".txt" as a vimwiki extension.
+<br>* Issue 148: There are no mailto links.
+<br>* Issue 151: Use location list instead of quickfix list for :VimwikiSea=
+rch
+<br>=A0=A0command result. Use :lopen instead of :copen, :lnext instead of=
+ :cnext
+<br>=A0=A0etc.
+<br>* Issue 152: Add the list of HTML files that would not be deleted after
+<br>=A0=A0|:VimwikiAll2HTML|.
+<br>* Issue 153: Delete HTML files that has no corresponding wiki ones with
+<br>=A0=A0|:VimwikiAll2HTML|.
+<br>* Issue 156: Add multiple HTML templates. See
+<br>=A0=A0|vimwiki-option-template_path|. Options html_header and html_foot=
+er are
+<br>=A0=A0no longer exist.
+<br>* Issue 173: When virtualedit=3Dall option is enabled the 'o' command=
+ behave
+<br>=A0=A0strange.
+<br>* Issue 178: Problem with alike wikie's paths.
+<br>* Issue 182: Browser command does not quote url.
+<br>* Issue 183: Spelling error highlighting is not possible with nested
+<br>=A0=A0syntaxes.
+<br>* Issue 184: Wrong foldlevel in some cases.
+<br>* Issue 195: Page renaming issue.
+<br>* Issue 196: vim: modeline bug -- syn=3Dvim doesn't work.
+<br>* Issue 199: Generated HTML for sublists is invalid.
+<br>* Issue 200: Generated HTML for todo lists does not show completion sta=
+tus
+<br>=A0=A0the fix relies on CSS, thus your old stylesheets need to be updat=
+ed!;
+<br>=A0=A0may not work in obsolete browsers or font-deficient systems.
+<br>* Issue 205: Block code: highlighting differs from processing. Inline=
+ code
+<br>=A0=A0block {{{ ... }}} is removed. Use `...` instead.
+<br>* Issue 208: Default highlight colors are problematic in many
+<br>=A0=A0colorschemes. Headers are highlighted as |hl-Title| by default,=
+ use
+<br>=A0=A0|g:vimwiki_hl_headers| to restore previous default Red, Green, Bl=
+ue or
+<br>=A0=A0custom header colors. Some other changes in highlighting.
+<br>* Issue 209: Wild comments slow down html generation. Comments are
+<br>=A0=A0changed, use %% to comment out entire line.
+<br>* Issue 210: HTML: para enclose header.
+<br>* Issue 214: External links containing Chinese characters get trimmed.
+<br>* Issue 218: Command to generate HTML file and open it in webbrowser.=
+ See
+<br>=A0=A0|:Vimwiki2HTMLBrowse|(bind to &lt;leader&gt;whh)
+<br>* NEW: Added &lt;Leader&gt;wh mapping to call |:Vimwiki2HTML|
+<br></td>
+</tr>
+<tr>
+        <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><a href=3D"h=
+ttp://www.vim.org/scripts/download_script.php?src_id=3D13756">vimwiki-1-1-1=
+.vba.gz</a></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><b>1.1.1</b></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><i>2010-09-03</i=
+></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"roweven" valign=3D"top"><i><a href=3D"http://www.vim.org/a=
+ccount/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"roweven" valign=3D"top" width=3D"2000">Follow up bugfix re=
+lease.
+<br>* FIX: Issue 122: Dot character in vimwiki's directory path isn't escap=
+ed.
+<br>* FIX: Issue 123: Where is Vimwiki2HTML and other commands? Sometimes=
+ filetype is not set up to vimwiki.
+<br>* FIX: Issue 124: Highlight group not found: Normal</td>
+</tr>
+<tr>
+        <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><a href=3D"ht=
+tp://www.vim.org/scripts/download_script.php?src_id=3D13667">vimwiki-1-1.vb=
+a.gz</a></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><b>1.1</b></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><i>2010-08-24</i>=
+</td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top">7.3</td>
+    <td class=3D"rowodd" valign=3D"top"><i><a href=3D"http://www.vim.org/ac=
+count/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"rowodd" valign=3D"top" width=3D"2000">
+<br>* NEW: Issue 57: Make it possible to have pre block inside list item.
+<br>* NEW: Issue 82: Add quick goto command. See |:VimwikiGoto|.
+<br>* NEW: Issue 83: Quick switch in diary. See |:VimwikiDiaryNextDay| and
+<br>=A0=A0|:VimwikiDiaryPrevDay| commands.
+<br>* FIX: Issue 84: Vimwiki rename removed the WikiWord display name.
+<br>* FIX: Issue 85: Errors if you have '~' subdirectory in a wiki director=
+y.
+<br>* FIX: Issue 86: Existed links '[[WikiLink1|Alias1]] | [[WikiLink2]]'=
+ are
+<br>=A0=A0highlighted as a single link.
+<br>* FIX: Issue 88: Underline text. See |g:vimwiki_valid_html_tags|.
+<br>* FIX: Issue 92: Wikies in a subdir could be renamed to an empty file.
+<br>* FIX: Issue 93: Use alias name in html title. See |vimwiki-title|.
+<br>* FIX: Issue 94: Relative links to PHP files are broken. See
+<br>=A0=A0|g:vimwiki_file_exts| for details.
+<br>* FIX: Issue 96: Closing bracket at the end of weblink shouldn't be a=
+ part
+<br>=A0=A0of that link.
+<br>* FIX: Issue 97: Error opening weblink in a browser if it has # inside.
+<br>* FIX: Issue 99: Vim is not responing while opening arbitrary wiki file.
+<br>* FIX: Issue 100: Additional content on diary index page could be
+<br>=A0=A0corrupted.
+<br>* NEW: Issue 101: Customized HTML tags. See |g:vimwiki_valid_html_tags|
+<br>* NEW: Issue 102: Conceal feature usage. See |g:vimwiki_conceallevel|.
+<br>* FIX: Issue 103: Always highlight links to non-wiki files as existed.
+<br>* FIX: Issue 104: vimwiki#nested_syntax needs 'keepend' to avoid contai=
+ned
+<br>=A0=A0language syntax eat needed '}}}'.
+<br>* FIX: Issue 105: &lt;i_CR&gt; on a todo list item with [ ] doesn't cre=
+ate new
+<br>=A0=A0todo list item.
+<br>* FIX: Issue 106: With MediaWiki syntax &lt;C-Space&gt; on a child todo=
+ list
+<br>=A0=A0item produce errors.
+<br>* FIX: Issue 107: With MediaWiki syntax &lt;C-Space&gt; on a list item=
+ creates
+<br>=A0=A0todo list item without space between * and [ ].
+<br>* FIX: Issue 110: Syntax highlighting doesn't work for indented codeblo=
+ck.
+<br>* FIX: Issue 115: Nested Perl syntax highlighting differs from regular
+<br>=A0=A0one.
+<br>* MISC: Many vimwiki commands were renamed from Vimwiki.*Word to
+<br>=A0=A0Vimwiki.*Link. VimwikiGoHome is renamed to VimwikiIndex,
+<br>=A0=A0VimwikiTabGoHome to VimwikiTabIndex.
+<br>* MISC: vimwiki-option-gohome is removed.
+<br></td>
+</tr>
+<tr>
+        <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><a href=3D"h=
+ttp://www.vim.org/scripts/download_script.php?src_id=3D12995">vimwiki-1-0.v=
+ba.gz</a></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><b>1.0</b></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><i>2010-05-12</i=
+></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"roweven" valign=3D"top"><i><a href=3D"http://www.vim.org/a=
+ccount/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"roweven" valign=3D"top" width=3D"2000">* NEW: Issue 41: Ta=
+ble cell and column text objects. See `vimwiki-text-objects`.
+<br>* NEW: Issue 42: Commands to move table columns left and right. See `:V=
+imwikiTableMoveColumnLeft` and `:VimwikiTableMoveColumnRight`.
+<br>* NEW: Issue 44: `&lt;S-Tab&gt;` should move cursor to the previous tab=
+le cell.
+<br>* NEW: Issue 45: It should be possible to indent tables. Indented table=
+s are centered in html.
+<br>* NEW: Issue 46: Do not htmlize some wiki pages (blacklist). New placeh=
+older is added: `%nohtml`. See `vimwiki-nohtml`.
+<br>* FIX: Issue 47: Lists aren't HTMLized properly.
+<br>* FIX: Issue 48: With autochdir it is impossible to have path_html such=
+ as `d:\vimwiki\html\`
+<br>* FIX: Issue 49: Table is not HTMLized properly at the end of wiki page.
+<br>* FIX: Issue 50: Inline formatting is not performed in table cells.
+<br>* FIX: Issue 51: Cannot insert '-' (minus) into table cells of the firs=
+t column.
+<br>* FIX: Issue 52: Table cell width is incorrect when double wide charact=
+ers are used (ie. Chinese). Check `g:vimwiki_CJK_length`.
+<br>* NEW: Issue 53: Wiki markup can not nested. (Use links and inline mark=
+up in Headers).
+<br>* NEW: Issue 54: Highlight for placeholders.
+<br>* NEW: Issue 56: Directory indexes. See `g:vimwiki_dir_link` option and=
+ `:VimwikiGenerateLinks` command.
+<br>* NEW: Issue 58: Html new lines with `&lt;br /&gt;`. Could be inserted=
+ with `&lt;S-CR&gt;` in insert mode.
+<br>* FIX: Issue 59: List item's text can't be started from `*`.
+<br>* NEW: Issue 60: Links inside completed gtd-items.
+<br>* NEW: Issue 61: Headers numbering. See `g:vimwiki_html_header_numberin=
+g` and `g:vimwiki_html_header_numbering_sym` options.
+<br>* FIX: Issue 63: Table cannot have leading empty cells in html.
+<br>* FIX: Issue 65: Table separator is not htmlized right if on top of the=
+ table.
+<br>* FIX: Issue 66: Table empty cells are very small in html.
+<br>* FIX: Issue 67: Wrong html conversion of multilined list item with bol=
+d text on the start of next line.
+<br>* FIX: Issue 68: auto-indent problem with langmap.
+<br>* FIX: Issue 73: Link navigation by Tab. "Escaped" wiki-word should be=
+ skipped for navigation with `&lt;tab&gt;`.
+<br>* FIX: Issue 75: `code` syntax doesn't display correctly in toc.
+<br>* FIX: Issue 77: Diary index only showing link to today's diary entry=
+ file for extensions other than '.wiki'.
+<br>* FIX: Issue 79: Further calendar.vim integration -- add sign to calend=
+ar date if it has corresponding diary page.
+<br>* FIX: Issue 80: Debian Lenny GUI Vim 7.2 has problems with toggling in=
+ner todo list items.
+<br>* FIX: Issue 81: Don't convert `WikiWord` as a link in html when `let=
+ g:vimwiki_camel_case =3D 0`
+<br></td>
+</tr>
+<tr>
+        <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><a href=3D"ht=
+tp://www.vim.org/scripts/download_script.php?src_id=3D12476">vimwiki-0-9-9.=
+vba.gz</a></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><b>0.9.9</b></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><i>2010-02-23</i>=
+</td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"rowodd" valign=3D"top"><i><a href=3D"http://www.vim.org/ac=
+count/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"rowodd" valign=3D"top" width=3D"2000">* NEW: Diary. Help=
+ in making daily notes. See ':h vimwiki-diary'. Now you
+<br>=A0=A0can really easy add information into vimwiki that should be sorte=
+d out
+<br>=A0=A0later.
+<br>* NEW: Tables are redesigned. Syntax is changed. Now they are
+<br>=A0=A0auto-formattable. You can navigate them with &lt;tab&gt; and &lt;=
+cr&gt; in insert
+<br>=A0=A0mode. See 'vimwiki-syntax-tables' and 'vimwiki-tables' for more=
+ details.=20
+<br>* NEW: Keyword STARTED: is added.
+<br>* NEW: Words TODO:, DONE:, STARTED:, XXX:, FIXME:, FIXED: are highlighed
+<br>=A0=A0inside headers.
+<br>* FIX: Export to html external links with 'file://' protocol. Ex:
+<br>=A0=A0'[<a target=3D"_blank" href=3D"file:///home/user1/book.pdf">file:=
+///home/user1/book.pdf</a> my book]'.
+<br>* FIX: Menu is corrupted if wiki's path contains spaces.
+<br>* FIX: Settings 'wrap' and 'linebreak' are removed from ftplugin. Add=
+ them
+<br>=A0=A0into your personal settings file '.vim/after/ftplugin/vimwiki.vim=
+' if
+<br>=A0=A0needed.
+<br>* NEW: Headers are highlighted in different colors by default.=A0=A0See=
+ ':h
+<br>=A0=A0g:vimwiki_hl_headers' to turn it off.
+<br>* FIX: Issue 40: Links with russian subdirs don't work.
+<br>* NEW: It is now possible to generate HTML files automatically on page
+<br>=A0=A0save. See ':h vimwiki-option-auto_export'.
+<br></td>
+</tr>
+<tr>
+        <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><a href=3D"h=
+ttp://www.vim.org/scripts/download_script.php?src_id=3D12151">vimwiki-0-9-8=
+01.vba.gz</a></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><b>0.9.801</b></=
+td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><i>2010-01-21</i=
+></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"roweven" valign=3D"top"><i><a href=3D"http://www.vim.org/a=
+ccount/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"roweven" valign=3D"top" width=3D"2000">* Issue 39:	Not a=
+ critical error in doc/vimwiki.txt</td>
+</tr>
+<tr>
+        <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><a href=3D"ht=
+tp://www.vim.org/scripts/download_script.php?src_id=3D12137">vimwiki_0_9_8.=
+vba.gz</a></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><b>0.9.8</b></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><i>2010-01-20</i>=
+</td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"rowodd" valign=3D"top"><i><a href=3D"http://www.vim.org/ac=
+count/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"rowodd" valign=3D"top" width=3D"2000">* NEW: Rename g:vimw=
+iki_fold_empty_lines to g:vimwiki_fold_trailing_empty_lines.
+<br>* NEW: One can use - along with * to start unordered list item.
+<br>* NEW: List items could be started from the first column.=A0=A0As a res=
+ult some
+<br>=A0=A0limitations appeared:
+<br>=A0=A0=A0=A0* a space after *, - or # for a list item is mandatory.
+<br>=A0=A0=A0=A0* g:vimwiki_fold_trailing_empty_lines if set to 0 folds one=
+ trailing
+<br>=A0=A0=A0=A0=A0=A0empty line.
+<br>* NEW: Folding is off by default. Use g:vimwiki_folding to enable it.
+<br>* NEW: Speed up vimwiki's folding a bit. Should lag a bit less in a lon=
+g todo lists.
+<br>* NEW: Centered headers. Start header with at least one space to make=
+ it html centered.
+<br>* NEW: Change in default css: header's colors.
+<br>* NEW: Vimwiki is aware of GetLatestVimScripts now.=20
+<br>* FIX: Use &lt;del&gt; tag instead of custom &lt;span class=3D"strike"&=
+gt; in html.
+<br>* FIX: There are no text styling in htmlized quoted text.
+<br>* FIX: set default value of g:vimwiki_fold_lists to 0 as written in thi=
+s help.
+<br>* FIX: Issue 33: Folded list items have wrong indentation when 'tabs'=
+ are used.
+<br>* FIX: Issue 34: vimwiki#subdir got wrong dir when VimwikiGet('path')=
+ is a
+<br>=A0=A0symbolic link. Thanks lilydjwg for the patch.
+<br>* FIX: Issue 28: todo-list auto-indent enhancement. New item should alw=
+ays be unchecked.
+<br>* FIX: Issue 36: Change the name of the :Search command to :VimwikiSear=
+ch
+<br>=A0=A0as it conflicts with MultipleSearch. Alias :VWS is also available.
+<br>* NEW: You can generate 'Table of contents' of your wiki page. See :h=
+ vimwiki-toc for details.</td>
+</tr>
+<tr>
+        <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><a href=3D"h=
+ttp://www.vim.org/scripts/download_script.php?src_id=3D11889">vimwiki_0_9_7=
+01_vba.zip</a></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><b>0.9.701</b></=
+td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><i>2009-12-11</i=
+></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"roweven" valign=3D"top"><i><a href=3D"http://www.vim.org/a=
+ccount/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"roweven" valign=3D"top" width=3D"2000">* FIX: Issue 30: Hi=
+ghlighting doesn't work for checked list item.
+<br></td>
+</tr>
+<tr>
+        <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><a href=3D"ht=
+tp://www.vim.org/scripts/download_script.php?src_id=3D11886">vimwiki_0_9_7_=
+vba.zip</a></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><b>0.9.7</b></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><i>2009-12-09</i>=
+</td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"rowodd" valign=3D"top"><i><a href=3D"http://www.vim.org/ac=
+count/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"rowodd" valign=3D"top" width=3D"2000">* NEW: Default check=
+box symbols are changed to [ ], [.], [o], [O], [X].
+<br>=A0=A0You can change them using |g:vimwiki-listsyms| variable.
+<br>* NEW: Color group names are renamed from wikiBold, wikiItalic, etc to
+<br>=A0=A0VimwikiBold, VimwikiItalic, etc.
+<br>* NEW: Open external links in a browser. There are default browsers
+<br>=A0=A0defined in |g:vimwiki_browsers| list. You can also redefine
+<br>=A0=A0|VimwikiWeblinkHandler| function to open weblinks in other progra=
+ms.
+<br>* NEW: Issue 25: Toggle the states of multiple TODO list items at a time
+<br>=A0=A0(in VISUAL and in VISUAL LINE modes)
+<br>* NEW: Issue 26: Highlight code snippets in vimwiki's pre. See
+<br>=A0=A0|vimwiki-option-nested_syntaxes|. Thanks kriomant.
+<br>* NEW: Issue 27: Automatic garbage deletion from html directory.
+<br>* NEW: Save all open vimwiki buffers before export to html.
+<br>* NEW: Issue 29: Custom :Search command.
+<br>* NEW: Header text objects are now expandable in VISUAL mode. Tap 'vah'=
+ to
+<br>=A0=A0select a header. Tap again 'ah' to expand selection further. Than=
+ks
+<br>=A0=A0Andy Wokula.
+<br>* FIX: Folding settings are reset to vim defaults in a new tab (think of
+<br>=A0=A0\wt) so you cannot hide things in folds.
+<br>* FIX: https links in form of [<a target=3D"_blank" href=3D"https://hel=
+lo.world.com/">https://hello.world.com</a>] are not exported
+<br>=A0=A0into html. Thanks Saurabh Sarpal for the patch.
+<br></td>
+</tr>
+<tr>
+        <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><a href=3D"h=
+ttp://www.vim.org/scripts/download_script.php?src_id=3D11562">vimwiki_0_9_6=
+_vba.zip</a></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><b>0.9.6</b></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><i>2009-10-22</i=
+></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"roweven" valign=3D"top"><i><a href=3D"http://www.vim.org/a=
+ccount/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"roweven" valign=3D"top" width=3D"2000">* NEW: You can have=
+ multiline list items. See |vimwiki-syntax-lists|.
+<br>* NEW: You can ignore newlines in multiline list items when do export to
+<br>=A0=A0html. See |g:vimwiki_list_ignore_newline| option.
+<br>* NEW: Different checkbox symbols [.], [:], [o] are added. See
+<br>=A0=A0|vimwiki-todo-lists|.
+<br>* NEW: Now there is no longer syntax of preformatted text that is start=
+ed
+<br>=A0=A0by a whitespace.
+<br>* NEW: Blockquotes. See |vimwiki-syntax-blockquote|.
+<br>* NEW: Per wiki folding option (vimwiki-option-folding) is removed. Glo=
+bal
+<br>=A0=A0|g:vimwiki_folding| and |g:vimwiki_fold_lists| are added.
+<br>* NEW: Due to being quite slow folding of list items is off by default.
+<br>=A0=A0Use |g:vimwiki_fold_lists| to turn it on.
+<br>* NEW: If you want replace some symbols in a wikifilename use
+<br>=A0=A0|g:vimwiki_badsyms| option (Andreas Baldeau).
+<br>* FIX: Command |:VimwikiToggleListItem| doesn't work for one of the two
+<br>=A0=A0wikies opened at the same time with different syntaxes.
+<br>* FIX: Command |:VimwikiToggleListItem| do not switch parent checkboxes=
+ if
+<br>=A0=A0there are non-checkbox list items available.
+<br>* FIX: Issue 24: Link error in html when write [[one.two.three]].
+<br>* FIX: Rename WikiWord to something with a colon (:) does nasty things.
+<br>* FIX: Command |:VimwikiToggleListItem| do not switch right if there are
+<br>=A0=A0list items without checkboxes in the list.
+<br></td>
+</tr>
+<tr>
+        <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><a href=3D"ht=
+tp://www.vim.org/scripts/download_script.php?src_id=3D11389">vimwiki_0_9_5_=
+vba.zip</a></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><b>0.9.5</b></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><i>2009-09-16</i>=
+</td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"rowodd" valign=3D"top"><i><a href=3D"http://www.vim.org/ac=
+count/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"rowodd" valign=3D"top" width=3D"2000">=A0=A0* NEW: Added=
+ g:vimwiki_global_ext to control creation of temporary wikies in a dirs tha=
+t are not listed in g:vimwiki_list.
+<br>=A0=A0* NEW: Added g:vimwiki_hl_headers to highlight headers with diffe=
+rent predefined colors.
+<br>=A0=A0* NEW: Checked [x] items are not highlighted with Comment syntax=
+ group by default. Use g:vimwiki_hl_cb_checked to turn it on.
+<br>=A0=A0* NEW: Added new syntax for links: [[link address][link descripti=
+on]].
+<br>=A0=A0* NEW: Added &lt;C-@&gt; allias of &lt;C-Space&gt; mapping for *n=
+ix systems.
+<br>=A0=A0* NEW: Added g:vimwiki_camel_case. Set it to 0 if you do not want=
+ CamelCased WikiWords to be linkified.
+<br>=A0=A0* FIX: Links with g:viwmiki_stripsym (default '_') [[My_Link|Text=
+]] are not highlighted when created.
+<br>=A0=A0* FIX: indent/vimwiki.vim is obsolete. If you upgrade from previo=
+us versions remove it. It causes wrong list indentation if noexpandtab is=
+ set.
+<br>=A0=A0* FIX: If tabs and spaces are used to indent list items html expo=
+rt gives error. Thanks Klaus Ethgen for report.
+<br>=A0=A0* FIX: Some html export fixes.</td>
+</tr>
+<tr>
+        <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><a href=3D"h=
+ttp://www.vim.org/scripts/download_script.php?src_id=3D11076">vimwiki_0_9_4=
+_vba.zip</a></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><b>0.9.4</b></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><i>2009-07-28</i=
+></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"roweven" valign=3D"top"><i><a href=3D"http://www.vim.org/a=
+ccount/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"roweven" valign=3D"top" width=3D"2000">=A0=A0* NEW: Links=
+ with directories: [[dir_name/Link|Text]]. Thanks Jie Wu.
+<br>=A0=A0* NEW: Added %root_path% template variable to get relative root=
+ dir of path_html. See vimwiki-option-html_header.
+<br>=A0=A0* FIX: Indent incorrect for vim without "float" compile option.=
+ Thanks Julian Kooij.
+<br>=A0=A0* FIX: Convert to html doesn't work right with links like [[foo::=
+bar]].
+<br>=A0=A0* FIX: Rename wikiword doesn't work right when rename WikiWord to=
+ [[WikiWord blablabla]].
+<br>=A0=A0* FIX: Renaming of links with description doesn't work.
+<br>=A0=A0* FIX: Weblinks with commas are not highlighted.
+<br>=A0=A0* MISC: Some changes in default css file.</td>
+</tr>
+<tr>
+        <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><a href=3D"ht=
+tp://www.vim.org/scripts/download_script.php?src_id=3D10808">vimwiki_0_9_3_=
+vba.zip</a></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><b>0.9.3</b></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><i>2009-06-12</i>=
+</td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"rowodd" valign=3D"top"><i><a href=3D"http://www.vim.org/ac=
+count/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"rowodd" valign=3D"top" width=3D"2000">=A0=A0* NEW: g:vimwi=
+ki_menu option is a string which is menu path. So one can use let g:vimwiki=
+_menu =3D 'Plugin.Vimwiki' to set the menu to the right place.
+<br>=A0=A0* NEW: g:vimwiki_fold_empty_lines -- don't or do fold in empty li=
+nes between headers. See :h g:vimwiki_fold_empty_lines
+<br>=A0=A0* FIX: Encoding error when running vimwiki in Windows XP Japanese=
+.=A0=A0Thanks KarasAya.
+<br></td>
+</tr>
+<tr>
+        <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><a href=3D"h=
+ttp://www.vim.org/scripts/download_script.php?src_id=3D10563">vimwiki_0_9_2=
+c_vba.zip</a></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><b>0.9.2c</b></t=
+d>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><i>2009-05-09</i=
+></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"roweven" valign=3D"top"><i><a href=3D"http://www.vim.org/a=
+ccount/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"roweven" valign=3D"top" width=3D"2000">=A0=A0* FIX: Regres=
+sion bug. Export to HTML of `[[link|desc]]` is wrong.</td>
+</tr>
+<tr>
+        <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><a href=3D"ht=
+tp://www.vim.org/scripts/download_script.php?src_id=3D10532">vimwiki_0_9_2b=
+_vba.zip</a></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><b>0.9.2b</b></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><i>2009-05-05</i>=
+</td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"rowodd" valign=3D"top"><i><a href=3D"http://www.vim.org/ac=
+count/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"rowodd" valign=3D"top" width=3D"2000">I was playing with=
+ python and vimball archives -- as a result CRLFs in a recent vba file. Any=
+way I hope those evil CRLFs in the past.
+<br>
+<br>=A0=A0* FIX: Installation on Linux doesn't work. (Dos line endings in=
+ Vimball archive file).
+<br>=A0=A0* FIX: Clear out FlexWiki ftplugin's setup. Now you don't have to=
+ hack filetype.vim to get rid of unexpected ':setlocal bomb' from FlexWiki'=
+s ftplugin.
+<br>=A0=A0* FIX: When write done: it will show another done: in html file.
+<br></td>
+</tr>
+<tr>
+        <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><a href=3D"h=
+ttp://www.vim.org/scripts/download_script.php?src_id=3D10518">vimwiki_0_9_2=
+a_vba.zip</a></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><b>0.9.2a</b></t=
+d>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><i>2009-05-04</i=
+></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"roweven" valign=3D"top"><i><a href=3D"http://www.vim.org/a=
+ccount/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"roweven" valign=3D"top" width=3D"2000">FIX: Remove dos lin=
+e endings from some files.</td>
+</tr>
+<tr>
+        <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><a href=3D"ht=
+tp://www.vim.org/scripts/download_script.php?src_id=3D10506">vimwiki_0_9_2_=
+vba.zip</a></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><b>0.9.2</b></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><i>2009-05-02</i>=
+</td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"rowodd" valign=3D"top"><i><a href=3D"http://www.vim.org/ac=
+count/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"rowodd" valign=3D"top" width=3D"2000">=A0=A0* NEW: Option=
+ 'folding' added to turn folding on/off.
+<br>=A0=A0* NEW: Header text object. See :h vimwiki-text-objects.
+<br>=A0=A0* NEW: Add/remove Header levels with '=3D' and '-'. See :h vimwik=
+i_=3D.
+<br>=A0=A0* NEW: Vimwiki GUI menu to select available wikies. See :h g:vimw=
+iki_menu.
+<br>=A0=A0* NEW: You can specify the name of your css file now. See :h vimw=
+iki-option-css_name
+<br>=A0=A0* NEW: You can add styles to image links, see :h vimwiki-syntax-l=
+inks.
+<br>=A0=A0* FIX: History doesn't work after :VimwikiRenameWord.
+<br>=A0=A0* FIX: Some of wikipedia links are not correctly highlighted. Lin=
+ks with parentheses.
+<br>=A0=A0* MISC: Renamed vimwiki_gtd to vimwiki_lst.</td>
+</tr>
+<tr>
+        <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><a href=3D"h=
+ttp://www.vim.org/scripts/download_script.php?src_id=3D10389">vimwiki_0_9_1=
+_vba.zip</a></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><b>0.9.1</b></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><i>2009-04-12</i=
+></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"roweven" valign=3D"top"><i><a href=3D"http://www.vim.org/a=
+ccount/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"roweven" valign=3D"top" width=3D"2000">=A0=A0* [new] HTML=
+ Table cell text alignment, see :h vimwiki-syntax-tables.
+<br>=A0=A0* [new] Wikipage history simplified. Each vimwiki buffer now hold=
+s b:vimwiki_prev_word which is list of [PrevWord, getpos()].
+<br>=A0=A0* [new] If highlight for groups wikiHeader1..wikiHeader6 exist (d=
+efined in a colorscheme) -- use it. Otherwise use Title highlight for all=
+ Headers.
+<br>=A0=A0* [fix] Warn only once if 'html_header' or 'html_footer' does not=
+ exist.
+<br>=A0=A0* [fix] Wrong folding for the text after the last nested list ite=
+m.
+<br>=A0=A0* [fix] Bold and Italic aren't highlighted in tables without spac=
+es between || and * or _. ||*bold*||_asdf_ || (Thanks Brett Stahlman)</td>
+</tr>
+<tr>
+        <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><a href=3D"ht=
+tp://www.vim.org/scripts/download_script.php?src_id=3D10324">vimwiki_0_9_0_=
+vba.zip</a></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><b>0.9</b></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><i>2009-03-30</i>=
+</td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"rowodd" valign=3D"top"><i><a href=3D"http://www.vim.org/ac=
+count/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"rowodd" valign=3D"top" width=3D"2000">=A0=A0* [new] You ca=
+n add classes to 'pre' tag -- :h vimwiki-syntax-preformatted. This might be=
+ useful for coloring some programming code with external js tools like goog=
+le syntax highlighter.
+<br>=A0=A0* [new] !WikiPage is not highlighted. It is just a plain word Wik=
+iPage in HTML, without exclamation mark
+<br>=A0=A0* [new] Definition lists, see :h vimwiki-syntax-lists.
+<br>=A0=A0* [new] New implementation of :h VimwikiRenameWord. CAUTION: It=
+ was tested on 2 computers only, backup your wiki before use it. Email me=
+ if it doesn't work for you.
+<br>=A0=A0* [new] HTML: convert [ ] to html checkboxes.
+<br>=A0=A0* [new] Default CSS: gray out checked items.=20
+<br>=A0=A0* [fix] Less than 3 characters are not highlighted in Bold and It=
+alic.
+<br>=A0=A0* [fix] Added vimwiki autocmd group to avoid clashes with user de=
+fined autocmds.
+<br>=A0=A0* [fix] Pressing ESC while :h :VimwikiUISelect opens current wiki=
+ index file.=A0=A0Should cancel wiki selection.</td>
+</tr>
+<tr>
+        <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><a href=3D"h=
+ttp://www.vim.org/scripts/download_script.php?src_id=3D10251">vimwiki_0_8_3=
+.zip</a></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><b>0.8.3</b></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><i>2009-03-19</i=
+></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"roweven" valign=3D"top"><i><a href=3D"http://www.vim.org/a=
+ccount/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"roweven" valign=3D"top" width=3D"2000">=A0=A0* [new] &lt;C=
+-Space&gt; on a list item creates checkbox.
+<br>=A0=A0* [fix] With * in the first column, &lt;CR&gt; shouldn't insert=
+ more * (default syntax).
+<br>=A0=A0* [fix] With MediaWiki's ** [ ], &lt;CR&gt; should insert it on=
+ the next line.
+<br>=A0=A0* [fix] HTML export should use 'fileencoding' instead of 'encodin=
+g'.
+<br>=A0=A0* [fix] Code cleanup.</td>
+</tr>
+<tr>
+        <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><a href=3D"ht=
+tp://www.vim.org/scripts/download_script.php?src_id=3D10207">vimwiki_0_8_2.=
+zip</a></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><b>0.8.2</b></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><i>2009-03-14</i>=
+</td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"rowodd" valign=3D"top"><i><a href=3D"http://www.vim.org/ac=
+count/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"rowodd" valign=3D"top" width=3D"2000">=A0=A0* [del] Remove=
+d google syntax file.
+<br>=A0=A0* [new] Default vimwiki syntax is a subset of google's one. Heade=
+r's has been changed from !Header to =3DHeader=3D. It is easier to maintain=
+ only 2 syntaxes. See :h vimwiki-syntax-headers.
+<br>=A0=A0* [new] Multiline paragraphs -- less longlines.
+<br>=A0=A0* [new] Comments. See :h vimwiki-syntax-comments.
+<br>=A0=A0* [del] Removed setlocal textwidth =3D 0 from ftplugin.
+<br>=A0=A0* [fix] New regexps for bold, italic, bolditalic.
+<br>=A0=A0* [fix] The last item in List sometimes fold-in incorrectly.
+<br>=A0=A0* [fix] Minor tweaks on default css.</td>
+</tr>
+<tr>
+        <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><a href=3D"h=
+ttp://www.vim.org/scripts/download_script.php?src_id=3D10179">vimwiki_0_8_1=
+.zip</a></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><b>0.8.1</b></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><i>2009-03-11</i=
+></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"roweven" valign=3D"top"><i><a href=3D"http://www.vim.org/a=
+ccount/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"roweven" valign=3D"top" width=3D"2000">=A0=A0* [new] Vimwi=
+ki's foldmethod changed from syntax to expr. Foldtext is changed to be nice=
+r with folded list items.
+<br>=A0=A0* [new] Fold/outline list items.
+<br>=A0=A0* [new] It is possible now to edit wiki files in arbitrary direct=
+ories which is not in g:vimwiki_list's paths. New WikiWords are created in=
+ the path of the current WikiWord.
+<br>=A0=A0* [new] User can remap Vimwiki's built in mappings.
+<br>=A0=A0* [new] Added g:vimwiki_use_mouse. It is off by default.
+<br>=A0=A0* [fix] Removed &lt;C-h&gt; mapping.
+<br></td>
+</tr>
+<tr>
+        <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><a href=3D"ht=
+tp://www.vim.org/scripts/download_script.php?src_id=3D10124">vimwiki_0_8.zi=
+p</a></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><b>0.8</b></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><i>2009-03-05</i>=
+</td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"rowodd" valign=3D"top"><i><a href=3D"http://www.vim.org/ac=
+count/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"rowodd" valign=3D"top" width=3D"2000">NOTE: g:vimwiki_home=
+ is obsolete now!!!
+<br>=A0=A0* NEW Multiple wikies support. A lot of options have been changed=
+, see :h vimwiki-options
+<br>=A0=A0* NEW Auto create directories.
+<br>=A0=A0* NEW Checked list item highlighted as comment.
+<br>=A0=A0* FIX Multiple set ft=3Dvimwiki for each buffer disabled. Vimwiki=
+ should load its buffers a bit faster now.
+<br></td>
+</tr>
+<tr>
+        <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><a href=3D"h=
+ttp://www.vim.org/scripts/download_script.php?src_id=3D10061">vimwiki_0_7_1=
+.zip</a></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><b>0.7.1</b></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><i>2009-02-28</i=
+></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"roweven" valign=3D"top"><i><a href=3D"http://www.vim.org/a=
+ccount/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"roweven" valign=3D"top" width=3D"2000">* NEW: &lt;Plug&gt;=
+VimwikiToggleListItem added to be able to remap &lt;C-Space&gt; to anything=
+ user prefers more.
+<br>* FIX: Toggleable list items do not work with MediaWiki markup.
+<br>* FIX: Changing g:vimwiki_home_html to path with ~ while vimwiki is loa=
+ded gives errors for HTML export.
+<br>* DEL: Command :VimwikiExploreHome.
+<br></td>
+</tr>
+<tr>
+        <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><a href=3D"ht=
+tp://www.vim.org/scripts/download_script.php?src_id=3D10010">vimwiki_0_7_0.=
+zip</a></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><b>0.7</b></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><i>2009-02-23</i>=
+</td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"rowodd" valign=3D"top"><i><a href=3D"http://www.vim.org/ac=
+count/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"rowodd" valign=3D"top" width=3D"2000"> * NEW: GTD stuff --=
+ toggleable list items. See h: vimwiki-gtd.
+<br> * FIX: Headers do not fold inner headers. (Thanks Brett Stahlman)
+<br> * FIX: Remove last blank lines from preformatted text at the end of fi=
+le (HTML).
+<br> * DEL: Removed g:vimwiki_smartCR option.
+<br></td>
+</tr>
+<tr>
+        <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><a href=3D"h=
+ttp://www.vim.org/scripts/download_script.php?src_id=3D9973">vimwiki_0_6_2.=
+zip</a></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><b>0.6.2</b></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><i>2009-02-15</i=
+></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"roweven" valign=3D"top"><i><a href=3D"http://www.vim.org/a=
+ccount/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"roweven" valign=3D"top" width=3D"2000">=A0=A0=A0=A0* NEW:=
+ [[link|description]] is available now.
+<br>=A0=A0=A0=A0* FIX: Barebone links (ie: <a target=3D"_blank" href=3D"htt=
+p://bla-bla-bla.org/h.pl?id=3D98">http://bla-bla-bla.org/h.pl?id=3D98</a>)=
+ get extra escaping of ? and friends so they become invalid in HTML.
+<br>=A0=A0=A0=A0* FIX: In linux going to [[wiki with whitespaces]] and then=
+ pressing BS to go back to prev wikipage produce error. (Thanks Brendon Ben=
+sel for the fix)
+<br>=A0=A0=A0=A0* FIX: Remove setlocal encoding and fileformat from vimwiki=
+ ftplugin.
+<br>=A0=A0=A0=A0* FIX: Some tweaks on default style.css
+<br></td>
+</tr>
+<tr>
+        <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><a href=3D"ht=
+tp://www.vim.org/scripts/download_script.php?src_id=3D9933">vimwiki_0_6_1.z=
+ip</a></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><b>0.6.1</b></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><i>2009-02-08</i>=
+</td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"rowodd" valign=3D"top"><i><a href=3D"http://www.vim.org/ac=
+count/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"rowodd" valign=3D"top" width=3D"2000">=A0=A0=A0=A0* FIX:=
+ [blablabla bla] shouldn't be converted to a link.
+<br>=A0=A0=A0=A0* FIX: Remove extra annoing empty strings from PRE tag made=
+ from
+<br>=A0=A0=A0=A0=A0=A0whitespaces in HTML export.
+<br>=A0=A0=A0=A0* FIX: Moved functions related to HTML converting to new au=
+toload module
+<br>=A0=A0=A0=A0=A0=A0to increase a bit vimwiki startup time.
+<br></td>
+</tr>
+<tr>
+        <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><a href=3D"h=
+ttp://www.vim.org/scripts/download_script.php?src_id=3D9912">vimwiki_0_6.zi=
+p</a></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><b>0.6</b></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><i>2009-02-04</i=
+></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"roweven" valign=3D"top"><i><a href=3D"http://www.vim.org/a=
+ccount/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"roweven" valign=3D"top" width=3D"2000"> * NEW: Header and=
+ footer templates. See g:vimwiki_html_header and g:vimwiki_html_footer in=
+ help.
+<br> * FIX: :Vimwiki2HTML does not recognize ~ as part of a valid path.</td>
+</tr>
+<tr>
+        <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><a href=3D"ht=
+tp://www.vim.org/scripts/download_script.php?src_id=3D9848">vimwiki_0_5_3.z=
+ip</a></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><b>0.5.3</b></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><i>2009-01-20</i>=
+</td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"rowodd" valign=3D"top"><i><a href=3D"http://www.vim.org/ac=
+count/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"rowodd" valign=3D"top" width=3D"2000">* FIX: Fixed :Vimwik=
+iRenameWord. Error when g:vimwiki_home had whitespaces in path.
+<br>* FIX: :VimwikiSplitWord and :VimwikiVSplitWord didn't work.</td>
+</tr>
+<tr>
+        <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><a href=3D"h=
+ttp://www.vim.org/scripts/download_script.php?src_id=3D9841">vimwiki_0_5_2.=
+zip</a></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><b>0.5.2</b></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><i>2009-01-19</i=
+></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"roweven" valign=3D"top"><i><a href=3D"http://www.vim.org/a=
+ccount/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"roweven" valign=3D"top" width=3D"2000">=A0=A0=A0=A0* NEW:=
+ Added :VimwikiGoHome, :VimwikiTabGoHome and :VimwikiExploreHome commands.
+<br>=A0=A0=A0=A0* NEW: Added &lt;Leader&gt;wt mapping to open vimwiki index=
+ file in a new tab.
+<br>=A0=A0=A0=A0* NEW: Added g:vimwiki_gohome option that controls how :Vim=
+wikiGoHome works when current buffer is changed. (Thanks Timur Zaripov)
+<br>=A0=A0=A0=A0* FIX: Fixed :VimwikiRenameWord. Very bad behaviour when au=
+tochdir isn't set up.
+<br>=A0=A0=A0=A0* FIX: Fixed commands :Wiki2HTML and :WikiAll2HTML to be av=
+ailable only for vimwiki buffers.
+<br>=A0=A0=A0=A0* FIX: Renamed :Wiki2HTML and :WikiAll2HTML to :Vimwiki2HTM=
+L and :VimwikiAll2HTML commands.
+<br>=A0=A0=A0=A0* FIX: Help file corrections. </td>
+</tr>
+<tr>
+        <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><a href=3D"ht=
+tp://www.vim.org/scripts/download_script.php?src_id=3D9604">vimwiki_0_5_1.z=
+ip</a></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><b>0.5.1</b></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><i>2008-12-03</i>=
+</td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"rowodd" valign=3D"top"><i><a href=3D"http://www.vim.org/ac=
+count/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"rowodd" valign=3D"top" width=3D"2000">=A0=A0* [new] Help=
+ is created.
+<br>=A0=A0* [new] Now you can fold headers.
+<br>=A0=A0* [new] &lt;Plug&gt;VimwikiGoHome and &lt;Plug&gt;VimwikiExploreH=
+ome were added.
+<br>=A0=A0* [fix] Bug with {{{HelloWikiWord}}} export to HTML is fixed.
+<br>=A0=A0* [del] Sync option removed from: Syntax highlighting for preform=
+atted text=A0=A0{{{ }}}.
+<br></td>
+</tr>
+<tr>
+        <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><a href=3D"h=
+ttp://www.vim.org/scripts/download_script.php?src_id=3D9253">vimwiki_0_5.zi=
+p</a></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><b>0.5</b></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><i>2008-09-15</i=
+></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"roweven" valign=3D"top"><i><a href=3D"http://www.vim.org/a=
+ccount/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"roweven" valign=3D"top" width=3D"2000">=A0=A0* DONE: vimwi=
+ki default markup to HTML conversion improved.
+<br>=A0=A0* DONE: Added basic `GoogleWiki` and `MediaWiki` markup languages.
+<br>=A0=A0* DONE: Chinese `[[complex wiki words]]`.</td>
+</tr>
+<tr>
+        <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><a href=3D"ht=
+tp://www.vim.org/scripts/download_script.php?src_id=3D8744">vimwiki_0_4.vba=
+</a></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><b>0.4</b></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><i>2008-06-02</i>=
+</td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"rowodd" valign=3D"top"><i><a href=3D"http://www.vim.org/ac=
+count/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"rowodd" valign=3D"top" width=3D"2000">=A0=A0* DONE: vimwik=
+i=3D&gt;HTML converter in plain vim language.
+<br>=A0=A0* DONE: Plugin autoload.</td>
+</tr>
+<tr>
+        <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><a href=3D"h=
+ttp://www.vim.org/scripts/download_script.php?src_id=3D8725">vimwiki_0_3_4.=
+vba</a></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><b>0.3.4</b></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><i>2008-05-26</i=
+></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"roweven" valign=3D"top"><i><a href=3D"http://www.vim.org/a=
+ccount/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"roweven" valign=3D"top" width=3D"2000">=A0=A0* FIXED: Back=
+up files (.wiki~) caused a bunch of errors while opening wiki files.</td>
+</tr>
+<tr>
+        <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><a href=3D"ht=
+tp://www.vim.org/scripts/download_script.php?src_id=3D8714">vimwiki_0_3_3.v=
+ba</a></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><b>0.3.3</b></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><i>2008-05-23</i>=
+</td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"rowodd" valign=3D"top"><i><a href=3D"http://www.vim.org/ac=
+count/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"rowodd" valign=3D"top" width=3D"2000">=A0=A0* FIXED: `[[wi=
+ki word with dots at the end...]]` didn't work.
+<br>=A0=A0* DONE: Added error handling for `delete wiki word` function.
+<br>=A0=A0* DONE: Added keybindings `o` and `O` for list items when g:vimwi=
+ki_smartCR=3D1.
+<br>=A0=A0* DONE: Added keybinding `&lt;Leader&gt;wh` to visit wiki home di=
+rectory.
+<br></td>
+</tr>
+<tr>
+        <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><a href=3D"h=
+ttp://www.vim.org/scripts/download_script.php?src_id=3D8696">vimwiki_0_3_2.=
+vba</a></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><b>0.3.2</b></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><i>2008-05-16</i=
+></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"roweven" valign=3D"top"><i><a href=3D"http://www.vim.org/a=
+ccount/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"roweven" valign=3D"top" width=3D"2000">FIXED: Renaming -=
+ error if complex wiki word contains %.=20
+<br>FIXED: Syntax highlighting for preformatted text . Sync option added.=20
+<br>FIXED: smartCR bug fix.</td>
+</tr>
+<tr>
+        <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><a href=3D"ht=
+tp://www.vim.org/scripts/download_script.php?src_id=3D8695">vimwiki_0_3_1.v=
+ba</a></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><b>0.3.1</b></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><i>2008-05-16</i>=
+</td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"rowodd" valign=3D"top"><i><a href=3D"http://www.vim.org/ac=
+count/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"rowodd" valign=3D"top" width=3D"2000">DONE: Use mouse to=
+ follow links. Left double-click to follow WikiPage, Rightclick then Leftcl=
+ick to go back.
+<br>FIXED: Renaming - [[hello world?]] to [[hello? world]] links are not up=
+dated.=20
+<br>FIXED: Buffers menu after renaming is the same as before renaming.</td>
+</tr>
+<tr>
+        <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><a href=3D"h=
+ttp://www.vim.org/scripts/download_script.php?src_id=3D8690">vimwiki_0_3.vb=
+a</a></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><b>0.3</b></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><i>2008-05-15</i=
+></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"roweven" valign=3D"top"><i><a href=3D"http://www.vim.org/a=
+ccount/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"roweven" valign=3D"top" width=3D"2000">DONE: - Highlight=
+ non-existent WikiWords.=20
+<br>DONE: - delete current WikiWord (&lt;Leader&gt;wd)=20
+<br>DONE: - g:vimwiki_smartCR=3D2 =3D&gt; use vim comments (see :h comments=
+ :h formatoptions) feature to deal with list items. (thx - Dmitry Alexandro=
+v)=20
+<br>DONE: Add highlighting to TODO:, DONE:, FIXED:.=20
+<br>DONE: Rename current WikiWord - be careful on Windows you cannot rename=
+ wikiword to WikiWord. After renaming update all links to that renamed Wiki=
+Word=20
+<br>FIXED: Bug - do not duplicate WikiWords in wiki history.=20
+<br>FIXED: after renaming [[wiki word]] twice buffers are not deleted=20
+<br>FIXED: when renaming from [[wiki word]] to WikiWord result is [[WikiWor=
+d]]=20
+<br>FIXED: more than one complex words on one line is bugging each other wh=
+en try go to one of them. [[bla bla bla]] [[dodo dodo dodo]] becomes bla bl=
+a bla ]] [[dodo dodo dodo</td>
+</tr>
+<tr>
+        <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><a href=3D"ht=
+tp://www.vim.org/scripts/download_script.php?src_id=3D8657">vimwiki_0_2_2.v=
+ba</a></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><b>0.2.2</b></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><i>2008-05-07</i>=
+</td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"rowodd" valign=3D"top"><i><a href=3D"http://www.vim.org/ac=
+count/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"rowodd" valign=3D"top" width=3D"2000">Added keybindings to=
+ split/vertsplit when following WikiWords.
+<br>&lt;S-CR&gt; - split WikiWord=A0=A0
+<br>&lt;C-CR&gt; - vertical split WikiWord
+<br></td>
+</tr>
+<tr>
+        <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><a href=3D"h=
+ttp://www.vim.org/scripts/download_script.php?src_id=3D8649">vimwiki_0_2_1.=
+vba</a></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><b>0.2.1</b></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><i>2008-05-06</i=
+></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"roweven" valign=3D"top"><i><a href=3D"http://www.vim.org/a=
+ccount/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"roweven" valign=3D"top" width=3D"2000">install on linux no=
+w works.</td>
+</tr>
+<tr>
+        <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><a href=3D"ht=
+tp://www.vim.org/scripts/download_script.php?src_id=3D8646">vimwiki_0_2.vba=
+</a></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><b>0.2</b></td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top"><i>2008-05-05</i>=
+</td>
+    <td class=3D"rowodd" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"rowodd" valign=3D"top"><i><a href=3D"http://www.vim.org/ac=
+count/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"rowodd" valign=3D"top" width=3D"2000">=A0=A0* (+) Add part=
+ of Google's Wiki syntax.
+<br>=A0=A0* (+) Add auto insert # with ENTER.
+<br>=A0=A0* (+) On/Off auto insert bullet with ENTER.
+<br>=A0=A0* (+) Strip `[[complex wiki name]]` from symbols that cannot be=
+ used in file names.
+<br>=A0=A0* (+) Links to non-wiki files. Non wiki files are files with exte=
+nsions ie `[[hello world.txt]]` or `[[my homesite.html]]`
+<br></td>
+</tr>
+<tr>
+        <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><a href=3D"h=
+ttp://www.vim.org/scripts/download_script.php?src_id=3D8644">vimwiki_0_1.vb=
+a</a></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><b>0.1</b></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top"><i>2008-05-04</i=
+></td>
+    <td class=3D"roweven" nowrap=3D"nowrap" valign=3D"top">7.0</td>
+    <td class=3D"roweven" valign=3D"top"><i><a href=3D"http://www.vim.org/a=
+ccount/profile.php?user_id=3D14343">Maxim Kim</a></i></td>
+    <td class=3D"roweven" valign=3D"top" width=3D"2000">Initial upload</td>
+</tr>
+</tbody></table>
+<!-- finish off the framework -->
+          </p></td>
+        </tr>
+      </tbody></table>
+    </td>
+
+  </tr>
+</tbody></table>
+
+<!-- END OF THE PAGE BODY: BETWEEN HEADER AND FOOTER -->
+
+<table border=3D"0" bordercolor=3D"red" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%">
+  <tbody><tr><td colspan=3D"4"><img src=3D"http://www.vim.org/images/spacer=
+.gif" alt=3D"" height=3D"5" width=3D"1"></td></tr>
+  <tr><td colspan=3D"4" bgcolor=3D"#000000"><img src=3D"http://www.vim.org/=
+images/spacer.gif" alt=3D"" height=3D"2" width=3D"1"></td></tr>
+  <tr><td colspan=3D"4"><img src=3D"http://www.vim.org/images/spacer.gif"=
+ alt=3D"" height=3D"5" width=3D"1"></td></tr>
+  <tr>
+    <td><img src=3D"http://www.vim.org/images/spacer.gif" alt=3D"" height=
+=3D"1" width=3D"5"></td>
+
+    <td align=3D"left" valign=3D"top"><small>
+      If you have questions or remarks about this site, visit the
+      <a href=3D"http://vimonline.sf.net/">vimonline development</a> pages.
+      Please use this site responsibly.
+      <br>=20
+     =20
+      Questions about <a href=3D"http://www.vim.org/about.php">Vim</a> shou=
+ld go
+      to the <a href=3D"http://www.vim.org/maillist.php">maillist</a>.
+      Help Bram <a href=3D"http://iccf-holland.org/">help Uganda</a>.
+      </small>
+	=A0
+	=A0
+
+	<!-- Start of StatCounter Code -->
+	<script type=3D"text/javascript" language=3D"javascript"><!--
+
+/* Script removed by snapshot save */
+
+--></script>
+
+	<script type=3D"text/javascript" language=3D"javascript" src=3D"urn:snapsh=
+ot-880AD237:http://www.statcounter.com/counter/counter.js"></script><noscri=
+pt><a href=3D"http://www.statcounter.com/" target=3D"_blank"><img  src=3D"h=
+ttp://c12.statcounter.com/counter.php?sc_project=3D1417324&java=3D0&securit=
+y=3Dd41633bc&invisible=3D0" alt=3D"free tracking" border=3D"0"></a> </noscr=
+ipt>
+	<!-- End of StatCounter Code -->
+          </td>
+
+    <td align=3D"right" valign=3D"top">
+      		<a href=3D"http://sourceforge.net/projects/vim" rel=3D"nofollow"><i=
+mg src=3D"http://sflogo.sourceforge.net/sflogo.php?group_id=3D8&amp;type=3D=
+1" alt=3D"SourceForge.net Logo" border=3D"0" height=3D"31" width=3D"88"></a>
+    </td>
+
+    <td><img src=3D"http://www.vim.org/images/spacer.gif" alt=3D"" height=
+=3D"1" width=3D"5"></td>
+  </tr>
+
+   =20
+  <tr><td colspan=3D"4"><img src=3D"http://www.vim.org/images/spacer.gif"=
+ alt=3D"" height=3D"5" width=3D"1"></td>
+ =20
+  </tr>
+</tbody></table>
+
+
+
+
+<div style=3D"position: absolute; display: none; z-index: 9999;" id=3D"live=
+margins_control"><img src=3D"chrome://livemargins/skin/monitor-background-h=
+orizontal.png" style=3D"position: absolute;left:-77px;top:-5px" height=3D"5=
+" width=3D"77">	<img src=3D"chrome://livemargins/skin/monitor-background-ve=
+rtical.png" style=3D"position: absolute;left:0;top:-5px;">	<img id=3D"monit=
+or-play-button" src=3D"chrome://livemargins/skin/monitor-play-button.png"=
+ onmouseover=3D"this.style.opacity=3D1" onmouseout=3D"this.style.opacity=3D=
+0.5" style=3D"position: absolute;left:1px;top:0;opacity:0.5;cursor:pointer"=
+></div></body></html>
+------=_NextPart_000_0000_A7B0ADEA.DA1D6E10
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.vim.org/images/spacer.gif
+
+R0lGODlhAQABAJH/AP///wAAAP///wAAACH/C0FET0JFOklSMS4wAt7tACH5BAEAAAIALAAAAAAB
+AAEAAAICVAEAOw==
+------=_NextPart_000_0000_A7B0ADEA.DA1D6E10
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.vim.org/images/sponsorvim.gif
+
+R0lGODlh1wAmAPcAAAAAAAB7AACEAAgICAiECBAQEBCEEBCMEBgYGBiMGCEhISGMISGUISkpKSmU
+KTExMTGUMTGcMTk5OTmcOUJCQkKcQkKlQkpKSkqlSlJSUlKlUlKtUlpaWlqtWmNjY2OtY2O1Y2tr
+a2u1a3Nzc3O1c3O9c3t7e3u9e4SEhITGhIyMjIzGjJSUlJTGlJTOlJycnJzOnKWlpaXOpaXWpa2t
+ra3WrbW1tbXWtbXetb29vb3evcbGxsbexsbnxs7Ozs7nztbW1tbn1tbv1t7e3t7v3ufn5+fv5+f3
+5+/v7+/37/f39/f/9///////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAA1wAmAAAI/gADCAgg
+kODAgggPKjTIMGHDhQ4jQpz4sKJEixQvaszIEaPHjR87gnTIpKTJkyhTqlzJsqXLlzBjypxJs6bN
+myYJ4tzJs6fPn0CD0tQptKjRo0iT8iSqtKnTp1B/Mj2JJMaIES+UlFQSo2sMGj5Q+lARAkWOkzRi
+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
+SjgSItGES+iETPiEUhiFVAiFViiFAxEQAAA7
+------=_NextPart_000_0000_A7B0ADEA.DA1D6E10
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.vim.org/images/vim_header.gif
+
+R0lGODlhtAAtAPcAANHRogNHAwD8AACVAHZpdtnZxgDFABkYGvDw4dzd3Kioqenp1ABoPQIES9nI
+1QCwBQByAAFrAGVlZLS0tNLSpDw8PDIxS9HR0cnJwQCMADM1M9LSyIB9gLyzuw4OaczMmgU5BYiI
+iAJbAlpbWc7Onby8vG5kbpCQkBY1FsLCwrq6uk1NTK2krePjysK6wfHx8cXExVNFU4eHftXV1ezs
+4Hx8fFNSU0FBQQQEMgCGAMbGxoyDjKWdpYx9jObm0QCBALa2tuHh1Z2dncnJya2trZWVlUE8TgB/
+AOLixpmZmEJwQrCwsOHhwrm5ss7OnoSEyClEKcS0xCoqKklCSenp6b6+viMjI9bWrIGAgKWlpaGg
+odTUqbartnRzdO3n4uPj4wB5ANra1e3t3m1rbfX19QBpHuPj3sjIvY2OjRsbbUVFRt7e1vPz6ejo
+4Z6mngBjAHxvfCoWKevq2BhBGNnZ0Xl3eQDVADInMgA1RM7OxoyVjAAsaLi4uLKysvr6+tjX2O3o
+3ISEhM7Ozs7OySo5Kt7ezwDvAJWMlQMDBfPz8zAwMCE1Ienp5QB8AFhSWC81Lff49wctBX56fs3K
+ze/u77+/u7y4vABPRt/fv9jYsiM7I7CysBIjEqejpwUUBUREQLy82QUDFQEUbgARcxIQEsDAwDY2
+dG1tgZaWi////ykpcL6+llJSeqOjj8HBwbGxknp6hUREd8/Pn19ffs3Nm8PDw8rKw4uLi6+vr0RD
+Q8HCwUZGUOTk1gJ/Auzr2unp3P7++gAOffPx8/j48L/Av+zr7GduXN7e0iUvJZOak4CAhU+HT3Bv
+dYWAhbWytXqOeSpXKgBOLTtXOwB5BDM7M05WSDc3NzluOaurq2pqYOzl4B9zH4aGh0A8N9LBz+/v
+5DBLMAg9LQJ/AUlKQ0lHSUY+SNPTpz87aeTd4T4wPZOVk35/fqemoRBSEKOko9TT1O/p415eXoF3
+gZGSkJCQi76+vb29vZOTk8zGzdfXsOno12ReZC8vIr+/vwAAZszMmSH5BAAAAAAALAAAAAC0AC0A
+AAj/AP8JHEiwoMGDCAcy+QNOGjomCSNKnEixosWLGDNqJPjBCYmPIEOCROJNiR0DShxA/EdLpMuQ
+G2PKnEmz5sAPmXgV2Mmz585CHa6dNIDSGyYnLQr5XLrTFwWbUKNKtYnTjIQKN7Jq3Xoj1x0RBiJE
+IJpyGLYVWLlyVXTr25apcOPKTUiCkQQhqSi92Mu3byIqPThByAGB6DI4XWb46cv4RaJipBSIoTW3
+smWptOhISQVkApDPoENPqGWpXIABYAobAMHli+fQsCdc4CbFB+XLuHNrzEwu1WhX/UoJHy4cRi0e
+FQJkOJLawLYoCUqkCE5ceD8Y9rAhsq27u3eJtMJY/9FRq4qKUv3Sq+/nqpS7ZskHHPnBHEWPSf1U
+VEG/vgr2LOSooc9t3xVoIAm/cKDBGFksAcN66bmyxAk7ODJHI/TN94MIUMQTiALB9QdDFUmsc8AQ
+CxBo4Iq6fXAFDYGMUAMVfEDYTwoKdGHDHGDk0MgRQB4xQAAHZPGHK1Wo518pRdRgjQILmMPilN5t
+gUQeufjGn3oSmrDIGxn8CGQjhM3RSTGCJJmef/0UgYUiWiwAAJV06gZAEBVoCWGXi0SQQ5CNZADB
+HNhQokMJSo5YxDpS9CPHnHVGapkseOq5Hp9+jinoHM5QUguia+rQZg2KlCCnpKjORWmeE2wZ4RJe
+Zv96xKYdvOAKqP34VwUa6yiyhA+ypCosXKtayiWsff5ZJhfC6IJrP7XYc0szitgD7EavoILKKiu2
+om1Bq6DyyrAEySKHC6y6yh6yfpbZASSlPAtDCWj0gIIQNEAqUSshGOTPv6gYiMq//hQ08CkHrYIw
+nbLow0IAWba6J7uCQtEBGfact+a808ZhwA/3aPOURKYUXBAsJQdcoMJpmDzQK6eoXNAp/si8IgBy
+cBGBIVMY+2qsYIATBSTmbVmLCrdw8IgIGQjQCxpeSBlRyQfRbPN3VFdk9ZQA+ALEzjmU4/O6XooA
+zdD1lGC0CmhIsrSgPxgiTjLwvHUQyh74Y8reprT/IhDNs6jijwezcDsQyv+qcorhEyksuN6wEMSy
+P2mcIvhAp/A9S0GtmNKyKnxHLpDjg8ciMyp8t3JKy6aMqxEAgGgBhgAZvNGzxJfCygkUtZBRgsbB
+6QDECXA88kYOP/wAQdwZ6KHNFQfNQvD0/f5D8+Ce+8PKQKz8u3feqjCe0CqCe7D3v9v/Qz72ef/L
+PcGmFBTC9ARvrn75pjwuOiwE5+2B4LHYiBjckAPaQQACt1NXCoggAXK4gAwqAF4/dDCBExDAeMgD
+kvKOYIgMrMML0DtI1mbmj/AJpGUC4Z8qXLeK7tkvIt1jheFeIbh+xfB9LhuI3qpWM4NIT4YCQYUH
+/zzgOuv9KxbcgoXfNLKDSNhhAMtD4NhS4I5AJCARv9sSDPowDwIQ4ngZ0uDyDDGAZ3wjEyLMIeZ6
+KJCsxcIfsziFHOU4xIkMcY5ylF4APZCGgqCwIDs0yNYKwseT+WNhRkSkTCSACDxMw0dSxJ16SpGF
+CbwgP/wphQ76cA8vgjFIQVLeAB7giS74QkVtVOPf2PiPrJWMfgSbCCzh949ADmSEOoyfIFmpQ1XI
+75BrvNpG2MCMBuzhB4JKoI3OowPgabIPRbjgJ0GpqTI0IBRF4E5BcNkKbg2ylSajmeheVsSEmMID
+SxxIN/8huHS2wn2A1CUJZfaKcb1xnOuT2Tdlcv8FMXTBmD5SJoSE8ywdLEEdnswgNY/QiAGUQRQN
+gJI5SPCBgnQvFqcInD8w+rmAsSJvsXjF+hR3Cla0zAMTaQVI5RgLkP5jfh5gRUnbZwpt8Q17pgjp
+4Uoox5KhVKV6y2je0pe5z+0tfTF5kTKMCYbeSNJG6SnFEPiQhISGEZSBeigO2PEoEqDyftOLRSu6
+96/ItWxwfmsh/RRHkc7Rr6YCCcFZ4fhKWPAPlugkCFkTVz23/ssDiNwrwfo4ky0ggBs4EMU4xmYj
+QaDBCgdAgZ+uCiiHjgIHVehqsBDirXRWJFzfwki2UOFZdYoLW6EtyGhxQwEaYAEHamCskt6Bhnj/
+ZMEEKBjMQhmagTJcthKnksVXyUXcipiDBvRIF1Sj+o4uVKAPPUjWQhtahmDgoAktuM1mi8vdi5ij
+Uk9dTylckQUskIMUnBAB8hrB3uSRqbo4qAQwEIAANuSDBN3Nb0WKFd4I4agLGiDFAUgRiUaA4AAD
+FkE7BnyAa0KWFKS4Bxv0pd8KH4S/6mJPCrSABRsoogilMEEApgGCHZQCG+WAgwpwUY9sVKAfS8CF
+EEjRhO1a+MYDwfBAS6EFDowgEovgQQc0wLRI7OAdQ0gbDHQwhBTYowpMnoEikmBjHN9Yx1zqB4cd
+AQIQ7OMdh0ABGALgCKliQQLxuIc9hoCGMXio/xRVkAI2KGxlC2P5RjzmAJcbEQA4zCAGp4nEGC4Q
+iAPgABEjSEEgbCABUlijH+vQACPoXGf9Yrk9PY6BJyAQAWpYwhIaeAMENMECQfAjDU9QQxEucAC8
+3AAL7yDHGJCA30pfGbzoaY8QJFGNSJwmADFIgDxAMKQY4EMGFgBFEz5BBCFoAAYJsIIC7GGFCeTD
+1jim1A1S0Qc8C2Ed5cBBNFCDAm78gcs5AEEd/pCLMaQiHvG4gARsQIZ5D+EeVghCCLFdYVkcwwqp
+qIUOKFmHFXThHA1gwBsUAQMeaAIMb0AGC/pQASL4wRq3EIQGkpAKK5wgAdZAQ3b5bWEAtCEXEtLo
+AwwUYANrzIMNZ7BAA8JhjEkcAgoREMEIXJCEFeigCCtYwhJyUYIlqAEXpbgBNlpQa5LnlxZMeMcI
+rEB1a7hDDBRAwiQsgIhHdCMdcQBBAOIgBSsg4gTnLTsi6jCCA1AdwQVoutO7SwtMMMIWGLBFGMQQ
+LKjbwhoNwENq8NCATzRhEGcwAx3wjgEMrCEMeWi8LQbB9LlXmBYUAIDmNT8QWiDBFjK/xCUaYIQN
+YIIEm0+96jVfZctX2vMbMMK/dhGGlbj+9hNZiAWMYAbb475OAQEAOw==
+------=_NextPart_000_0000_A7B0ADEA.DA1D6E10
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.vim.org/images/buyhelplearn.gif
+
+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
+------=_NextPart_000_0000_A7B0ADEA.DA1D6E10
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://sflogo.sourceforge.net/sflogo.php?group_id=8&type=1
+
+iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAMAAABUFvrSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAFpQTFRF////7u7uX2pytLm9ipKYn6aqdH6F3+Hj6uvsf4iOv8PHanR7
+1NfZlJyhqrC09PX2ys3Qsri8kpqf7KqcmJ+k1kkqzdDTxcnMub7BoKarqpOR8cK4lp2j6Z6NbVan
+UgAAARFJREFUSMft08lu3DAURNHb93EUKbUcJ7Ez/f9vZiG3h2TdG0O1IMDNQaEIcrlTuHCXnPAJ
+n/Bng69deyXU3nIGUi5qEGpkX5JnVzdUe6tdjUV1gWQwTepxWC5cdisR25i0Xm5wEIZBzTlDM0Gz
+VLJZWfwxSiW2xQAgaZ0mE8BiHFPktcEIoPrlFc4jrQBZfVINA64OJfx6iItagGQp+1G2vcG03OMG
+r0Daiva5HvCt8Rtc3MOA5MNr41rKv41nr4S/x0LtfRuNOqLEdF8Mak8fpkiGtpFeLg8GPH57TLbq
+f1Ns6kZW12vrarqWYBrvHi8Bs+sIlN3+vajrs+rPP7+SjTimKO+mOD/ICZ/wJ4LvlL9T9gm7i8l6
+8gAAAABJRU5ErkJggg==
+------=_NextPart_000_0000_A7B0ADEA.DA1D6E10
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: chrome://livemargins/skin/monitor-background-horizontal.png
+
+iVBORw0KGgoAAAANSUhEUgAAAE0AAAAFCAYAAAAAAmGxAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A
+/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9kIBwk6F/3p9A4AAAAZdEVYdENv
+bW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAo0lEQVQ4y+2SSw6EMAxD7TBz/wMPtLOASsXK
+B1hjqRuSOu4jxC7DWYSv6DsAdKkz6XniX9V5+ONCjicz2njDJ4A2G3gBmMBgEuQuNBZzNWcFjZKh
+F8DVowHYBrRvEnoYmoT3wljiYdKj4RlA0gwRDBawojv9ws/hAawBWGdodI45QCjbSanp4717dIAs
+icecB8EMFD0KVZfAWwyFtgL44dV9/QG/nx1+osSlawAAAABJRU5ErkJggg==
+------=_NextPart_000_0000_A7B0ADEA.DA1D6E10
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: chrome://livemargins/skin/monitor-background-vertical.png
+
+iVBORw0KGgoAAAANSUhEUgAAAAUAAABRCAYAAAAacGwEAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A
+/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9kIBwk5C8LF+4IAAAAZdEVYdENv
+bW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAABIUlEQVQ4y62Uu07EMBBFz9ig1RZAQQv91nT8
+/3/wFxQJii8F3t2JX3FBJCvR2JP7GM/wydsZOAGPQAACTxdegWfgnDdiXJfTO+sWgZSX4stqHwsp
+Aj/ACmxxIX0BF+AbWIAtCFn+1wMQAQsmyIGQF0GY+QAQrh9y67a7e9pBsz/CvZMqg/KA12BqnTT/
+PuRpLSCV6WkksxkcoUvW0669IjMVQCoNGaU7eT5dWREj7VaWo+m8WjXi8DJoVOLj9OQZ+PRuNXWI
+zrSiefJqWbe1amQleY2AqnSN0qvCVdbhWXigNOVnmjLEyrbpntSocHfyeYLJe1BSym0oqzvObB/w
+6Ol/bkjmKYJzfjcAbfrSVh1XK5KqoDqT9j6CqmnTVXR7fgGOG60weMe6CQAAAABJRU5ErkJggg==
+
+------=_NextPart_000_0000_A7B0ADEA.DA1D6E10
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: chrome://livemargins/skin/monitor-play-button.png
+
+iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A
+/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9kMCQ0lHLU3WjcAAAHYSURBVDjL
+lZTBalNBFIa/uXdu0qa1SoK2CuojqCulIJQKNboSXLr3Edz4Bm7duPIJFERcBLSGgrj1GWJLS5Ua
+FJIamzm/i5ncKG1KcmA2M3O+Of9/DuOePX+hJ/uXYbEO84tQqUGeA47TQwDcWCr4shOaHuBafQF/
+poavLZBV53F5cSrCpTck+DYYQsNaXkCQcCYwkZlwTkwb9SKH7iFeOI4kTBEyK8g5BwgPMDCRS2QI
+J8PJpgZhUaMXMAgiN3i5eo61q2cpiuMefd7/w6P2jwkwh5egJ3DBuHmhkko9HqvLFX4G49b5Ck+v
+LxFMPNg8iN2VRWm/DAgxYeP9Ae3voQSsr1TZ3GgA8OpOg/WVannWDWkMjCiNEGAYk9s7fch8efnj
+dh9olND/4ijEWTDDGw6CwJLBZsnBaYy2JA2y0vmk5u7FuQhOq3lpbjIoCIKBpfYTLG4C7+4v470/
+Ma/1tU/zSm28MRypEJnJgQkkPmwfTny81elz780ea693+bT7m1anH/OCxTkaERkaD9/uQdGFLJ8I
+3Or0uN3p/TPasXF+7FHyJYvVzRRS6poUsbK03EwQzPAomT0U5AKXqpoFVPVpIE2gEKuxMP5wTvzL
+FM9Hb1UyCHr8F1NT7OnOQnb0AAAAAElFTkSuQmCC
+------=_NextPart_000_0000_A7B0ADEA.DA1D6E10
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-C9F1D651:http://www.vim.org/css/style.css
+
+/* Effective stylesheet produced by snapshot save */
+body, td, p { font-family: arial,helvetica,sans-serif; }
+th { font-family: arial,helvetica,sans-serif; font-weight: bold; text-align=
+: left; }
+em { font-weight: bold; font-style: italic; }
+.darkbg { background-color: rgb(0, 127, 0); }
+.lightbg { background-color: rgb(204, 204, 153); }
+.sidebar { font-family: arial,helvetica,sans-serif; background-color: rgb(2=
+40, 240, 221); font-size: small; }
+.topheader { font-family: arial,helvetica,sans-serif; font-size: large; fon=
+t-weight: bold; background-color: rgb(204, 204, 153); }
+.sidebarheader { font-family: arial,helvetica,sans-serif; font-size: small;=
+ font-weight: bold; }
+.newsdate { font-style: italic; color: rgb(102, 102, 204); font-size: small=
+; }
+pre, code { font-family: "andale mono","monotype.com","courier new",monospa=
+ce; }
+h1 { font-family: arial,helvetica,sans-serif; font-size: medium; font-weigh=
+t: bold; color: rgb(0, 0, 102); }
+.txth1 { font-family: arial,helvetica,sans-serif; font-size: medium; font-w=
+eight: bold; color: rgb(0, 0, 102); }
+h2 { font-family: arial,helvetica,sans-serif; font-size: small; font-weight=
+: bold; color: rgb(0, 0, 102); }
+.txth2 { font-family: arial,helvetica,sans-serif; font-size: small; font-we=
+ight: bold; color: rgb(0, 0, 102); }
+h3 { font-family: arial,helvetica,sans-serif; font-size: x-small; font-weig=
+ht: bold; color: rgb(0, 0, 102); }
+.txth3 { font-family: arial,helvetica,sans-serif; font-size: x-small; font-=
+weight: bold; color: rgb(0, 0, 102); }
+small { font-family: arial,helvetica,sans-serif; font-size: 75%; }
+a.small { font-family: arial,helvetica,sans-serif; font-size: 75%; text-dec=
+oration: none; color: rgb(0, 0, 102); }
+.style1 { color: rgb(102, 102, 102); }
+input { font-family: arial,helvetica,sans-serif; }
+textarea { font-family: arial,helvetica,sans-serif; width: 100%; }
+.prompt { font-family: arial,helvetica,sans-serif; font-weight: bold; }
+.errortext { font-family: arial,helvetica,sans-serif; color: rgb(204, 0, 0)=
+; }
+.errorheader { font-family: arial,helvetica,sans-serif; color: rgb(204, 0,=
+ 0); font-size: medium; }
+.tableheader { font-family: arial,helvetica,sans-serif; font-weight: bold;=
+ background-color: rgb(204, 204, 153); }
+.rowodd { font-family: arial,helvetica,sans-serif; background-color: rgb(24=
+0, 240, 221); }
+.roweven { font-family: arial,helvetica,sans-serif; background-color: rgb(2=
+04, 204, 153); }
+tr.tableheader th { font-family: arial,helvetica,sans-serif; background-col=
+or: rgb(204, 204, 153); text-align: center; }
+td.checker { background-color: rgb(0, 127, 0); background-image: url("http:=
+//vim.sourceforge.net/images/checkerboard.gif"); }
+.example { background-color: rgb(238, 255, 204); border-color: rgb(136, 170=
+, 102); border-style: solid none; border-width: 1px medium; padding: 5px;=
+ }
+
+------=_NextPart_000_0000_A7B0ADEA.DA1D6E10
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://vim.sourceforge.net/images/checkerboard.gif
+
+R0lGODlhCgAKAIAAAAB/APDw8CH5BAAAAAAALAAAAAAKAAoAAAIShBMGqHz5Gpq0Wriwy7K/C1YF
+ADs=
+------=_NextPart_000_0000_A7B0ADEA.DA1D6E10
+Content-Type: text/plain
+Content-Transfer-Encoding: base64
+Content-Location: http://www.vim.org/images/vim_shortcut.ico
+
+AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAc3NzAGZmZgAzMzMAc79MADGVAADm5uYAzMzMAEyyGgA2pAAAIGQAANnZ2QCZmZkA
+M5kAABpMAACysrIAREREAExmQAAQMgAAJkAaAEBZMwAzZhoAJnMAABFeAAASRgAAJ4QAAAI0AAAG
+HwAANEQzAGZ4ZgCIiIgATIAzADRWMwAskgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXGgAAAAAAAAAAAAABAgMXIRkaAAAAAAAAAAAABgcM
+AAINAxwDAgMCAAAAAAYHBwwMHx8MIAwCDAAAAAAGBwcHDAIWBx0HHgcAAAAbBgcHBwIDDgIUAhwC
+AAAXGAYHBwcMDAAWDQ0ZGgAABBUGBwIRCwIMAxYNCQUAAAATBgcCDRELBwcUCQUAAAAAAAYHAg0N
+EQsHDBIAAAAAAAAGBwINDQ0RCwcMAAAAAAABCwcMAw0NDg8HBwwQAAAABgcHBwIICQoGBwcHAgAA
+AAECAgIDBAUAAQICAgMAAAAAAAAAAAAAAAAAAAAAAP5/AAD8PwAAwB8AAMABAADAAQAAwAAAAIAA
+AAAAAAAAAAAAAIABAADAAwAAwAMAAIABAACAAQAAgAEAAP5/AAA=
+------=_NextPart_000_0000_A7B0ADEA.DA1D6E10
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.google.com/cse/intl/en/images/google_custom_search_watermark.gif
+
+R0lGODlhdwAQAPcAANfX1/7+/vz8/Pv7+/n5+f39/fb29vf39/Ly8vz7+/r6+/r6+vPz8/X19vf2
+9v/9/PTz8/n7//T09O/v7q3Nr/Dx8fTV0MvV6d/a2fDw8v/++uXl5uTt/fTW0rfC2ty6td7n3v/8
+++Xm6dLa6v79/PLx7fDw7/X4/bXA2fTz8dXW2vX19fX19NjU0/j4+LjB1uncq9br19Ps1OrhwLjD
+2+u8tu3v7erq6tbW1ua5tPna1sLQ7N3n++fGwqu3z+C5tefEv9rV1NTW2+nc2/Pz9uLi4vLz8/77
+4uDa2dvZz8HI1+js6dbUza3Lr87S3Obm5+zt7dyyrfbwzdmvqfr7+9fe7tfc6bi/0Nvi79/f4MDL
+4+Pe3tDY6qu84urp7r/H16m74tvq3OTdwuDcy+/j4v389MfR5Onp6sDI2dzAvNm2sa6/5fDLxvDg
+ofHt7fXrxOvT0N/d3f/7+9zy3drb3ebZ1+zb2LzE2Nzj8fTh3trY0O67svDjqurq67rC1djg8v/9
+1vDjqenp6dzt3Onq7ezo5MLH1O/p16zMr/HNx8fL1d7b29DZ7vb19cjP4OPi3dbd69Lb7cPM4Pr7
+/cXQ6Ofr873K5s7OzsrY9M7Z8fv47eva2PPz9PDz9/79/a693vzl4eHFwff29/Lj4Prh3djh89bc
+6ePU0ejn56vLr+DXst3o3Pvv7e7HwbC/4K283fz9/7Tcttfa4sPM3sXN3/XFvNnl+L7E0/Hx8uft
++err6tnc4trc4t3VtuXbqe7u7q3MsL7I4Pb09Obr9tDX5cDO6OWsp//g2tnT0t3t3avNrd/h5/Py
+8rvC1NbJx/X29fLrs9Dd99ra2+3nzePj4t/V1Ojo6MrV6+Xu/OPh3d+6tdzn3NnX0ebl5vn6+6fF
+qd+4stnUvOTu/f319O/1/tHc8uDh4//+/uLp+eHa2a2+4////MjO3OHf29Xf9erp6vb299fS0fb2
+9d7Y06enp////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAB3ABAA
+AAj/AOsJHEiwoMGDCBMqXMiwocOHECNKnEix4sII6KqMyMTDG8UAMWLZsEiypERyZuhMQLCBhhIB
+FEEoQ1AQgE0A9XCa3EkyQjFpBCt0g1nvgZyC6zQkXEWhgcAQD+oFwJHTZkF6WBvSm4h1K1eFHK4c
+OHgOlB04iRoJPHJo2psU9WDlwhONEZFtFA6QILWJDRkGl3IKHui1XuGEhx0WTqxYYblbAQ4ec2aA
+Sqgf9QCF46RADIwCtoQ4cIQiQRhEA3QgCzBkygrEVwV67Wo4a23ZXW0TNqibtu3fugtSehG5oKda
+iwS6MVYIGjeBJdo82mGuXgZXEpKlEtYq3ag6cUTB/yY423Bs8+bLoyf8WzZ59OXVF7QCpsLAYaUw
+edmDROCCHPPwkYRAAwSihyXs1NNJMwYMAgwENVSDAAELJaZeb+6llyFj7uWG21bywXdQA2tIUlwC
+y3xyBhBpCDTOB4LMoApMZfhCDS6GRHINKvXM0cQAPWhDlEKLibibkSBu+F6HSyYpYogEifBKMJWc
+MAkWPkABgRqnsGJBCwWw0MsYmkjBhAv1KHBBF4TUI8M3SzATBTgd5DEAkb1lRRtufCJ5VZ4g+sae
+kgj9oogfsxDDSxYG1CMBBlu8s4BAB7STzQ0UYsOFLHeoY8QzRehSDwNBxGPNkDylalIABDhAAKpS
+GTRUnDhfmFBAArQ4oequvFoEiQdEmaJCr8QW2xA8aGjhzh+7yGPss9AWNEAfT0wAa7TYGhQQADs=
+
+------=_NextPart_000_0000_A7B0ADEA.DA1D6E10
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-1186C74A:http://www.google.com/coop/cse/brand?form=cse-search-box&lang=en
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_A7B0ADEA.DA1D6E10
+Content-Type: text/javascript
+Content-Transfer-Encoding: quoted-printable
+Content-Location: urn:snapshot-880AD237:http://www.statcounter.com/counter/counter.js
+
+/* Script removed by snapshot save */
+
+------=_NextPart_000_0000_A7B0ADEA.DA1D6E10--
