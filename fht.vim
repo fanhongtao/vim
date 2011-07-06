@@ -14,7 +14,7 @@ set nocompatible
 " plugin: pathogen (id: 2332)
 " When install plugin with directory 'doc', execute command like this to make
 " the doc effective:
-"	helptag $VIM/vimfiles/bundle/Recent/doc
+"     helptag $VIM/vimfiles/bundle/Recent/doc
 " Use pathogen to easily modify the runtime path to include all
 " plugins under the ~/.vim/bundle directory
 "call pathogen#helptags()
@@ -61,6 +61,9 @@ set incsearch           " show search matches as you type
 set noerrorbells        " don't beep
 set nobackup            " do not keep a backup file
 
+set completeopt=menu,longest
+                        " Insert mode completion options
+
 " Set the spell language to US English.
 " Use Ctrl-X, CTRL-K to check the spell
 "set spell spelllang=en_us
@@ -73,7 +76,7 @@ else
     set dir=~/.vim,.                    " set directory of swap files
 endif
 
-colorscheme torte       " set active color scheme
+colorscheme torte_fht   " set active color scheme
 syntax on               " Switch syntax highlighting on
 
 " It clears the search buffer when you press ,/
@@ -124,7 +127,7 @@ if has("autocmd")
 
 else
 
-    set autoindent		" always set autoindenting on
+    set autoindent      " always set autoindenting on
 
 endif " has("autocmd")
 
@@ -142,9 +145,9 @@ let s:backup_dir = getcwd()
 let s:curr_dir = s:backup_dir
 let s:last_dir = ""
 while s:last_dir != s:curr_dir
-    if filereadable("vim_proj/project.vim")
+    if filereadable(".vimproj/project.vim")
         " echo 'Read project from '.s:curr_dir
-        source vim_proj/project.vim
+        source .vimproj/project.vim
         break
     endif
     cd ..
@@ -226,6 +229,7 @@ let g:RecentWinmode = "newtab"      " Open file in new tab
 " For Linux, use the default '~/vimwiki/'
 if (g:iswindows==1)
     let g:vimwiki_list = [{'path': 'E:/Git/vimwiki/main'},
-                \ {'path': 'E:/Git/vimwiki/vim'}]
+                \ {'path': 'E:/Git/vimwiki/vim'},
+                \ {'path': 'E:/Git/vimwiki/cpp'} ]
 endif
 

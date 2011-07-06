@@ -1,5 +1,6 @@
 #!/bin/bash
 # This file is used to create VIM project files for C/C++ project.
+
 function log() {
     echo `date +"%Y-%m-%d %H:%M:%S"` $* 
 }
@@ -20,7 +21,7 @@ fi
 log "Base_path: ${base_path}"
 
 # create project dir
-proj_dir="vim_proj"
+proj_dir=".vimproj"
 if [ ! -d ${proj_dir} ]; then
     log "mkdir '${proj_dir}'"
     mkdir ${proj_dir}
@@ -44,7 +45,7 @@ cscope -bq
 
 # create ctag file
 log "Create file 'tags' ..."
-ctags --fields=+ai --C++-types=+p -L cscope.files
+ctags --fields=+aiS --C++-types=+p --extra=+q -L cscope.files
 
 # get include path, so that we can use 'Ctrl-Wgf' or 'Ctrl-gf' to open a include file with filename under cursor 
 inc_dirs=`grep "\.h$" cscope.files | awk '{n=split($0, a, "/"); print substr($0, 0, length($0) - length(a[n]))}' | sort | uniq`
@@ -62,7 +63,7 @@ let g:LookupFile_TagExpr = string('${base_path}/${proj_dir}/filenametags')
 set path+=${tmppath}
 " > project.vim
 
-# add directory 'vim_proj' to git's ignore list 
+# add directory '.vimproj' to git's ignore list 
 cd ..
 file=".git/info/exclude"
 if [ -f $file ]; then

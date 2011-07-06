@@ -18,8 +18,9 @@ Linux, for a single user:
 2. link  fht.vim as .vimrc
 	cd
 	ln -s  ~/vim/fht.vim  .vimrc
-3. link directory 'autoload' and 'bundle' into '.vim'
+3. link directories into '.vim'
 	cd ~/.vim
-	ln -s ~/vim/vimfiles/autoload  autoload
-	ln -s ~/vim/vimfiles/bundle   bundle
+	ln -s ~/vim/vimfiles/autoload   autoload
+	ln -s ~/vim/vimfiles/bundle     bundle
+	ln -s ~/vim/vimfiles/colors     colors
 
