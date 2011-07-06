@@ -79,15 +79,32 @@ endif
 colorscheme torte_fht   " set active color scheme
 syntax on               " Switch syntax highlighting on
 
+
+"==============================================================================
+" Definations of mapping
+
 " It clears the search buffer when you press ,/
 nmap <silent> ,/ :nohlsearch<CR>
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
+" maps for switch tab page
+map  <F3> :tabprevious<CR>
+map  <F4> :tabnext<CR>
+imap <F3> <ESC>:tabprevious<CR>i
+imap <F4> <ESC>:tabnext<CR>i
+
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
+
+" mappings for completion
+inoremap <C-]>  <C-X><C-]>
+inoremap <C-F>  <C-X><C-F>
+inoremap <C-D>  <C-X><C-D>
+inoremap <C-L>  <C-X><C-L>
+
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
