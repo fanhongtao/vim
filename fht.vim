@@ -192,6 +192,16 @@ if !exists(":Thelp")
     command -nargs=1 Thelp :tabnew | :exec "help" "<args>" | :only!
 endif
 
+" Define a command 'CleanCode' to
+"     Replace TAB with 4 spaces and delete triming blanks.
+function s:CleanCode()
+    :%s/\t/    /ge
+    :%s/\s\+$//ge
+endfunction
+if !exists(":CleanCode")
+    command -nargs=0 CleanCode call s:CleanCode()
+endif
+
 
 "==============================================================================
 " Plugin settings.
