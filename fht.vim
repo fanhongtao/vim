@@ -64,6 +64,8 @@ set nobackup            " do not keep a backup file
 set completeopt=menu,longest
                         " Insert mode completion options
 
+set cinoptions=:0,l1,g0
+
 " Set the spell language to US English.
 " Use Ctrl-X, CTRL-K to check the spell
 "set spell spelllang=en_us
@@ -102,7 +104,6 @@ inoremap <C-U> <C-G>u<C-U>
 " mappings for completion
 inoremap <C-]>  <C-X><C-]>
 inoremap <C-F>  <C-X><C-F>
-inoremap <C-D>  <C-X><C-D>
 inoremap <C-L>  <C-X><C-L>
 
 
@@ -178,7 +179,7 @@ unlet s:last_dir
 
 "==============================================================================
 " User defined command
-function s:Thelp(param)
+function! s:Thelp(param)
     :tabnew
     :exec ":help" a:param
     :only!
@@ -194,7 +195,7 @@ endif
 
 " Define a command 'CleanCode' to
 "     Replace TAB with 4 spaces and delete triming blanks.
-function s:CleanCode()
+function! s:CleanCode()
     :%s/\t/    /ge
     :%s/\s\+$//ge
 endfunction
@@ -242,6 +243,14 @@ let Tlist_Use_Right_Window = 1  " Show taglist window on the right
 let tlist_cpp_setting='c++;c:class;f:function;p:prototype'
 " Use 'F9' to open/close taglist window
 map <silent> <F9> :TlistToggle<CR>
+
+"==============================================================================
+" plugin: lookupfile (id: 1581)
+let g:LookupFile_PreserveLastPattern = 0 " Always need to input new pattern
+let g:LookupFile_AlwaysAcceptFirst   = 1 " Press <CR> to open first matched file
+let g:LookupFile_AllowNewFiles       = 0 " Do not create new file
+nmap <silent> <leader>lt :LUTags<cr>
+nmap <silent> <leader>lb :LUBufs<cr>
 
 "==============================================================================
 " plugin: recent (id: 1767)
