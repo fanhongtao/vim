@@ -64,7 +64,9 @@ set nobackup            " do not keep a backup file
 set completeopt=menu,longest
                         " Insert mode completion options
 
-set cinoptions=:0,l1,g0
+set cinoptions=:0,l1,g0,t0
+                        " C&C++ indent options
+                        " :h cinoptions-value
 
 " Set the spell language to US English.
 " Use Ctrl-X, CTRL-K to check the spell
