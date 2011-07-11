@@ -26,6 +26,7 @@ highlight StatusLine guifg=blue     guibg=white
 highlight Statement  guifg=Yellow                   gui=NONE
 highlight Type                                      gui=NONE
 highlight Pmenu                     guibg=Blue
+highlight ModeMsg    guifg=Green                    gui=NONE
 
 " Console
 highlight Normal     ctermfg=LightGrey  ctermbg=Black
@@ -38,5 +39,6 @@ highlight StatusLine ctermfg=blue       ctermbg=white
 highlight Statement  ctermfg=Yellow                     cterm=NONE
 highlight Type                                          cterm=NONE
 highlight Pmenu                         ctermbg=Blue
+highlight ModeMsg    ctermfg=Green                      cterm=NONE
 
 
