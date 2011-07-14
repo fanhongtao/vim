@@ -108,6 +108,11 @@ inoremap <C-]>  <C-X><C-]>
 inoremap <C-F>  <C-X><C-F>
 inoremap <C-L>  <C-X><C-L>
 
+" Hilighted trailing whitespace in 'TODO' syle
+match Todo /\s\+$/
+
+" Automatically removing all trailing whitespace for some particular filetypes
+autocmd FileType c,cpp,java,php autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
