@@ -42,7 +42,8 @@ set expandtab           " use spaces instead of tab
 set tabstop=4           " a tab is four spaces
 set softtabstop=4       " replace tab with 4 spaces
 set shiftwidth =4       " auto indent with 4 spaces
-set fileencodings=utf-8,ucs-bom,cp936
+set encoding=utf-8      " the character encoding used inside Vim
+set fileencodings=ucs-bom,utf-8,cp936
                         " a list of character encodings considered when 
                         " starting to edit an existing file.
 set history=50          " keep 50 lines of command line history
