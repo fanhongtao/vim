@@ -5,6 +5,14 @@ function log() {
     echo `date +"%Y-%m-%d %H:%M:%S"` $* 
 }
 
+function add_to_gitignore() {
+    x=`grep $1 $gitfile`
+    if [ "x$x" == "x" ]; then
+        log "Append \"$1\" to $gitfile"
+        echo "$1" >> $gitfile
+    fi
+}
+
 if [ $# -ne 1 ]; then
     echo "Usage $0 project_path"
     exit 1;
@@ -15,8 +23,10 @@ cd $1
 os=`uname | grep MINGW`
 if [ "x$os" != "x" ]; then
     base_path=`pwd | awk '{disk=substr($0, 2, 1); print toupper(disk)":"substr($0, 3)}'`
+    ctags="${0%/*}/ctags.exe"
 else
     base_path=`pwd`
+    ctags="/usr/bin/ctags"
 fi
 log "Base_path: ${base_path}"
 
@@ -45,7 +55,7 @@ cscope -bq
 
 # create ctag file
 log "Create file 'tags' ..."
-ctags --fields=+aiS --C++-types=+p --extra=+q -L cscope.files
+`"$ctags" --fields=+aiS --C++-types=+p --extra=+q -L cscope.files`
 
 # get include path, so that we can use 'Ctrl-Wgf' or 'Ctrl-gf' to open a include file with filename under cursor 
 inc_dirs=`grep "\.h$" cscope.files | awk '{n=split($0, a, "/"); print substr($0, 0, length($0) - length(a[n]))}' | sort | uniq`
@@ -65,13 +75,9 @@ set path+=${tmppath}
 
 # add directory '.vimproj' to git's ignore list 
 cd ..
-file=".git/info/exclude"
-if [ -f $file ]; then
-    x=`grep ${proj_dir} $file`
-    if [ "x$x" == "x" ]; then
-        log "Change Git's exclude file."
-        echo "${proj_dir}/" >> $file
-    fi
+gitfile=".git/info/exclude"
+if [ -f $gitfile ]; then
+    add_to_gitignore "${proj_dir}/"
 fi
 
 log "Exit."

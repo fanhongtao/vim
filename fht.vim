@@ -243,6 +243,11 @@ let g:miniBufExplModSelTarget       = 1
 
 "==============================================================================
 " plugin: taglists (id: 273)
+if (g:iswindows==1)
+    let Tlist_Ctags_Cmd="\"".$VIM."/vimtools/ctags.exe\""
+else
+    let Tlist_Ctags_Cmd="/usr/bin/ctags"
+endif
 let Tlist_Show_One_File    = 1  " Only show tag of current file
 let Tlist_Exit_OnlyWindow  = 1  " Exit VIM if taglist window is the one one
 let Tlist_Use_Right_Window = 1  " Show taglist window on the right
