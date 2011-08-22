@@ -50,7 +50,7 @@ nmap <silent><C-\>i :call <SID>CSWin_Process_Key('8')<cr>
 
 nmap <silent><C-\>\ :call <SID>CSWin_Toggle_Option()<cr>
 
-autocmd BufEnter *.[ch] silent call s:Cscope_Init()
+autocmd BufEnter *.{[ch],[ch]pp,cc} silent call s:Cscope_Init()
 autocmd VimEnter * silent call s:CS_db_init()
 autocmd VimLeave * silent! call delete(s:tmpfile_2)
 
@@ -85,9 +85,9 @@ function! s:CSWin_Process_Cmd(option,var)
         exe 'silent! rightbelow ' . g:csWinSize . 'split __CSWIN__'
         setlocal nowrap
         setlocal nonu
-        setlocal nobuflisted
+        " setlocal nobuflisted
         setlocal buftype=nofile
-        setlocal bufhidden=delete
+        setlocal bufhidden=hide
         setlocal noswapfile
         setlocal modifiable
         setlocal foldenable

@@ -258,6 +258,10 @@ let tlist_cpp_setting='c++;c:class;f:function;p:prototype'
 map <silent> <F9> :TlistToggle<CR>
 
 "==============================================================================
+" plugin: cscope_win (id: 1076)
+let g:csAppendResults=0
+
+"==============================================================================
 " plugin: lookupfile (id: 1581)
 let g:LookupFile_PreserveLastPattern = 0 " Always need to input new pattern
 let g:LookupFile_AlwaysAcceptFirst   = 1 " Press <CR> to open first matched file
