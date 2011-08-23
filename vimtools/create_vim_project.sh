@@ -68,7 +68,7 @@ done
 # create file project.vim 
 log "Create file 'project.vim' ..."
 echo "set tags=${base_path}/${proj_dir}/tags
-cs add ${base_path}/${proj_dir}/cscope.out
+autocmd VimEnter * silent CS add ${base_path}/${proj_dir}/cscope.out
 let g:LookupFile_TagExpr = string('${base_path}/${proj_dir}/filenametags')
 set path+=${tmppath}
 " > project.vim

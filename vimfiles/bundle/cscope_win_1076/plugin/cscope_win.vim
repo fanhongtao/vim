@@ -51,7 +51,7 @@ nmap <silent><C-\>i :call <SID>CSWin_Process_Key('8')<cr>
 nmap <silent><C-\>\ :call <SID>CSWin_Toggle_Option()<cr>
 
 autocmd BufEnter *.{[ch],[ch]pp,cc} silent call s:Cscope_Init()
-autocmd VimEnter * silent call s:CS_db_init()
+" autocmd VimEnter * silent call s:CS_db_init()
 autocmd VimLeave * silent! call delete(s:tmpfile_2)
 
 function! s:Cscope_Init()
@@ -71,6 +71,8 @@ function! s:CS_db_init()
     let s:tmpfile_2=tempname()
     exe 'set tags=' . s:tmpfile_2
 endfunction
+
+call s:CS_db_init()
 
 function! s:CSWin_Process_Cmd(option,var)
     let s:Cscope_Tag = a:var
@@ -95,6 +97,9 @@ function! s:CSWin_Process_Cmd(option,var)
         setlocal foldcolumn=2
         nnoremap <buffer> <silent> <enter> :call <SID>CSWin_Process_Enter()<cr>
         nnoremap <buffer> <silent> <2-LeftMouse> :call <SID>CSWin_Process_Enter()<CR>
+        nnoremap <buffer> <silent> x :call <SID>CSWin_Process_KEY_Input('prev')<CR>
+        nnoremap <buffer> <silent> c :call <SID>CSWin_Process_KEY_Input('next')<CR>
+        nnoremap <buffer> <silent> <space> :call <SID>CSWin_Process_KEY_Input('space')<CR>
 
         if hlexists('DefCscopeTagName')
             hi link CscopeTagName DefCscopeTagName
@@ -183,7 +188,7 @@ function! s:CSWin_Process_Cmd(option,var)
     while i<g:csMaxConn
         if s:cs_slot_{i}_used==1
             let cs_cmd=&csprg . cs_ic_option . " -d -L -f " . s:cscope_{i}_db_filename . " -" . a:option . a:var . " | sort -k 3,3 -g | sort -s -k 1,1"
-            let output=system(cs_cmd) 
+            let output=system(cs_cmd)
 
             while output != ''
                 let line_pos=stridx(output,"\n")
@@ -289,6 +294,26 @@ function! s:CSWin_Process_Key(option)
     return
 endfunction
 
+function! s:CSWin_Process_KEY_Input(key)
+    if bufname("%") != "__CSWIN__"
+        return
+    endif
+
+    let buf_num=bufnr("%")
+    if (a:key == "space")
+        " do nothing
+    elseif (a:key == "prev")
+        -1
+    elseif (a:key == "next")
+        +1
+    else
+        return;
+    endif
+
+    call <SID>CSWin_Process_Enter()
+    exe bufwinnr(buf_num) . 'wincmd w'
+endfunction
+
 function! s:CSWin_Process_Enter()
     if bufname("%") != "__CSWIN__"
         return
@@ -326,7 +351,12 @@ function! s:CSWin_Process_Enter()
     exe 'redir! > ' . s:tmpfile_2
     exe "silent echo \'" . s:Cscope_Tag . "\t" . tfile . "\t" . tline . "\'"
     exe 'redir END'
-    exe bufwinnr(s:bufnum) . 'wincmd w'
+
+    let target_winnr=bufwinnr(s:bufnum)
+    if (target_winnr == -1)
+        let target_winnr = winnr('#')
+    endif
+    exe target_winnr . 'wincmd w'
     exe 'tj ' . s:Cscope_Tag
     normal zz
 endfunction

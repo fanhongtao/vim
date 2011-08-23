@@ -44,10 +44,10 @@ set softtabstop=4       " replace tab with 4 spaces
 set shiftwidth =4       " auto indent with 4 spaces
 set encoding=utf-8      " the character encoding used inside Vim
 set fileencodings=ucs-bom,utf-8,cp936
-                        " a list of character encodings considered when 
+                        " a list of character encodings considered when
                         " starting to edit an existing file.
 set history=50          " keep 50 lines of command line history
-set undolevels=1000     " use many muchos levels of undo 
+set undolevels=1000     " use many muchos levels of undo
 set number              " Print the line number in front of each line
 set ruler               " Show the line and column number of the cursor position
 set showcmd             " display incomplete commands
@@ -260,12 +260,15 @@ map <silent> <F9> :TlistToggle<CR>
 "==============================================================================
 " plugin: cscope_win (id: 1076)
 let g:csAppendResults=0
+highlight link DefCscopeFileName Tag
+highlight link DefCscopeCurrLine Underlined
 
 "==============================================================================
 " plugin: lookupfile (id: 1581)
 let g:LookupFile_PreserveLastPattern = 0 " Always need to input new pattern
 let g:LookupFile_AlwaysAcceptFirst   = 1 " Press <CR> to open first matched file
 let g:LookupFile_AllowNewFiles       = 0 " Do not create new file
+let g:LookupFile_MinPatLength        = 1
 nmap <silent> <leader>lt :LUTags<cr>
 nmap <silent> <leader>lb :LUBufs<cr>
 
@@ -275,7 +278,7 @@ let g:RecentWinmode = "newtab"      " Open file in new tab
 
 "==============================================================================
 " plugin: vimwiki (id: 2226)
-" For Windows, I use two wiki, 
+" For Windows, I use two wiki,
 "     one for common use, placed in E:/Git/vimwiki/main.
 "     one for VIM, placed in E:/Git/vimwiki/vim.
 "
