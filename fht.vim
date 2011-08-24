@@ -61,6 +61,7 @@ set incsearch           " show search matches as you type
 
 set noerrorbells        " don't beep
 set nobackup            " do not keep a backup file
+set hidden              " Support switch buffer without save
 
 set completeopt=menu,longest
                         " Insert mode completion options
@@ -260,6 +261,7 @@ map <silent> <F9> :TlistToggle<CR>
 "==============================================================================
 " plugin: cscope_win (id: 1076)
 let g:csAppendResults=0
+let g:csCaseSensitive=1
 highlight link DefCscopeFileName Tag
 highlight link DefCscopeCurrLine Underlined
 

@@ -1,8 +1,9 @@
 "=============================================================================
 " File: cscope_win.vim
 " Author: Shivakumar T (shivatg@yahoo.co.uk)
-" Last Change:	2006 Mar 10
-" Version: 2.0
+"         Hongtao Fan (fanhongtao@gmail.com)
+" Last Change:	2011 Aug 24
+" Version: 2.1
 "-----------------------------------------------------------------------------
 
 if exists('csWinLoaded')
@@ -97,9 +98,9 @@ function! s:CSWin_Process_Cmd(option,var)
         setlocal foldcolumn=2
         nnoremap <buffer> <silent> <enter> :call <SID>CSWin_Process_Enter()<cr>
         nnoremap <buffer> <silent> <2-LeftMouse> :call <SID>CSWin_Process_Enter()<CR>
-        nnoremap <buffer> <silent> x :call <SID>CSWin_Process_KEY_Input('prev')<CR>
-        nnoremap <buffer> <silent> c :call <SID>CSWin_Process_KEY_Input('next')<CR>
-        nnoremap <buffer> <silent> <space> :call <SID>CSWin_Process_KEY_Input('space')<CR>
+        nnoremap <buffer> <silent> x :call <SID>CSWin_Process_Key_Input('prev')<CR>
+        nnoremap <buffer> <silent> c :call <SID>CSWin_Process_Key_Input('next')<CR>
+        nnoremap <buffer> <silent> <space> :call <SID>CSWin_Process_Key_Input('space')<CR>
 
         if hlexists('DefCscopeTagName')
             hi link CscopeTagName DefCscopeTagName
@@ -192,6 +193,9 @@ function! s:CSWin_Process_Cmd(option,var)
 
             while output != ''
                 let line_pos=stridx(output,"\n")
+                if line_pos==-1
+                    break
+                endif
                 "entire line
                 let curr_line=strpart(output, 0, line_pos)
 
@@ -294,7 +298,7 @@ function! s:CSWin_Process_Key(option)
     return
 endfunction
 
-function! s:CSWin_Process_KEY_Input(key)
+function! s:CSWin_Process_Key_Input(key)
     if bufname("%") != "__CSWIN__"
         return
     endif
