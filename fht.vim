@@ -216,6 +216,8 @@ endif
 "==============================================================================
 " Plugin settings.
 
+runtime ftplugin/man.vim     " Enable command `Man'
+
 "==============================================================================
 " plugin: matchit (id: 39)
 filetype plugin on

@@ -84,7 +84,7 @@ function! s:CSWin_Process_Cmd(option,var)
     let old_report = &report
     set report=99999
 
-    if winnum == -1
+    if !bufexists("__CSWIN__")
         exe 'silent! rightbelow ' . g:csWinSize . 'split __CSWIN__'
         setlocal nowrap
         setlocal nonu
@@ -150,6 +150,9 @@ function! s:CSWin_Process_Cmd(option,var)
         syntax match CscopeUnknown /<<.\{-}>>/
         syntax match CscopeTagLineNr /\[[0-9]\+\]/
     else
+        if winnum == -1
+            exe 'silent! rightbelow ' . g:csWinSize . 'split __CSWIN__'
+        endif
         wincmd b
         setlocal modifiable
         if g:csAppendResults==0
