@@ -1,9 +1,9 @@
 "=============================================================================
 " File: cscope_win.vim
 " Author: Shivakumar T (shivatg@yahoo.co.uk)
-"         Hongtao Fan (fanhongtao@gmail.com)
-" Last Change:	2011 Aug 24
-" Version: 2.1
+" Maintainer:	Hongtao Fan (fanhongtao@gmail.com)
+" Last Change:	2011 Aug 26
+" Version: 2.2
 "-----------------------------------------------------------------------------
 
 if exists('csWinLoaded')
@@ -57,6 +57,7 @@ autocmd VimLeave * silent! call delete(s:tmpfile_2)
 
 function! s:Cscope_Init()
     let s:bufnum=bufnr("%")
+    let s:bufname="__CSWIN__"
     return
 endfunction
 
@@ -70,7 +71,6 @@ function! s:CS_db_init()
         let i=i+1
     endwhile
     let s:tmpfile_2=tempname()
-    exe 'set tags=' . s:tmpfile_2
 endfunction
 
 call s:CS_db_init()
@@ -78,14 +78,14 @@ call s:CS_db_init()
 function! s:CSWin_Process_Cmd(option,var)
     let s:Cscope_Tag = a:var
 
-    let winnum = bufwinnr("__CSWIN__")
+    let winnum = bufwinnr(s:bufname)
     let curwin = winnr()
 
     let old_report = &report
     set report=99999
 
-    if !bufexists("__CSWIN__")
-        exe 'silent! rightbelow ' . g:csWinSize . 'split __CSWIN__'
+    if !bufexists(s:bufname)
+        exe 'silent! rightbelow ' . g:csWinSize . 'split ' . s:bufname
         setlocal nowrap
         setlocal nonu
         " setlocal nobuflisted
@@ -151,7 +151,7 @@ function! s:CSWin_Process_Cmd(option,var)
         syntax match CscopeTagLineNr /\[[0-9]\+\]/
     else
         if winnum == -1
-            exe 'silent! rightbelow ' . g:csWinSize . 'split __CSWIN__'
+            exe 'silent! rightbelow ' . g:csWinSize . 'split ' . s:bufname
         endif
         wincmd b
         setlocal modifiable
@@ -287,7 +287,7 @@ function! s:CSWin_Process_Cmd(option,var)
 endfunction
 
 function! s:CSWin_Process_Key(option)
-    if bufname("%") == "__CSWIN__"
+    if bufname("%") == s:bufname
         return
     endif
 
@@ -302,7 +302,7 @@ function! s:CSWin_Process_Key(option)
 endfunction
 
 function! s:CSWin_Process_Key_Input(key)
-    if bufname("%") != "__CSWIN__"
+    if bufname("%") != s:bufname
         return
     endif
 
@@ -322,7 +322,7 @@ function! s:CSWin_Process_Key_Input(key)
 endfunction
 
 function! s:CSWin_Process_Enter()
-    if bufname("%") != "__CSWIN__"
+    if bufname("%") != s:bufname
         return
     endif
 
@@ -364,7 +364,9 @@ function! s:CSWin_Process_Enter()
         let target_winnr = winnr('#')
     endif
     exe target_winnr . 'wincmd w'
+    exe 'setlocal tags=' . s:tmpfile_2
     exe 'tj ' . s:Cscope_Tag
+    exe 'setlocal tags='
     normal zz
 endfunction
 
