@@ -1,9 +1,9 @@
 "=============================================================================
 " File: cscope_win.vim
 " Author: Shivakumar T (shivatg@yahoo.co.uk)
-" Maintainer:	Hongtao Fan (fanhongtao@gmail.com)
-" Last Change:	2011 Aug 26
-" Version: 2.2
+" Maintainer:	Fan Hongtao (fanhongtao@gmail.com)
+" Last Change:	2011 Aug 29
+" Version: 2.3
 "-----------------------------------------------------------------------------
 
 if exists('csWinLoaded')
@@ -153,7 +153,7 @@ function! s:CSWin_Process_Cmd(option,var)
         if winnum == -1
             exe 'silent! rightbelow ' . g:csWinSize . 'split ' . s:bufname
         endif
-        wincmd b
+        exe bufwinnr(s:bufname) . 'wincmd w'
         setlocal modifiable
         if g:csAppendResults==0
             silent! %delete _
@@ -363,10 +363,18 @@ function! s:CSWin_Process_Enter()
     if (target_winnr == -1)
         let target_winnr = winnr('#')
     endif
+
     exe target_winnr . 'wincmd w'
+    let curr_bufnum=winbufnr(0)
     exe 'setlocal tags=' . s:tmpfile_2
     exe 'tj ' . s:Cscope_Tag
-    exe 'setlocal tags='
+    if curr_bufnum != winbufnr(0)
+        exe 'b#'
+        exe 'setlocal tags='
+        exe 'b#'
+    else
+        exe 'setlocal tags='
+    endif
     normal zz
 endfunction
 
