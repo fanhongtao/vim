@@ -1,0 +1,976 @@
+From: <ÓÉ Windows Internet Explorer 7 ±£´æ>
+Subject: compview - Creates an interactive search window : vim online
+Date: Sat, 7 Jan 2012 20:36:56 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_000E_01CCCD7C.18D93A70"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.6157
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_000E_01CCCD7C.18D93A70
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.vim.org/scripts/script.php?script_id=1803
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>compview - Creates an interactive search window : vim =
+online</TITLE><LINK=20
+href=3D"http://www.vim.org/css/style.css" type=3Dtext/css =
+rel=3DStylesheet>
+<META http-equiv=3DContent-Type content=3D"text/html; =
+charset=3DISO-8859-1">
+<META=20
+content=3D"Vim, Vi IMproved, text editor, home, documentation, tips, =
+scripts, news"=20
+name=3DKEYWORDS><LINK href=3D"/images/vim_shortcut.ico" =
+type=3Dimage/x-icon=20
+rel=3D"shortcut icon">
+<META content=3D"MSHTML 6.00.6000.17107" name=3DGENERATOR></HEAD>
+<BODY bgColor=3D#ffffff leftMargin=3D0 topMargin=3D0 marginwidth=3D"0" =
+marginheight=3D"0"><!-- HEADER, SPONSOR IMAGE, VIM IMAGE AND BOOK AD -->
+<TABLE borderColor=3Dred cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+  <TBODY>
+  <TR>
+    <TD class=3Dlightbg colSpan=3D4><IMG height=3D5 alt=3D""=20
+      src=3D"http://www.vim.org/images/spacer.gif" width=3D1></TD></TR>
+  <TR>
+    <TD class=3Dlightbg>&nbsp;&nbsp;&nbsp;</TD>
+    <TD class=3Dlightbg align=3Dleft><A=20
+      href=3D"http://www.vim.org/sponsor/index.php"><IMG=20
+      alt=3D"sponsor Vim development"=20
+      src=3D"http://www.vim.org/images/sponsorvim.gif" =
+border=3D0></A></TD>
+    <TD class=3Dlightbg align=3Dmiddle><A =
+href=3D"http://www.vim.org/index.php"><IMG=20
+      alt=3D"Vim logo" src=3D"http://www.vim.org/images/vim_header.gif"=20
+    border=3D0></A></TD>
+    <TD class=3Dlightbg align=3Dright><A=20
+      href=3D"http://iccf-holland.org/click5.html"><IMG alt=3D"Vim Book =
+Ad"=20
+      src=3D"http://www.vim.org/images/buyhelplearn.gif" =
+border=3D0></A></TD></TR>
+  <TR>
+    <TD class=3Dlightbg colSpan=3D4><IMG height=3D5 alt=3D""=20
+      src=3D"http://www.vim.org/images/spacer.gif" width=3D1></TD></TR>
+  <TR>
+    <TD class=3Ddarkbg colSpan=3D4><IMG height=3D10 alt=3D""=20
+      src=3D"http://www.vim.org/images/spacer.gif" =
+width=3D1></TD></TR></TBODY></TABLE><!-- THE PAGE BODY: BETWEEN HEADER =
+AND FOOTER -->
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+  <COLGROUP>
+  <COL width=3D180>
+  <COL width=3D1>
+  <TBODY>
+  <TR vAlign=3Dtop>
+    <TD class=3Dsidebar>
+      <TABLE cellSpacing=3D0 cellPadding=3D4 width=3D180 border=3D0>
+        <TBODY>
+        <TR vAlign=3Dtop>
+          <TD class=3Dsidebar><!-- INCLUDE THE PAGE NAVIGATION -->
+            <TABLE borderColor=3Dred cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+            border=3D0>
+              <TBODY>
+              <TR>
+                <TD><SMALL>not logged in (<A=20
+                  =
+href=3D"http://www.vim.org/login.php">login</A>)</SMALL></TD></TR>
+              <TR>
+                <TD><SMALL>&nbsp;</SMALL>=20
+                  <FORM id=3Dcse-search-box =
+action=3Dhttp://www.google.com/cse>
+                  <DIV><INPUT type=3Dhidden=20
+                  value=3Dpartner-pub-3005259998294962:bvyni59kjr1 =
+name=3Dcx> <INPUT=20
+                  type=3Dhidden value=3DISO-8859-1 name=3Die> <INPUT =
+name=3Dq> <BR><INPUT type=3Dsubmit value=3DSearch name=3Dsa> =
+</DIV></FORM>
+                  <SCRIPT=20
+                  =
+src=3D"http://www.google.com/coop/cse/brand?form=3Dcse-search-box&amp;lan=
+g=3Den"=20
+                  type=3Dtext/javascript></SCRIPT>
+                </TD></TR>
+              <TR>
+                <TD><IMG height=3D1 alt=3D""=20
+                  src=3D"http://www.vim.org/images/spacer.gif" width=3D1 =
+
+              border=3D0></TD></TR>
+              <TR>
+                <TD class=3Ddarkbg><IMG height=3D3 alt=3D""=20
+                  src=3D"http://www.vim.org/images/spacer.gif" =
+border=3D0></TD></TR>
+              <TR>
+                <TD><IMG height=3D2 alt=3D""=20
+                  src=3D"http://www.vim.org/images/spacer.gif" width=3D1 =
+
+              border=3D0></TD></TR>
+              <TR>
+                <TD class=3Dsidebarheader><A=20
+                  =
+href=3D"http://www.vim.org/index.php">Home</A></TD></TR>
+              <TR>
+                <TD class=3Dsidebarheader><A=20
+                  href=3D"http://www.vim.org/search.php">Advanced =
+search</A></TD></TR>
+              <TR>
+                <TD><IMG height=3D7 alt=3D""=20
+                  src=3D"http://www.vim.org/images/spacer.gif" width=3D1 =
+
+              border=3D0></TD></TR>
+              <TR>
+                <TD class=3Dchecker><IMG height=3D1 alt=3D""=20
+                  src=3D"http://www.vim.org/images/spacer.gif" =
+border=3D0></TD></TR>
+              <TR>
+                <TD><IMG height=3D7 alt=3D""=20
+                  src=3D"http://www.vim.org/images/spacer.gif" width=3D1 =
+
+              border=3D0></TD></TR>
+              <TR>
+                <TD class=3Dsidebarheader><A=20
+                  href=3D"http://www.vim.org/about.php">About =
+Vim</A></TD></TR>
+              <TR>
+                <TD class=3Dsidebarheader><A=20
+                  =
+href=3D"http://www.vim.org/community.php">Community</A></TD></TR>
+              <TR>
+                <TD class=3Dsidebarheader><A=20
+                  =
+href=3D"http://www.vim.org/news/news.php">News</A></TD></TR>
+              <TR>
+                <TD class=3Dsidebarheader><A=20
+                  =
+href=3D"http://www.vim.org/sponsor/index.php">Sponsoring</A></TD></TR>
+              <TR>
+                <TD class=3Dsidebarheader><A=20
+                  =
+href=3D"http://www.vim.org/trivia.php">Trivia</A></TD></TR>
+              <TR>
+                <TD class=3Dsidebarheader><A=20
+                  =
+href=3D"http://www.vim.org/docs.php">Documentation</A></TD></TR>
+              <TR>
+                <TD class=3Dsidebarheader><A=20
+                  =
+href=3D"http://www.vim.org/download.php">Download</A></TD></TR>
+              <TR>
+                <TD><IMG height=3D7 alt=3D""=20
+                  src=3D"http://www.vim.org/images/spacer.gif" width=3D1 =
+
+              border=3D0></TD></TR>
+              <TR>
+                <TD class=3Dchecker><IMG height=3D1 alt=3D""=20
+                  src=3D"http://www.vim.org/images/spacer.gif" =
+border=3D0></TD></TR>
+              <TR>
+                <TD><IMG height=3D7 alt=3D""=20
+                  src=3D"http://www.vim.org/images/spacer.gif" width=3D1 =
+
+              border=3D0></TD></TR>
+              <TR>
+                <TD class=3Dsidebarheader><A=20
+                  =
+href=3D"http://www.vim.org/scripts/index.php">Scripts</A></TD></TR>
+              <TR>
+                <TD class=3Dsidebarheader><A=20
+                  =
+href=3D"http://www.vim.org/tips/index.php">Tips</A></TD></TR>
+              <TR>
+                <TD class=3Dsidebarheader><A=20
+                  href=3D"http://www.vim.org/account/index.php">My=20
+              Account</A></TD></TR>
+              <TR>
+                <TD><IMG height=3D7 alt=3D""=20
+                  src=3D"http://www.vim.org/images/spacer.gif" width=3D1 =
+
+              border=3D0></TD></TR>
+              <TR>
+                <TD class=3Dchecker><IMG height=3D1 alt=3D""=20
+                  src=3D"http://www.vim.org/images/spacer.gif" =
+border=3D0></TD></TR>
+              <TR>
+                <TD><IMG height=3D7 alt=3D""=20
+                  src=3D"http://www.vim.org/images/spacer.gif" width=3D1 =
+
+              border=3D0></TD></TR>
+              <TR>
+                <TD class=3Dsidebarheader><A=20
+                  href=3D"http://www.vim.org/huh.php">Site=20
+            =
+Help</A></TD></TR></TBODY></TABLE><BR><G:PLUSONE></G:PLUSONE>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D172 =
+border=3D0>
+              <TBODY>
+              <TR>
+                <TD><IMG height=3D8 alt=3D""=20
+                  src=3D"http://www.vim.org/images/spacer.gif" width=3D1 =
+
+              border=3D0></TD></TR>
+              <TR>
+                <TD class=3Ddarkbg><IMG height=3D3 alt=3D""=20
+                  src=3D"http://www.vim.org/images/spacer.gif"=20
+              width=3D1></TD></TR></TBODY></TABLE><BR><!-- INCLUDE THE =
+PAGE SIDEBAR TEXT -->&nbsp;=20
+          </TD></TR></TBODY></TABLE></TD>
+    <TD class=3Ddarkbg><IMG height=3D1 alt=3D""=20
+      src=3D"http://www.vim.org/images/spacer.gif" width=3D1 =
+border=3D0><BR></TD>
+    <TD>
+      <TABLE borderColor=3Dred cellSpacing=3D0 cellPadding=3D10 =
+width=3D"100%"=20
+        border=3D0><TBODY>
+        <TR>
+          <TD vAlign=3Dtop><SPAN class=3Dtxth1>compview : Creates an =
+interactive=20
+            search window</SPAN> <BR><BR><!-- karma table -->
+            <TABLE borderColor=3D#000066 cellSpacing=3D0 cellPadding=3D4 =
+border=3D1>
+              <TBODY>
+              <TR>
+                <TD class=3Dlightbg><B>&nbsp;script karma&nbsp;</B></TD>
+                <TD>Rating <B>57/22</B>, Downloaded by 1022 &nbsp;=20
+                  <G:PLUSONE></G:PLUSONE></TD>
+                <TD class=3Dlightbg><B>&nbsp;Comments, bugs,=20
+                  improvements&nbsp;</B> </TD>
+                <TD><A =
+href=3D"http://vim.wikia.com/wiki/Script:1803">Vim=20
+                  wiki</A> </TD></TR></TBODY></TABLE>
+            <P>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D0>
+              <TBODY>
+              <TR>
+                <TD class=3Dprompt>created by</TD></TR>
+              <TR>
+                <TD><A=20
+                  =
+href=3D"http://www.vim.org/account/profile.php?user_id=3D1599">Juan=20
+                  Frias</A></TD></TR>
+              <TR>
+                <TD>&nbsp;</TD></TR>
+              <TR>
+                <TD class=3Dprompt>script type</TD></TR>
+              <TR>
+                <TD>utility</TD></TR>
+              <TR>
+                <TD>&nbsp;</TD></TR>
+              <TR>
+                <TD class=3Dprompt>description</TD></TR>
+              <TR>
+                <TD>CompView.vim is a handy little script that I use all =
+the=20
+                  time. After a search term is entered it generates a =
+list of=20
+                  matches and displays a window with all the matching =
+lines. As=20
+                  you move around this window to different matched lines =
+the=20
+                  original window is automatically updated to show you =
+where in=20
+                  the file the match is found. It is like an interactive =
+=91cw=92=20
+                  command. <BR><BR>Check out this page for a screen shot =
+of the=20
+                  script in action. <BR><A=20
+                  href=3D"http://juan.boxfi.com/vim-plugins/#compview"=20
+                  =
+target=3D_blank>http://juan.boxfi.com/vim-plugins/#compview</A></TD></TR>=
+
+              <TR>
+                <TD>&nbsp;</TD></TR>
+              <TR>
+                <TD class=3Dprompt>install details</TD></TR>
+              <TR>
+                <TD>1. Read the section titled 'Options' <BR>2. Setup =
+any=20
+                  variables need in your vimrc file <BR>3. Copy =
+'compview.vim'=20
+                  to your plugin directory.</TD></TR>
+              <TR>
+                <TD>&nbsp;</TD></TR></TBODY></TABLE><!-- rating table =
+-->
+            <FORM name=3Drating method=3Dpost><INPUT type=3Dhidden =
+value=3D1803=20
+            name=3Dscript_id>=20
+            <TABLE borderColor=3D#000066 cellSpacing=3D0 cellPadding=3D4 =
+border=3D1>
+              <TBODY>
+              <TR>
+                <TD class=3Dlightbg><B>rate this script</B></TD>
+                <TD vAlign=3Dcenter><INPUT type=3Dradio =
+value=3Dlife_changing=20
+                  name=3Drating>Life Changing <INPUT type=3Dradio =
+value=3Dhelpful=20
+                  name=3Drating>Helpful <INPUT type=3Dradio =
+value=3Dunfulfilling=20
+                  name=3Drating>Unfulfilling&nbsp; <INPUT type=3Dsubmit =
+value=3Drate>=20
+                </TD></TR></TBODY></TABLE></FORM><SPAN =
+class=3Dtxth2>script=20
+            versions</SPAN> (<A=20
+            =
+href=3D"http://www.vim.org/scripts/add_script_version.php?script_id=3D180=
+3">upload=20
+            new version</A>)=20
+            <P>Click on the package to download.=20
+            <P>
+            <TABLE cellSpacing=3D2 cellPadding=3D4 width=3D"100%" =
+border=3D0>
+              <TBODY>
+              <TR class=3Dtableheader>
+                <TH vAlign=3Dtop>package</TH>
+                <TH vAlign=3Dtop>script version</TH>
+                <TH vAlign=3Dtop>date</TH>
+                <TH vAlign=3Dtop>Vim version</TH>
+                <TH vAlign=3Dtop>user</TH>
+                <TH vAlign=3Dtop>release notes</TH></TR>
+              <TR>
+                <TD class=3Drowodd vAlign=3Dtop noWrap><A=20
+                  =
+href=3D"http://www.vim.org/scripts/download_script.php?src_id=3D10385">co=
+mpview.vim</A></TD>
+                <TD class=3Drowodd vAlign=3Dtop noWrap><B>1.05</B></TD>
+                <TD class=3Drowodd vAlign=3Dtop =
+noWrap><I>2009-04-11</I></TD>
+                <TD class=3Drowodd vAlign=3Dtop noWrap>6.0</TD>
+                <TD class=3Drowodd vAlign=3Dtop><I><A=20
+                  =
+href=3D"http://www.vim.org/account/profile.php?user_id=3D1599">Juan=20
+                  Frias</A></I></TD>
+                <TD class=3Drowodd vAlign=3Dtop width=3D2000>Fixed =
+problems with=20
+                  multiple tags and =
+buffers.</TD></TR></TBODY></TABLE><!-- finish off the framework =
+--></P></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><!-- END OF =
+THE PAGE BODY: BETWEEN HEADER AND FOOTER -->
+<TABLE borderColor=3Dred cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+  <TBODY>
+  <TR>
+    <TD colSpan=3D4><IMG height=3D5 alt=3D""=20
+      src=3D"http://www.vim.org/images/spacer.gif" width=3D1></TD></TR>
+  <TR>
+    <TD bgColor=3D#000000 colSpan=3D4><IMG height=3D2 alt=3D""=20
+      src=3D"http://www.vim.org/images/spacer.gif" width=3D1></TD></TR>
+  <TR>
+    <TD colSpan=3D4><IMG height=3D5 alt=3D""=20
+      src=3D"http://www.vim.org/images/spacer.gif" width=3D1></TD></TR>
+  <TR>
+    <TD><IMG height=3D1 alt=3D"" =
+src=3D"http://www.vim.org/images/spacer.gif"=20
+      width=3D5></TD>
+    <TD vAlign=3Dtop align=3Dleft><SMALL>If you have questions or =
+remarks about=20
+      this site, visit the <A =
+href=3D"http://vimonline.sf.net/">vimonline=20
+      development</A> pages. Please use this site responsibly. =
+<BR>Questions=20
+      about <A href=3D"http://www.vim.org/about.php">Vim</A> should go =
+to the <A=20
+      href=3D"http://www.vim.org/maillist.php">maillist</A>. Help Bram =
+<A=20
+      href=3D"http://iccf-holland.org/">help Uganda</A>. </SMALL>&nbsp; =
+&nbsp; <!-- Start of StatCounter Code -->
+      <SCRIPT language=3Djavascript type=3Dtext/javascript>=0A=
+	var sc_project=3D1417324; =0A=
+	var sc_invisible=3D1; =0A=
+	var sc_partition=3D11; =0A=
+	var sc_security=3D"d41633bc"; =0A=
+	</SCRIPT>
+
+      <SCRIPT language=3Djavascript=20
+      src=3D"http://www.statcounter.com/counter/counter.js"=20
+      type=3Dtext/javascript></SCRIPT>
+      <NOSCRIPT><A href=3D"http://www.statcounter.com/" =
+target=3D_blank><IMG=20
+      alt=3D"free tracking"=20
+      =
+src=3D"http://c12.statcounter.com/counter.php?sc_project=3D1417324&amp;ja=
+va=3D0&amp;security=3Dd41633bc&amp;invisible=3D0"=20
+      border=3D0></A> </NOSCRIPT><!-- End of StatCounter Code --></TD>
+    <TD vAlign=3Dtop align=3Dright><A =
+href=3D"http://sourceforge.net/projects/vim"=20
+      rel=3Dnofollow><IMG height=3D31 alt=3D"SourceForge.net Logo"=20
+      =
+src=3D"http://sflogo.sourceforge.net/sflogo.php?group_id=3D8&amp;type=3D1=
+"=20
+      width=3D88 border=3D0></A> </TD>
+    <TD><IMG height=3D1 alt=3D"" =
+src=3D"http://www.vim.org/images/spacer.gif"=20
+      width=3D5></TD></TR>
+  <TR>
+    <TD colSpan=3D4><IMG height=3D5 alt=3D""=20
+      src=3D"http://www.vim.org/images/spacer.gif" =
+width=3D1></TD></TR></TBODY></TABLE><!-- for Google +1 button -->
+<SCRIPT type=3Dtext/javascript>=0A=
+  (function() {=0A=
+    var po =3D document.createElement('script'); po.type =3D =
+'text/javascript'; po.async =3D true;=0A=
+    po.src =3D 'https://apis.google.com/js/plusone.js';=0A=
+    var s =3D document.getElementsByTagName('script')[0]; =
+s.parentNode.insertBefore(po, s);=0A=
+  })();=0A=
+</SCRIPT>
+</BODY></HTML>
+
+------=_NextPart_000_000E_01CCCD7C.18D93A70
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.vim.org/images/spacer.gif
+
+R0lGODlhAQABAJH/AP///wAAAP///wAAACH/C0FET0JFOklSMS4wAt7tACH5BAEAAAIALAAAAAAB
+AAEAAAICVAEAOw==
+
+------=_NextPart_000_000E_01CCCD7C.18D93A70
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.vim.org/images/sponsorvim.gif
+
+R0lGODlh1wAmAPcAAAAAAAB7AACEAAgICAiECBAQEBCEEBCMEBgYGBiMGCEhISGMISGUISkpKSmU
+KTExMTGUMTGcMTk5OTmcOUJCQkKcQkKlQkpKSkqlSlJSUlKlUlKtUlpaWlqtWmNjY2OtY2O1Y2tr
+a2u1a3Nzc3O1c3O9c3t7e3u9e4SEhITGhIyMjIzGjJSUlJTGlJTOlJycnJzOnKWlpaXOpaXWpa2t
+ra3WrbW1tbXWtbXetb29vb3evcbGxsbexsbnxs7Ozs7nztbW1tbn1tbv1t7e3t7v3ufn5+fv5+f3
+5+/v7+/37/f39/f/9///////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAA1wAmAAAI/gADCAgg
+kODAgggPKjTIMGHDhQ4jQpz4sKJEixQvaszIEaPHjR87gnTIpKTJkyhTqlzJsqXLlzBjypxJs6bN
+myYJ4tzJs6fPn0CD0tQptKjRo0iT8iSqtKnTp1B/Mj2JJMaIES+UlFQSo2sMGj5Q+lARAkWOkzRi
+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
+SjgSItGES+iETPiEUhiFVAiFViiFAxEQAAA7
+
+------=_NextPart_000_000E_01CCCD7C.18D93A70
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.vim.org/images/vim_header.gif
+
+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
+
+------=_NextPart_000_000E_01CCCD7C.18D93A70
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.vim.org/images/buyhelplearn.gif
+
+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
+
+------=_NextPart_000_000E_01CCCD7C.18D93A70
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://c12.statcounter.com/counter.php?sc_project=1417324&java=0&security=d41633bc&invisible=0
+
+R0lGODlhAQABAJH/AP///wAAAMDAwAAAACH5BAEAAAIALAAAAAABAAEAAAICVAEAOw==
+
+------=_NextPart_000_000E_01CCCD7C.18D93A70
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://sflogo.sourceforge.net/sflogo.php?group_id=8&type=1
+
+iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAMAAABUFvrSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAFpQTFRF////7u7uX2pytLm9ipKYn6aqdH6F3+Hj6uvsf4iOv8PHanR7
+1NfZlJyhqrC09PX2ys3Qsri8kpqf7KqcmJ+k1kkqzdDTxcnMub7BoKarqpOR8cK4lp2j6Z6NbVan
+UgAAARFJREFUSMft08lu3DAURNHb93EUKbUcJ7Ez/f9vZiG3h2TdG0O1IMDNQaEIcrlTuHCXnPAJ
+n/Bng69deyXU3nIGUi5qEGpkX5JnVzdUe6tdjUV1gWQwTepxWC5cdisR25i0Xm5wEIZBzTlDM0Gz
+VLJZWfwxSiW2xQAgaZ0mE8BiHFPktcEIoPrlFc4jrQBZfVINA64OJfx6iItagGQp+1G2vcG03OMG
+r0Daiva5HvCt8Rtc3MOA5MNr41rKv41nr4S/x0LtfRuNOqLEdF8Mak8fpkiGtpFeLg8GPH57TLbq
+f1Ns6kZW12vrarqWYBrvHi8Bs+sIlN3+vajrs+rPP7+SjTimKO+mOD/ICZ/wJ4LvlL9T9gm7i8l6
+8gAAAABJRU5ErkJggg==
+
+------=_NextPart_000_000E_01CCCD7C.18D93A70
+Content-Type: text/css;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.vim.org/css/style.css
+
+BODY {
+	FONT-FAMILY: arial,helvetica,sans-serif
+}
+TD {
+	FONT-FAMILY: arial,helvetica,sans-serif
+}
+P {
+	FONT-FAMILY: arial,helvetica,sans-serif
+}
+TH {
+	FONT-WEIGHT: bold; FONT-FAMILY: arial,helvetica,sans-serif; TEXT-ALIGN: =
+left
+}
+EM {
+	FONT-WEIGHT: bold; FONT-STYLE: italic
+}
+.darkbg {
+	BACKGROUND-COLOR: #007f00
+}
+.lightbg {
+	BACKGROUND-COLOR: #cccc99
+}
+.sidebar {
+	FONT-SIZE: small; FONT-FAMILY: arial,helvetica,sans-serif; =
+BACKGROUND-COLOR: #f0f0dd
+}
+.topheader {
+	FONT-WEIGHT: bold; FONT-SIZE: large; FONT-FAMILY: =
+arial,helvetica,sans-serif; BACKGROUND-COLOR: #cccc99
+}
+.sidebarheader {
+	FONT-WEIGHT: bold; FONT-SIZE: small; FONT-FAMILY: =
+arial,helvetica,sans-serif
+}
+.newsdate {
+	FONT-SIZE: small; COLOR: #6666cc; FONT-STYLE: italic
+}
+PRE {
+	FONT-FAMILY: "andale mono", "monotype.com", "courier new", monospace
+}
+CODE {
+	FONT-FAMILY: "andale mono", "monotype.com", "courier new", monospace
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: medium; COLOR: #000066; FONT-FAMILY: =
+arial,helvetica,sans-serif
+}
+.txth1 {
+	FONT-WEIGHT: bold; FONT-SIZE: medium; COLOR: #000066; FONT-FAMILY: =
+arial,helvetica,sans-serif
+}
+H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: small; COLOR: #000066; FONT-FAMILY: =
+arial,helvetica,sans-serif
+}
+.txth2 {
+	FONT-WEIGHT: bold; FONT-SIZE: small; COLOR: #000066; FONT-FAMILY: =
+arial,helvetica,sans-serif
+}
+H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; COLOR: #000066; FONT-FAMILY: =
+arial,helvetica,sans-serif
+}
+.txth3 {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; COLOR: #000066; FONT-FAMILY: =
+arial,helvetica,sans-serif
+}
+SMALL {
+	FONT-SIZE: 75%; FONT-FAMILY: arial,helvetica,sans-serif
+}
+A.small {
+	FONT-SIZE: 75%; COLOR: #000066; FONT-FAMILY: =
+arial,helvetica,sans-serif; TEXT-DECORATION: none
+}
+.style1 {
+	COLOR: #666666
+}
+INPUT {
+	FONT-FAMILY: arial,helvetica,sans-serif
+}
+TEXTAREA {
+	WIDTH: 100%; FONT-FAMILY: arial, helvetica, sans-serif
+}
+.prompt {
+	FONT-WEIGHT: bold; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.errortext {
+	COLOR: #cc0000; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.errorheader {
+	FONT-SIZE: medium; COLOR: #cc0000; FONT-FAMILY: =
+arial,helvetica,sans-serif
+}
+.tableheader {
+	FONT-WEIGHT: bold; FONT-FAMILY: arial,helvetica,sans-serif; =
+BACKGROUND-COLOR: #cccc99
+}
+.rowodd {
+	FONT-FAMILY: arial,helvetica,sans-serif; BACKGROUND-COLOR: #f0f0dd
+}
+.roweven {
+	FONT-FAMILY: arial,helvetica,sans-serif; BACKGROUND-COLOR: #cccc99
+}
+TR.tableheader TH {
+	FONT-FAMILY: arial,helvetica,sans-serif; BACKGROUND-COLOR: #cccc99; =
+TEXT-ALIGN: center
+}
+TD.checker {
+	BACKGROUND-IMAGE: =
+url(http://vim.sourceforge.net/images/checkerboard.gif); =
+BACKGROUND-COLOR: #007f00
+}
+.example {
+	BORDER-RIGHT: #88aa66; PADDING-RIGHT: 5px; BORDER-TOP: #88aa66 1px =
+solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: #88aa66; =
+PADDING-TOP: 5px; BORDER-BOTTOM: #88aa66 1px solid; BACKGROUND-COLOR: =
+#eeffcc
+}
+
+------=_NextPart_000_000E_01CCCD7C.18D93A70
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.google.com/coop/cse/brand?form=cse-search-box&lang=en
+
+=0A=
+(function() {=0A=
+var f =3D document.getElementById('cse-search-box');=0A=
+if (!f) {=0A=
+f =3D document.getElementById('searchbox_demo');=0A=
+}=0A=
+if (f && f['q']) {=0A=
+var q =3D f['q'];=0A=
+var n =3D navigator;=0A=
+var l =3D location;=0A=
+var su =3D function () {=0A=
+var u =3D document.createElement('input');=0A=
+var v =3D document.location.toString();=0A=
+var existingSiteurl =3D /(?:[?&]siteurl=3D)([^&#]*)/.exec(v);=0A=
+if (existingSiteurl) {=0A=
+v =3D decodeURI(existingSiteurl[1]);=0A=
+}=0A=
+var delimIndex =3D v.indexOf('://');=0A=
+if (delimIndex >=3D 0) {=0A=
+v =3D v.substring(delimIndex + '://'.length, v.length);=0A=
+}=0A=
+u.name =3D 'siteurl';=0A=
+u.value =3D v;=0A=
+u.type =3D 'hidden';=0A=
+f.appendChild(u);=0A=
+};=0A=
+if (n.appName =3D=3D 'Microsoft Internet Explorer') {=0A=
+var s =3D f.parentNode.childNodes;=0A=
+for (var i =3D 0; i < s.length; i++) {=0A=
+        if (s[i].nodeName =3D=3D 'SCRIPT' &&=0A=
+            s[i].attributes['src'] &&=0A=
+            s[i].attributes['src'].nodeValue =3D=3D =
+unescape('http:\x2F\x2Fwww.google.com\x2Fcoop\x2Fcse\x2Fbrand?form=3Dcse-=
+search-box\x26lang=3Den')) {=0A=
+          su();=0A=
+          break;=0A=
+        }=0A=
+      }=0A=
+    } else {=0A=
+      su();=0A=
+    }=0A=
+=0A=
+    =0A=
+    if (n.platform =3D=3D 'Win32') {=0A=
+      q.style.cssText =3D 'border: 1px solid #7e9db9; padding: 2px;';=0A=
+    }=0A=
+=0A=
+    =0A=
+    if (window.history.navigationMode) {=0A=
+      window.history.navigationMode =3D 'compatible';=0A=
+    }=0A=
+=0A=
+    var b =3D function() {=0A=
+      if (q.value =3D=3D '') {=0A=
+        q.style.background =3D '#FFFFFF =
+url(http:\x2F\x2Fwww.google.com\x2Fcse\x2Fintl\x2Fen\x2Fimages\x2Fgoogle_=
+custom_search_watermark.gif) left no-repeat';=0A=
+      }=0A=
+    };=0A=
+=0A=
+    var f =3D function() {=0A=
+      q.style.background =3D '#ffffff';=0A=
+    };=0A=
+=0A=
+    q.onfocus =3D f;=0A=
+    q.onblur =3D b;=0A=
+=0A=
+    =0A=
+    if (!/[&?]q=3D[^&]/.test(l.search)) {=0A=
+      b();=0A=
+    }=0A=
+  }=0A=
+})();=0A=
+
+------=_NextPart_000_000E_01CCCD7C.18D93A70
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.statcounter.com/counter/counter.js
+
+var sc_width=3Dscreen.width;var sc_height=3Dscreen.height;var =
+sc_referer=3D""+document.referrer;try{sc_referer=3D""+parent.document.ref=
+errer}catch(ex){sc_referer=3D""+document.referrer}var sc_unique=3D0;var =
+sc_returning=3D0;var sc_returns=3D0;var sc_error=3D0;var =
+sc_remove=3D0;var sc_cls=3D-1;var sc_inv=3D0;var sc_os=3D"";var =
+sc_title=3D"";var sc_url=3D"";var sc_base_dir=3D"";var =
+sc_click_dir=3D"";var sc_link_back_start=3D"";var =
+sc_link_back_end=3D"";var sc_security_code=3D"";var =
+sc_http_url=3D"http";var sc_host=3D"statcounter.com";var =
+sc_dc=3D"c";if(window.sc_invisible){if(window.sc_invisible=3D=3D1){sc_inv=
+=3D1}}if(window.sc_click_stat){sc_cls=3Dwindow.sc_click_stat}if(window.sc=
+_https){if(sc_https=3D=3D1){sc_doc_loc=3D''+document.location;myRE=3Dnew =
+RegExp("^https","i");if(sc_doc_loc.match(myRE)){sc_http_url=3D"https"}}}i=
+f(window.sc_project){if(sc_project=3D=3D"4135125"||sc_project=3D=3D"61696=
+19"||sc_project=3D=3D"6222332"||sc_project=3D=3D"5106510"||sc_project=3D=3D=
+"6311399"||sc_project=3D=3D"6320092"||sc_project=3D=3D"5291656"||sc_proje=
+ct=3D=3D"7324465"||sc_project=3D=3D"6640020"||sc_project=3D=3D"4629288"||=
+sc_project=3D=3D"1480088"||sc_project=3D=3D"2447031"){sc_dc=3D"1.counter.=
+b"}}if(window.sc_local){sc_base_dir=3Dsc_local}else{if(sc_cls=3D=3D-1){sc=
+_cls=3D1}sc_base_dir=3Dsc_http_url+"://"+sc_dc+"."+sc_host+"/"}sc_click_d=
+ir=3Dsc_base_dir;if(window.sc_text){sc_base_dir+=3D"text.php?"}else{sc_ba=
+se_dir+=3D"t.php?"}if(window.sc_project){if(sc_project=3D=3D"4135125"||sc=
+_project=3D=3D"6169619"||sc_project=3D=3D"6222332"||sc_project=3D=3D"5106=
+510"||sc_project=3D=3D"6311399"||sc_project=3D=3D"6320092"||sc_project=3D=
+=3D"5291656"||sc_project=3D=3D"7324465"||sc_project=3D=3D"6640020"||sc_pr=
+oject=3D=3D"4629288"||sc_project=3D=3D"1480088"||sc_project=3D=3D"2447031=
+"){if(Math.floor(Math.random()*6)!=3D1){sc_remove=3D1}}sc_base_dir+=3D"sc=
+_project=3D"+sc_project}else =
+if(window.usr){sc_base_dir+=3D"usr=3D"+usr}else{sc_error=3D1}if(window.sc=
+_remove_link){sc_link_back_start=3D"";sc_link_back_end=3D""}else{sc_link_=
+back_start=3D"<a class=3D\"statcounter\" =
+href=3D\"http://www."+sc_host+"\" =
+target=3D\"_blank\">";sc_link_back_end=3D"<\/a>"}sc_date=3Dnew =
+Date();sc_time=3Dsc_date.getTime();sc_time_difference=3D3600000;sc_title=3D=
+""+document.title;sc_url=3D""+document.location;sc_referer=3Dsc_referer.s=
+ubstring(0,600);sc_title=3Dsc_title.substring(0,300);sc_url=3Dsc_url.subs=
+tring(0,300);sc_referer=3Descape(sc_referer);if(encodeURIComponent){sc_ti=
+tle=3DencodeURIComponent(sc_title)}else{sc_title=3Descape(sc_title)}sc_ur=
+l=3Descape(sc_url);if(window.sc_security){sc_security_code=3Dsc_security}=
+if(sc_script_num){sc_script_num++}else{var sc_script_num=3D1}var =
+sc_tracking_url=3Dsc_base_dir+"&resolution=3D"+sc_width+"&h=3D"+sc_height=
++"&camefrom=3D"+sc_referer+"&u=3D"+sc_url+"&t=3D"+sc_title+"&java=3D1&sec=
+urity=3D"+sc_security_code+"&sc_random=3D"+Math.random()+"&sc_snum=3D"+sc=
+_script_num;var sc_clstr=3D"<span class=3D\"statcounter\">";var =
+sc_cltext=3D"\" alt=3D\"StatCounter - Free Web Tracker and Counter\" =
+border=3D\"0\">";var sc_strout=3Dsc_clstr+sc_link_back_start+"<img =
+src=3D\""+sc_tracking_url+sc_cltext+sc_link_back_end+"</span>";if(sc_erro=
+r=3D=3D1){document.writeln("Code corrupted. Insert fresh copy.")}else =
+if(sc_remove=3D=3D1){}else{if(sc_inv=3D=3D1){if(window.sc_call){sc_call++=
+}else{sc_call=3D1}eval("var sc_img"+sc_call+" =3D new =
+Image();sc_img"+sc_call+".src =3D =
+\""+sc_tracking_url+"&invisible=3D1\"")}else =
+if(window.sc_text){document.writeln('<scr'+'ipt =
+language=3D"JavaScript"'+' =
+src=3D'+sc_tracking_url+"&text=3D"+sc_text+'></scr'+'ipt>')}else{document=
+.writeln(sc_strout)}}if(sc_cls>0){if(clickstat_done!=3D1){var =
+clickstat_done=3D1;var clickstat_project=3Dwindow.sc_project;var =
+clickstat_security=3Dwindow.sc_security_code;var =
+dlext=3D"7z|aac|avi|csv|doc|docx|exe|flv|gif|gz|jpe?g|js|mp(3|4|e?g)|mov|=
+pdf|phps|png|ppt|rar|sit|tar|torrent|txt|wma|wmv|xls|xlsx|xml|zip";if(typ=
+eof(window.sc_download_type)=3D=3D'string'){dlext=3Dwindow.sc_download_ty=
+pe}var ltype=3D"https?|ftp|telnet|ssh|ssl|mailto";var =
+second=3D"ac|co|gov|ltd|me|mod|net|nic|nhs|org|plc|police|sch|com";var =
+dl=3Dnew RegExp("\\.("+dlext+")$","i");var lnk=3Dnew =
+RegExp("^("+ltype+"):","i");var domsec=3Dnew =
+RegExp("\^("+second+")$","i");var =
+host_name=3Dlocation.host.replace(/^www\./i,"");var =
+host_splitted=3Dhost_name.split(".");var =
+domain=3Dhost_splitted.pop();var =
+host_split=3Dhost_splitted.pop();if(domsec.test(host_split)){domain=3Dhos=
+t_split+"."+domain;host_split=3Dhost_splitted.pop()}domain=3Dhost_split+"=
+."+domain;var =
+lnklocal_mask=3D"^https?:\/\/(.*)("+domain+"|webcache.googleusercontent.c=
+om)";var lnklocal=3Dnew =
+RegExp(lnklocal_mask,"i");if(document.getElementsByTagName){var =
+anchors=3Ddocument.getElementsByTagName('a');for(var =
+i=3D0;i<anchors.length;i++){var =
+anchor=3Danchors[i];if(anchor.onmousedown){var =
+original_click=3Danchor.onmousedown;var =
+s=3Doriginal_click.toString().split("\n").join(" ");var =
+bs=3Ds.indexOf('{');var head=3Ds.substr(0,bs);var =
+ps=3Dhead.indexOf('(');var pe=3Dhead.indexOf(')');var =
+params=3Dhead.substring(ps+1,pe);var plist=3Dparams.split(",");var =
+body=3Ds.substr(bs+1,s.length-bs-2);var =
+insert=3D"sc_clickstat_call(this,'"+sc_click_dir+"');";var =
+final_body=3Dinsert+body;var ev_head=3D"new Function (";var =
+ev_params=3D"";var ev_sep=3D"";for(var =
+sc_i=3D0;sc_i<plist.length;sc_i++){ev_params=3Dev_sep+"'"+plist[sc_i]+"'"=
+;ev_sep=3D","}if(ev_sep=3D=3D","){ev_params+=3D","}var =
+ev_foot=3D"final_body);";var =
+ev_final=3Dev_head+ev_params+ev_foot;anchor.onmousedown=3Deval(ev_final)}=
+else{anchor.onmousedown=3Dnew =
+Function("event","sc_clickstat_call(this,'"+sc_click_dir+"');return =
+true;")}}}function sc_none(){return}function =
+sc_delay(){if(window.sc_click_stat){var =
+d=3Dwindow.sc_click_stat}else{var d=3D250}var n=3Dnew Date();var =
+t=3Dn.getTime()+d;while(n.getTime()<t){var n=3Dnew Date()}}function =
+sc_clickstat_call(adata,sc_click_dir){if(adata){var =
+clickmode=3D0;if(lnk.test(adata)){if((lnklocal.test(adata))){if(dl.test(a=
+data)){clickmode=3D1}else if(window.sc_exit_link_detect&&new =
+RegExp(sc_exit_link_detect,"i").test(adata)){clickmode=3D2}else =
+if(sc_cls=3D=3D2){clickmode=3D2}}else{clickmode=3D2}}if(clickmode!=3D0){v=
+ar sc_link=3Descape(adata);if(sc_link.length>0){var =
+sc_req=3Dsc_click_dir+"click.gif?sc_project=3D"+clickstat_project+"&secur=
+ity=3D"+clickstat_security+"&c=3D"+sc_link+"&m=3D"+clickmode+"&u=3D"+sc_u=
+rl+"&t=3D"+sc_title+"&rand=3D"+Math.random();var sc_req_image=3Dnew =
+Image();sc_req_image.onload=3Dsc_none;sc_req_image.src=3Dsc_req;sc_delay(=
+)}}}}var =
+sc_gsyn_pattern=3D'googlesyndication\.com|ypn-js\.overture\.com|ypn-js\.y=
+sm\.yahoo\.com|googleads\.g\.doubleclick\.net';var =
+sc_gsyn_pattern2=3D'^aswift_[0-9]+$';var sc_px;var sc_py;function =
+sc_adsense_click(sc_data){if(sc_data.src.match(sc_gsyn_pattern)){var =
+sc_link=3Descape(sc_data.src)}else{var sc_link=3Descape("Google Adsense =
+"+sc_data.width+"x"+sc_data.height)}var i=3Dnew Image();var =
+sc_req=3Dsc_click_dir+"click.gif?sc_project=3D"+clickstat_project+"&secur=
+ity=3D"+clickstat_security+"&c=3D"+sc_link+"&m=3D2&u=3D"+sc_url+"&t=3D"+s=
+c_title+"&rand=3D"+Math.random();i.src=3Dsc_req;sc_delay()}function =
+sc_adsense_init(){if(document.all&&typeof =
+window.opera=3D=3D"undefined"){var =
+el=3Ddocument.getElementsByTagName("iframe");for(var =
+i=3D0;i<el.length;i++){if(el[i].src.match(sc_gsyn_pattern)||el[i].id.matc=
+h(sc_gsyn_pattern2)){el[i].onfocus=3Dfunction(){sc_adsense_click(this)}}}=
+}else{if(typeof =
+window.addEventListener!=3D"undefined"){window.addEventListener("unload",=
+sc_exitpage,false);window.addEventListener("mousemove",sc_getmouse,true)}=
+}}if(typeof =
+window.addEventListener!=3D'undefined'){window.addEventListener('load',sc=
+_adsense_init,false)}else{if(typeof =
+document.addEventListener!=3D'undefined'){document.addEventListener('load=
+',sc_adsense_init,false)}else{if(typeof =
+window.attachEvent!=3D'undefined'){window.attachEvent('onload',sc_adsense=
+_init)}else{if(typeof window.onload=3D=3D'function'){var =
+sc_existing=3Donload;window.onload=3Dfunction(){sc_existing();sc_adsense_=
+init()}}else{window.onload=3Dsc_adsense_init}}}}function =
+sc_getmouse(e){if(typeof =
+e.pageX=3D=3D"number"){sc_px=3De.pageX;sc_py=3De.pageY}else{if(typeof =
+e.clientX=3D=3D"number"){sc_px=3De.clientX;sc_py=3De.clientY;if(document.=
+body&&(document.body.scrollLeft||document.body.scrollTop)){sc_px+=3Ddocum=
+ent.body.scrollLeft;sc_py+=3Ddocument.body.scrollTop}else{if(document.doc=
+umentElement&&(document.documentElement.scrollLeft||document.documentElem=
+ent.scrollTop)){sc_px+=3Ddocument.documentElement.scrollLeft;sc_py+=3Ddoc=
+ument.documentElement.scrollTop}}}}}function sc_findy(obj){var =
+y=3D0;while(obj){y+=3Dobj.offsetTop;obj=3Dobj.offsetParent}return(y)}func=
+tion sc_findx(obj){var =
+x=3D0;while(obj){x+=3Dobj.offsetLeft;obj=3Dobj.offsetParent}return(x)}fun=
+ction =
+sc_exitpage(e){ad=3Ddocument.getElementsByTagName("iframe");if(typeof =
+sc_px=3D=3D"undefined"){return}for(var i=3D0;i<ad.length;i++){var =
+adLeft=3Dsc_findx(ad[i]);var adTop=3Dsc_findy(ad[i]);var =
+adW=3DparseInt(adLeft)+parseInt(ad[i].width)+15;var =
+adH=3DparseInt(adTop)+parseInt(ad[i].height)+10;var =
+inFrameX=3D(sc_px>(adLeft-10)&&sc_px<adW);var =
+inFrameY=3D(sc_py>(adTop-10)&&sc_py<adH);if(inFrameY&&inFrameX){if(ad[i].=
+src.match(sc_gsyn_pattern)||ad[i].id.match(sc_gsyn_pattern2)){sc_adsense_=
+click(ad[i])}}}}}}
+------=_NextPart_000_000E_01CCCD7C.18D93A70--
