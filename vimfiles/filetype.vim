@@ -1,6 +1,6 @@
 
 " Android log
 augroup filetypedetect
-au BufNewFile,BufRead *.alog setf android_log
+au BufNewFile,BufRead *.log setf log
 augroup END
 
